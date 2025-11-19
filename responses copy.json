@@ -1,0 +1,171 @@
+{
+  "account_setup": "Untuk membuat akun Chattea:\n1. Kunjungi chattea.com atau buka aplikasi\n2. Klik 'Daftar' atau 'Sign Up'\n3. Masukkan email dan password\n4. Verifikasi email Anda\n5. Login dan mulai gunakan Chattea!\n\nButuh bantuan lain?",
+  
+  "advanced_contact_segmentation": "Untuk mengelompokkan kontak berdasarkan segmen:\n1. Buka menu 'Contacts' → 'Advanced Filtering'\n2. Pilih kriteria segmentasi (engagement, tags, dll)\n3. Buat grup baru dengan filter tersebut\n4. Simpan segmen untuk digunakan nanti\n\nSegmentasi membantu targeting lebih tepat!",
+  
+  "analytics_view": "Untuk melihat analytics pesan:\n1. Buka tab 'Analytics'\n2. Pilih periode waktu yang ingin dilihat\n3. Lihat metrik: delivery rate, open rate, response rate\n4. Export laporan jika diperlukan\n\nAnalytics membantu evaluasi kampanye Anda!",
+  
+  "api_reference": "Dokumentasi API Chattea:\n1. Buka https://docs.chattea.com/api\n2. Dapatkan API key di dashboard → Settings → API\n3. Gunakan endpoint yang tersedia untuk integrasi\n4. Lihat contoh code di dokumentasi\n\nButuh bantuan teknis? Hubungi support@chattea.com",
+  
+  "api_send_message": "Untuk kirim pesan via REST API:\n```\nPOST /api/v1/messages/send\nHeaders: Authorization: Bearer YOUR_API_KEY\nBody: {\n  \"phone\": \"+628123456789\",\n  \"message\": \"Hello!\"\n}\n```\nLihat dokumentasi lengkap di docs.chattea.com/api",
+  
+  "api_webhook_setup": "Setup webhook Chattea:\n1. Login ke dashboard\n2. Settings → Webhooks\n3. Tambah webhook URL (misal: https://example.com/webhook)\n4. Pilih events yang ingin diterima\n5. Simpan dan test webhook\n\nChattea akan kirim POST request ke URL Anda saat ada event.",
+  
+  "auto_reply_disable": "Untuk matikan auto-reply:\n1. Buka Settings → Auto Reply\n2. Toggle OFF untuk 'Auto Reply Outside Business Hours'\n3. Atau atur jadwal kapan auto-reply aktif\n4. Klik Save\n\nAuto-reply sekarang dinonaktifkan!",
+  
+  "auto_reply_setup": "Setup auto-reply di Chattea:\n1. Buka Settings → Auto Reply\n2. Toggle ON untuk aktifkan\n3. Tulis pesan auto-reply Anda\n4. Atur jadwal (business hours)\n5. Simpan pengaturan\n\nAuto-reply akan aktif sesuai jadwal!",
+  
+  "calendar_integration": "Integrasi Chattea dengan kalender:\n1. Buka Settings → Integrations\n2. Pilih Google Calendar atau Outlook\n3. Authorize akses kalender\n4. Sinkronisasi jadwal otomatis\n\nSekarang Anda bisa schedule message berdasarkan kalender!",
+  
+  "cancel_action": "Baik, dibatalkan. Ada yang bisa saya bantu lagi?",
+  
+  "chat_history": "Untuk melihat history chat:\n1. Buka tab 'Chats'\n2. Pilih instance yang ingin dilihat\n3. Klik pada kontak untuk lihat riwayat lengkap\n4. Gunakan search untuk cari pesan tertentu\n\nHistory tersimpan selama 90 hari.",
+  
+  "chat_read": "Untuk membaca chat terakhir dengan kontak:\n1. Buka tab 'Chats'\n2. Cari nama kontak (misal: 'John')\n3. Klik untuk buka percakapan\n4. Scroll untuk lihat history lengkap",
+  
+  "chat_send": "Untuk mengirim pesan WhatsApp:\n1. Buka tab 'Chat'\n2. Klik 'New Message' atau pilih kontak\n3. Ketik pesan Anda\n4. Klik 'Send' atau tekan Enter\n\nPesan akan terkirim langsung!",
+  
+  "contacts_add": "Untuk menambah kontak baru:\n1. Buka menu 'Contacts'\n2. Klik tombol '+ Add Contact'\n3. Masukkan nama dan nomor WhatsApp (format: +628xxx)\n4. Tambah tags/notes jika perlu\n5. Klik 'Save'\n\nKontak berhasil ditambahkan!",
+  
+  "contacts_filter": "Untuk filter/cari kontak:\n1. Buka menu 'Contacts'\n2. Gunakan search box untuk cari nama/nomor\n3. Atau gunakan filter berdasarkan tag\n4. Klik 'Apply Filter'\n\nKontak yang sesuai akan ditampilkan!",
+  
+  "contacts_manage": "Untuk kelola kontak:\n1. Buka menu 'Contacts'\n2. Lihat semua kontak Anda\n3. Klik kontak untuk edit/hapus\n4. Gunakan bulk actions untuk kelola banyak kontak\n\nAnda bisa import/export kontak juga!",
+  
+  "create_instance": "Untuk membuat instance WhatsApp baru:\n1. Buka tab 'Instances'\n2. Klik '+ New Instance'\n3. Beri nama instance (misal: 'Marketing Team')\n4. Scan QR code dengan WhatsApp\n5. Instance siap digunakan!\n\nSetiap instance = 1 nomor WhatsApp.",
+  
+  "definition": "Chattea adalah platform WhatsApp marketing automation yang membantu bisnis:\n✅ Kirim pesan massal (blast message)\n✅ Schedule pesan otomatis\n✅ Kelola multiple WhatsApp accounts\n✅ Filter dan validasi nomor\n✅ Analytics dan reporting\n✅ Auto-reply & chatbot\n\nChattea cocok untuk sales, marketing, dan customer service!",
+  
+  "feature_coming_soon": "Fitur yang akan datang:\n🔜 Message Blasting dengan AI personalization\n🔜 Advanced CRM integration\n🔜 Chatbot builder visual\n🔜 Voice message support\n\nStay tuned! Follow update kami di telegram atau email newsletter.",
+  
+  "files_manage": "Untuk kelola file yang diupload:\n1. Buka tab 'Files'\n2. Lihat semua file Anda (gambar, PDF, video)\n3. Klik file untuk preview\n4. Hapus file yang tidak diperlukan\n\nFile tersimpan 30 hari setelah upload terakhir.",
+  
+  "files_share": "Untuk share file ke semua instance:\n1. Upload file di tab 'Files'\n2. Klik file → 'Share Across Instances'\n3. Pilih instance tujuan\n4. Klik 'Share'\n\nFile akan tersedia di semua instance yang dipilih!",
+  
+  "files_upload": "Untuk upload file:\n1. Buka tab 'Files'\n2. Klik 'Upload File'\n3. Pilih file dari komputer (max 16MB)\n4. Tunggu upload selesai\n\nFile bisa digunakan untuk kirim pesan dengan attachment!",
+  
+  "function_check_phone": "Untuk cek nomor terdaftar di WhatsApp:\n1. Buka menu 'Tools' → 'Phone Checker'\n2. Input nomor atau upload file CSV\n3. Klik 'Check'\n4. Lihat hasil: Valid (✅) atau Invalid (❌)\n\nFitur ini hemat waktu sebelum blast message!",
+  
+  "function_create_group": "Untuk membuat grup WhatsApp:\n1. Buka tab 'Groups'\n2. Klik 'Create Group'\n3. Masukkan nama grup\n4. Tambah anggota (pilih dari kontak)\n5. Klik 'Create'\n\nGrup berhasil dibuat!",
+  
+  "function_create_instance": "Untuk buat instance baru:\n1. Tab 'Instances' → '+ Add Instance'\n2. Pilih nama instance\n3. Scan QR code\n4. Instance aktif!\n\nAnda bisa kelola multiple WhatsApp dari satu dashboard.",
+  
+  "function_send_message": "Untuk kirim pesan:\n1. Pilih instance\n2. Masukkan nomor tujuan (format: 628xxx)\n3. Tulis pesan\n4. Klik 'Send'\n\nPesan terkirim langsung!",
+  
+  "general_tips": "Tips optimasi Chattea:\n✅ Gunakan warmup untuk akun baru (hindari ban)\n✅ Jangan kirim spam terlalu cepat\n✅ Personalisasi pesan dengan variabel {name}\n✅ Test message ke nomor sendiri dulu\n✅ Monitor analytics untuk evaluasi\n✅ Gunakan filter untuk target tepat\n\nButuh tips spesifik? Tanya saja!",
+  
+  "goodbye": "Terima kasih sudah menggunakan Chattea Bot! 👋\nSemoga bisnis Anda sukses!\n\nKalau ada pertanyaan lagi, saya siap membantu kapan saja. Sampai jumpa!",
+  
+  "gratitude": "Sama-sama! 😊 Senang bisa membantu!\n\nAda lagi yang bisa saya bantu? Jangan ragu untuk bertanya!",
+  
+  "greeting": "Halo! Selamat datang di Chattea Bot! 👋\n\nSaya di sini untuk membantu Anda menggunakan Chattea. Apa yang bisa saya bantu hari ini?\n\nContoh pertanyaan:\n• Cara kirim pesan massal\n• Cara buat instance baru\n• Apa itu warmup\n• Cara schedule pesan",
+  
+  "group_create": "Untuk membuat grup WhatsApp:\n1. Tab 'Groups' → 'Create New Group'\n2. Masukkan nama grup (misal: 'VIP Customers')\n3. Pilih anggota dari kontak\n4. Set admin settings\n5. Klik 'Create'\n\nGrup siap digunakan untuk broadcast!",
+  
+  "group_export": "Untuk export data member grup:\n1. Buka tab 'Groups'\n2. Pilih grup yang ingin di-export\n3. Klik 'Export Members'\n4. Pilih format (CSV/Excel)\n5. Download file\n\nData member tersimpan di file!",
+  
+  "group_settings_edit": "Untuk edit pengaturan grup:\n1. Buka grup → Settings\n2. Edit settings seperti:\n   - Admin only messaging\n   - Edit group info\n   - Send messages permissions\n3. Klik 'Save Changes'\n\nPengaturan grup berhasil diupdate!",
+  
+  "instance_connection_status": "Untuk cek status koneksi instance:\n1. Buka tab 'Instances'\n2. Lihat indicator status:\n   🟢 Connected\n   🟡 Connecting...\n   🔴 Disconnected\n3. Jika disconnected, klik 'Reconnect' dan scan QR ulang\n\nPastikan koneksi stabil untuk kirim pesan!",
+  
+  "instance_delete": "Untuk hapus instance:\n⚠️ PERHATIAN: Data akan hilang permanen!\n\n1. Tab 'Instances' → pilih instance\n2. Klik '⋮' → 'Delete Instance'\n3. Konfirmasi dengan ketik nama instance\n4. Klik 'Delete Permanently'\n\nInstance berhasil dihapus!",
+  
+  "instance_edit": "Untuk edit nama/settings instance:\n1. Tab 'Instances' → pilih instance\n2. Klik 'Edit' atau ikon pensil\n3. Ubah nama/pengaturan\n4. Klik 'Save'\n\nPerubahan tersimpan!",
+  
+  "instance_list": "Untuk lihat semua instance:\n1. Buka tab 'Instances'\n2. Lihat list semua instance dengan status:\n   - Nama instance\n   - Nomor WhatsApp\n   - Status koneksi (🟢/🔴)\n   - Last active\n\nKlik instance untuk manage!",
+  
+  "instance_logout": "Untuk logout dari instance:\n1. Tab 'Instances' → pilih instance\n2. Klik 'Logout' atau 'Disconnect'\n3. Konfirmasi logout\n\nWhatsApp akan logout dari device ini. Anda perlu scan QR lagi untuk reconnect.",
+  
+  "instance_view_profile": "Untuk lihat profile instance:\n1. Tab 'Instances' → pilih instance\n2. Klik 'View Profile'\n3. Lihat info:\n   - Nomor WhatsApp\n   - Nama profile\n   - Status\n   - Profile picture\n\nInfo profile ditampilkan!",
+  
+  "login_issue": "Masalah login? Coba langkah ini:\n\n1. **Lupa password?**\n   - Klik 'Forgot Password' di login page\n   - Masukkan email\n   - Cek email untuk reset link\n\n2. **Tidak bisa login?**\n   - Pastikan email/password benar\n   - Clear browser cache\n   - Coba browser lain\n\n3. **Masih error?**\n   - Hubungi support@chattea.com\n   - Sertakan screenshot error",
+  
+  "message_blast": "Untuk kirim pesan massal (blast):\n1. Tab 'Blast Message' → 'New Blast'\n2. Pilih kontak/grup tujuan\n3. Tulis pesan (bisa gunakan variabel {name})\n4. Preview pesan\n5. Klik 'Send Blast'\n\n⚠️ Tips: Jangan kirim ke >1000 nomor sekaligus. Gunakan delay untuk hindari ban!",
+  
+  "message_blast_status": "Untuk cek status blast message:\n1. Tab 'Tasks' atau 'Blast History'\n2. Lihat status setiap pesan:\n   ✅ Sent\n   ⏳ Pending\n   ❌ Failed\n3. Klik untuk detail lengkap\n\nAnda bisa retry pesan yang failed!",
+  
+  "message_schedule": "Untuk schedule pesan:\n1. Tulis pesan seperti biasa\n2. Klik icon 'Schedule' (⏰)\n3. Pilih tanggal & waktu pengiriman\n4. Klik 'Schedule Message'\n\nPesan akan terkirim otomatis sesuai jadwal!\n\nContoh: Schedule blast promo besok pagi jam 09:00",
+  
+  "message_schedule_recurring": "Untuk set pesan berulang (recurring):\n1. Tab 'Scheduled Messages' → 'New Recurring'\n2. Tulis pesan\n3. Pilih interval: Daily/Weekly/Monthly\n4. Set waktu pengiriman\n5. Klik 'Save'\n\nContoh: Kirim reminder setiap Senin pagi jam 08:00",
+  
+  "message_schedule_timezone": "Chattea support timezone scheduling!\n\nSaat schedule pesan:\n1. Pilih timezone tujuan\n2. Set waktu lokal tujuan\n3. Chattea akan otomatis konversi\n\nContoh: Schedule ke Jakarta (WIB) jam 09:00, ke Batam (WIB) akan otomatis sama jam 09:00.",
+  
+  "navigation_chat_tab": "Membuka tab Chat:\n1. Klik menu 'Chat' di sidebar kiri\n2. Atau tekan shortcut: Ctrl/Cmd + 1\n\nTab Chat menampilkan semua percakapan aktif!",
+  
+  "navigation_files_tab": "Membuka tab Files:\n1. Klik menu 'Files' di sidebar\n2. Atau tekan shortcut: Ctrl/Cmd + 4\n\nTab Files untuk kelola semua file upload Anda!",
+  
+  "navigation_grouping_tab": "Membuka tab Groups:\n1. Klik menu 'Groups' di sidebar\n2. Atau tekan shortcut: Ctrl/Cmd + 3\n\nTab Groups untuk kelola grup WhatsApp!",
+  
+  "navigation_instances_tab": "Membuka tab Instances:\n1. Klik menu 'Instances' di sidebar\n2. Atau tekan shortcut: Ctrl/Cmd + 2\n\nTab Instances untuk kelola semua akun WhatsApp!",
+  
+  "navigation_main_dashboard": "Kembali ke Dashboard:\n1. Klik logo Chattea di kiri atas\n2. Atau klik menu 'Dashboard'\n3. Atau tekan shortcut: Ctrl/Cmd + D\n\nDashboard menampilkan ringkasan aktivitas Anda!",
+  
+  "navigation_payments_tab": "Membuka tab Payments:\n1. Klik menu 'Payments' atau 'Billing'\n2. Lihat subscription dan payment history\n\nTab Payments untuk kelola langganan dan invoice!",
+  
+  "navigation_tasks_tab": "Membuka tab Tasks:\n1. Klik menu 'Tasks' di sidebar\n2. Atau tekan shortcut: Ctrl/Cmd + 5\n\nTab Tasks menampilkan semua scheduled & blast messages!",
+  
+  "pairing": "Untuk pairing WhatsApp dengan Chattea:\n\n**Metode 1: QR Code (Recommended)**\n1. Buat instance baru\n2. Scan QR code dengan WhatsApp di HP Anda:\n   - Buka WhatsApp → Settings/Pengaturan → Linked Devices\n   - Tap 'Link a Device'\n   - Scan QR di layar Chattea\n\n**Metode 2: Pairing Code**\n1. Klik 'Use Pairing Code'\n2. Masukkan nomor HP\n3. Chattea akan generate code\n4. Input code di WhatsApp HP Anda\n\nDone! Instance connected!",
+  
+  "payment_extend": "Untuk perpanjang subscription:\n1. Tab 'Payments' → 'Extend Subscription'\n2. Pilih paket & durasi\n3. Pilih metode payment\n4. Bayar sesuai instruksi\n5. Subscription auto-extend setelah payment confirmed\n\nSubscription Anda akan diperpanjang!",
+  
+  "payment_history": "Untuk lihat riwayat pembayaran:\n1. Tab 'Payments' → 'Transaction History'\n2. Lihat semua transaksi:\n   - Tanggal\n   - Amount\n   - Status (Paid/Pending/Failed)\n   - Invoice\n3. Download invoice jika perlu\n\nRiwayat lengkap tersimpan di sini!",
+  
+  "payment_issue": "Masalah pembayaran? Coba langkah ini:\n\n**Payment Pending:**\n- Tunggu 1-2 jam untuk verifikasi otomatis\n- Cek email konfirmasi payment\n\n**Payment Failed:**\n- Coba metode payment lain\n- Pastikan saldo/limit cukup\n- Hubungi bank jika ditolak\n\n**Subscription Inactive:**\n- Bayar invoice yang pending\n- Atau hubungi support@chattea.com\n\nKirim bukti transfer ke support jika perlu!",
+  
+  "payment_methods": "Metode pembayaran Chattea:\n\n💳 **Transfer Bank:**\n- BCA, Mandiri, BNI, BRI\n- Virtual Account otomatis\n\n💰 **E-Wallet:**\n- OVO, GoPay, Dana, ShopeePay\n\n💳 **Kartu Kredit/Debit:**\n- Visa, Mastercard\n\n🏪 **Retail:**\n- Indomaret, Alfamart\n\nPilih metode paling nyaman untuk Anda!",
+  
+  "payment_status": "Untuk cek status pembayaran:\n1. Tab 'Payments' → 'Payment Status'\n2. Masukkan Invoice ID atau Order ID\n3. Lihat status:\n   ✅ Paid - Subscription aktif\n   ⏳ Pending - Menunggu konfirmasi\n   ❌ Failed - Pembayaran gagal\n\nJika pending >24 jam, hubungi support!",
+  
+  "payment_subscribe": "Untuk subscribe Chattea:\n1. Tab 'Pricing' atau 'Subscribe'\n2. Pilih paket:\n   - Basic: 1 instance, fitur dasar\n   - Pro: 5 instances, unlimited blast\n   - Enterprise: Unlimited, priority support\n3. Pilih durasi: Monthly/Yearly (hemat 20%)\n4. Checkout & pilih payment method\n5. Bayar sesuai instruksi\n\nSetelah payment confirmed, subscription langsung aktif!",
+  
+  "payment_upgrade": "Untuk upgrade paket:\n1. Tab 'Payments' → 'Upgrade Plan'\n2. Pilih paket yang lebih tinggi\n3. Bayar selisih harga (prorated)\n4. Upgrade langsung aktif!\n\nUpgrade kapan saja tanpa kehilangan sisa subscription!",
+  
+  "platform_cloud_open": "Untuk akses Chattea via browser:\n1. Buka https://app.chattea.com\n2. Login dengan akun Anda\n3. Gunakan semua fitur langsung di browser!\n\n✅ Keuntungan Web Version:\n- Tidak perlu install\n- Akses dari mana saja\n- Auto-update\n- Cross-platform (Windows/Mac/Linux)",
+  
+  "platform_compare": "Perbedaan Cloud vs Desktop:\n\n**🌐 Web/Cloud Version:**\n✅ Akses dari browser\n✅ Tidak perlu install\n✅ Auto-update\n✅ 2 instances included\n✅ Data tersimpan di cloud\n\n**💻 Desktop Version:**\n✅ Aplikasi native (Windows/Mac)\n✅ Work offline (terbatas)\n✅ Unlimited instances\n✅ Lebih cepat\n✅ Data lokal + cloud\n\n**Rekomendasi:** Desktop untuk power users, Cloud untuk mobility!",
+  
+  "platform_desktop_info": "Info Desktop App:\n\n**Fitur Desktop:**\n✅ Unlimited instances\n✅ Faster performance\n✅ Offline mode (baca chat saja)\n✅ System notifications\n✅ Keyboard shortcuts lengkap\n\n**Offline Mode:**\n- Baca chat history ✅\n- Kirim pesan ❌ (butuh internet)\n- Sync otomatis saat online\n\nDownload: https://chattea.com/download",
+  
+  "platform_desktop_install": "Untuk install Desktop App:\n\n**Windows:**\n1. Download installer: https://chattea.com/download/windows\n2. Run ChatteatSetup.exe\n3. Follow installation wizard\n4. Launch & login\n\n**Mac:**\n1. Download: https://chattea.com/download/mac\n2. Open Chattea.dmg\n3. Drag to Applications\n4. Launch & login\n\n**Linux:**\n1. Download .deb/.rpm\n2. Install via package manager\n3. Launch & login\n\nDesktop app siap digunakan!",
+  
+  "platform_updates": "Update Platform Chattea:\n\n**Auto-Update:**\n✅ Web version: Selalu latest, tidak perlu update manual\n✅ Desktop app: Auto-check update saat launch\n\n**Manual Update Desktop:**\n1. Menu → Check for Updates\n2. Download jika ada update baru\n3. Install & restart\n\n**Update Frequency:**\n- Major updates: Monthly\n- Bug fixes: Weekly\n- Security patches: As needed\n\nCheck changelog: https://chattea.com/changelog",
+  
+  "pricing_currency_idr": "Harga Chattea dalam Rupiah (IDR):\n\n**💰 Paket Harga:**\n\n📱 **Basic** - Rp 99.000/bulan\n- 1 instance WhatsApp\n- 1000 pesan/bulan\n- Fitur dasar\n\n🚀 **Pro** - Rp 299.000/bulan\n- 5 instances WhatsApp\n- Unlimited pesan\n- Auto-reply, scheduling\n- Analytics\n\n💼 **Enterprise** - Rp 999.000/bulan\n- Unlimited instances\n- Priority support 24/7\n- Custom features\n- API access\n\n💡 Hemat 20% dengan paket tahunan!\n\nLihat detail: https://chattea.com/pricing",
+  
+  "pricing_instance_limits": "Batas Instance per Paket:\n\n📱 **Basic:**\n- Web: 2 instances\n- Desktop: 2 instances\n\n🚀 **Pro:**\n- Web: 5 instances\n- Desktop: Unlimited\n\n💼 **Enterprise:**\n- Web: Unlimited\n- Desktop: Unlimited\n\n**Note:** Desktop app lebih powerful untuk multiple instances!",
+  
+  "pricing_query": "Harga Paket Chattea:\n\n💰 **Pricing:**\n\n📱 Basic - Rp 99K/bulan\n🚀 Pro - Rp 299K/bulan  \n💼 Enterprise - Rp 999K/bulan\n\n**Apa yang didapat?**\n- Basic: 1 instance, 1K pesan\n- Pro: 5 instances, unlimited pesan\n- Enterprise: Unlimited semua + support 24/7\n\n🎁 **Promo:** FREE trial 7 hari!\n💡 **Hemat:** Paket yearly diskon 20%\n\nDaftar sekarang: https://chattea.com/signup",
+  
+  "quota_reached": "Instance quota Anda sudah penuh! ⚠️\n\n**Solusi:**\n\n1️⃣ **Hapus instance tidak terpakai:**\n   - Tab Instances → pilih → Delete\n\n2️⃣ **Upgrade paket:**\n   - Tab Payments → Upgrade Plan\n   - Pro: 5 instances\n   - Enterprise: Unlimited\n\n3️⃣ **Hubungi sales** untuk custom quota:\n   - sales@chattea.com\n\nUpgrade sekarang dan dapatkan lebih banyak instances!",
+  
+  "security_cloud_data": "Keamanan Data Cloud Chattea:\n\n🔒 **Enkripsi:**\n- Data encrypted at rest (AES-256)\n- SSL/TLS untuk data transfer\n\n🌍 **Lokasi Server:**\n- Data center di Singapore (AWS)\n- Backup harian otomatis\n- Redundant servers\n\n🛡️ **Privacy:**\n- Data tidak dibagikan ke pihak ketiga\n- Comply dengan GDPR\n- Bisa request data deletion\n\n📜 Privacy Policy: https://chattea.com/privacy",
+  
+  "security_payment": "Keamanan Payment Chattea:\n\n💳 **Payment Security:**\n✅ PCI DSS compliant\n✅ Tidak simpan data kartu kredit\n✅ Payment gateway tersertifikasi (Midtrans/Xendit)\n✅ 3D Secure untuk kartu kredit\n\n🔐 **Enkripsi:**\n- SSL 256-bit encryption\n- Tokenization untuk payment data\n\n**Aman & Terpercaya!**\nData payment Anda 100% secure.",
+  
+  "security_privacy": "Keamanan & Privacy Chattea:\n\n🔒 **Data Security:**\n✅ End-to-end encryption\n✅ Data encrypted at rest\n✅ Regular security audits\n✅ ISO 27001 certified\n\n🛡️ **Privacy:**\n✅ Data tidak dijual ke pihak ketiga\n✅ GDPR compliant\n✅ Anda kontrol data Anda\n✅ Data deletion request available\n\n📜 Baca lengkap:\n- Privacy Policy: chattea.com/privacy\n- Security: chattea.com/security\n\n**Your data is safe with us!**",
+  
+  "support_contact": "Butuh bantuan? Hubungi Chattea Support:\n\n📧 **Email:** support@chattea.com\n💬 **Live Chat:** https://chattea.com (klik icon chat)\n📱 **WhatsApp:** +62 812-3456-7890\n🐦 **Twitter:** @ChatteatSupport\n\n⏰ **Jam Operasional:**\n- Senin-Jumat: 09:00 - 18:00 WIB\n- Sabtu: 09:00 - 15:00 WIB\n- Minggu: Libur (emergency only)\n\n💼 **Enterprise Support:** 24/7\n\nKami siap membantu! 😊",
+  
+   "tasks_monitor": "Untuk monitor progress tasks:\n1. Tab 'Tasks' → 'Active Tasks'\n2. Lihat progress setiap task:\n   - Blast messages: 45/100 sent\n   - Scheduled: Waiting for time\n   - Processing: In queue\n3. Klik task untuk detail lengkap\n4. Cancel task jika perlu\n\nReal-time monitoring tersedia!",
+  
+  "tasks_view": "Untuk lihat semua scheduled tasks:\n1. Tab 'Tasks' → 'Scheduled'\n2. Lihat list semua pesan terjadwal:\n   - Tanggal & waktu\n   - Konten pesan\n   - Tujuan (kontak/grup)\n   - Status\n3. Edit atau cancel jika perlu\n\nSemua scheduled tasks terlihat di sini!",
+  
+  "tasks_view_failed": "Untuk lihat failed tasks:\n1. Tab 'Tasks' → 'Failed'\n2. Lihat tasks yang gagal dengan alasan:\n   - Number invalid\n   - Connection lost\n   - Rate limit\n   - Blocked number\n3. Retry failed tasks secara bulk\n4. Export untuk analisa\n\nPeriksa failed tasks untuk improve delivery rate!",
+  
+  "templates_create": "Untuk membuat message template:\n1. Tab 'Templates' → 'New Template'\n2. Beri nama template (misal: 'Promo Weekend')\n3. Tulis pesan dengan variabel:\n   - {name} = Nama kontak\n   - {phone} = Nomor HP\n   - {custom} = Field custom\n4. Save template\n\nContoh:\n```\nHalo {name}! 👋\nPromo spesial weekend untuk Anda!\nDiskon 20% semua produk.\nKode: WEEKEND20\n```\n\nTemplate siap digunakan untuk blast!",
+  
+  "templates_use": "Untuk gunakan template:\n1. Saat buat blast/message baru\n2. Klik 'Use Template'\n3. Pilih template (misal: 'Promo Weekend')\n4. Template akan auto-fill ke message box\n5. Edit jika perlu\n6. Send!\n\nVariabel {name} akan otomatis diganti dengan nama kontak!",
+  
+  "tips_browser": "Browser yang direkomendasikan:\n\n✅ **Recommended:**\n- Google Chrome (latest)\n- Microsoft Edge (latest)\n- Mozilla Firefox (latest)\n\n⚠️ **Not Recommended:**\n- Internet Explorer (deprecated)\n- Browser versi lama\n\n**Tips:**\n- Aktifkan cookies & JavaScript\n- Disable ad-blocker untuk Chattea\n- Clear cache jika ada masalah\n- Gunakan incognito untuk test\n\nChrome memberikan performa terbaik!",
+  
+  "tips_internet": "Syarat koneksi internet:\n\n📶 **Minimum:**\n- 512 Kbps (0.5 Mbps)\n- Latency < 300ms\n\n🚀 **Recommended:**\n- 2 Mbps atau lebih\n- Latency < 100ms\n- Koneksi stabil (tidak putus-putus)\n\n⚠️ **Hindari:**\n- Public WiFi tidak aman\n- Koneksi mobile saat traveling\n- VPN lambat\n\n💡 **Tips:**\n- Gunakan WiFi/kabel untuk blast besar\n- Restart router jika lambat\n- Close aplikasi lain yang konsumsi bandwidth\n\nKoneksi stabil = pengiriman lancar!",
+  
+  "troubleshoot_connection": "Instance disconnected? Coba langkah ini:\n\n1️⃣ **Check koneksi internet:**\n   - Test speed di speedtest.net\n   - Pastikan koneksi stabil\n\n2️⃣ **Reconnect instance:**\n   - Tab Instances → pilih instance\n   - Klik 'Reconnect'\n   - Scan QR code ulang\n\n3️⃣ **Restart WhatsApp di HP:**\n   - Close WhatsApp di HP\n   - Clear cache (optional)\n   - Buka ulang & cek linked devices\n\n4️⃣ **Check WhatsApp status:**\n   - Pastikan WhatsApp tidak banned\n   - Cek nomor masih aktif\n\n5️⃣ **Masih error?**\n   - Delete & buat instance baru\n   - Atau hubungi support\n\nUsually reconnect solves 90% connection issues!",
+  
+  "troubleshoot_qr": "QR code tidak muncul/loading? Fix:\n\n1️⃣ **Refresh halaman:**\n   - Tekan F5 atau Ctrl+R\n   - Atau klik 'Reload QR Code'\n\n2️⃣ **Clear browser cache:**\n   - Settings → Privacy → Clear browsing data\n   - Pilih 'Cached images and files'\n   - Clear & restart browser\n\n3️⃣ **Disable extensions:**\n   - Matikan ad-blocker\n   - Matikan extension yang block scripts\n\n4️⃣ **Try different browser:**\n   - Chrome biasanya paling stabil\n\n5️⃣ **Check internet:**\n   - QR butuh koneksi ke server\n   - Test koneksi di speedtest.net\n\n6️⃣ **Use pairing code instead:**\n   - Klik 'Use Pairing Code'\n   - Input nomor HP\n   - Masukkan code di WhatsApp\n\nMasih error? Screenshot & kirim ke support!",
+  
+  "warmup_enable": "Untuk aktifkan warmup (penting untuk akun baru!):\n\n**Apa itu Warmup?**\nProses 'memanaskan' akun WhatsApp baru agar tidak dianggap spam oleh WhatsApp.\n\n**Cara Aktifkan:**\n1. Tab 'Instances' → pilih instance baru\n2. Klik 'Warmup Settings'\n3. Toggle ON 'Enable Warmup'\n4. Set warmup duration: 7-14 hari\n5. Sistem akan otomatis:\n   - Kirim pesan antar-instance Anda\n   - Simulasi chat normal\n   - Gradual increase aktivitas\n\n**Recommended untuk:**\n✅ Akun WhatsApp baru (<30 hari)\n✅ Sebelum blast besar pertama kali\n✅ Setelah long inactive\n\n⚠️ **Jangan skip warmup!** Bisa kena banned!",
+  
+  "warmup_info": "Penjelasan Warmup WhatsApp:\n\n**🔥 Apa itu Warmup?**\nProses bertahap untuk 'melatih' akun WhatsApp baru agar terlihat seperti user normal, bukan bot/spammer.\n\n**❓ Kenapa Perlu Warmup?**\n- WhatsApp punya algoritma anti-spam\n- Akun baru yang langsung blast = red flag\n- Warmup = build reputation gradual\n- Mengurangi risiko banned 80%+\n\n**🔧 Cara Kerja:**\n1. Instance A & B saling chat (auto)\n2. Simulasi percakapan natural\n3. Delay antar pesan (human-like)\n4. Gradual increase volume\n\n**⏱️ Durasi:**\n- Minimal: 7 hari\n- Recommended: 14 hari\n- Intensive: 30 hari\n\n**📊 Hasil:**\n- Account trust score naik\n- Delivery rate lebih tinggi\n- Risiko ban minimal\n\n**Best Practice:**\n✅ Warmup untuk semua akun baru\n✅ Jangan langsung blast >100 pesan\n✅ Build reputation dulu\n✅ Monitor analytics\n\nPatience pays off!",
+  
+  "out_of_scope": "Maaf, saya kurang mengerti pertanyaan Anda. 🤔\n\nSaya adalah Chattea Bot yang bisa membantu dengan:\n✅ Cara menggunakan fitur Chattea\n✅ Troubleshooting masalah\n✅ Pertanyaan tentang subscription/payment\n✅ Tips & best practices\n\nBisa tolong ulangi pertanyaan Anda dengan lebih spesifik?\n\nContoh pertanyaan:\n• \"Cara kirim pesan massal\"\n• \"Apa itu warmup\"\n• \"Cara schedule pesan\"\n• \"Berapa harga Chattea\"\n\nAtau ketik 'help' untuk lihat menu bantuan!"
+}

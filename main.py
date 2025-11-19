@@ -660,12 +660,27 @@ def main():
     print("✓ Model saved to 'chattea_complete_model.pth'")
     
     # 10. Create simple responses (you should customize these)
-    responses = {intent: f"Response for {intent}" for intent in unique_intents}
-    responses['out_of_scope'] = "Maaf, saya kurang mengerti. Bisa tolong diulang?"
-    
-    with open(Config.RESPONSES_PATH, 'w', encoding='utf-8') as f:
-        json.dump(responses, f, ensure_ascii=False, indent=2)
-    
+    # 10. Load or create responses safely
+    if os.path.exists(Config.RESPONSES_PATH):
+        # Load existing predefined responses
+        with open(Config.RESPONSES_PATH, 'r', encoding='utf-8') as f:
+            responses = json.load(f)
+        print(f"✓ Loaded existing responses from '{Config.RESPONSES_PATH}'")
+    else:
+        # Create a template only if file doesn't exist
+        responses = {intent: f"Response for {intent}" for intent in unique_intents}
+        responses['out_of_scope'] = "Maaf, saya kurang mengerti. Bisa tolong diulang?"
+        with open(Config.RESPONSES_PATH, 'w', encoding='utf-8') as f:
+            json.dump(responses, f, ensure_ascii=False, indent=2)
+        print(f"✓ Responses template saved to '{Config.RESPONSES_PATH}'")
+
+    # Optional: ensure new intents get placeholders without overwriting existing ones
+    for intent in unique_intents:
+        if intent not in responses:
+            responses[intent] = f"Response for {intent}"
+
+    responses.setdefault('out_of_scope', "Maaf, saya kurang mengerti. Bisa tolong diulang?")
+        
     print(f"✓ Responses template saved to '{Config.RESPONSES_PATH}'")
     
     # 11. Test interactive mode
