@@ -502,8 +502,23 @@ class ChatteaBot:
         self.device = device
         self.model.eval()
     
+    def detect_language(self, text):
+        """Simple language detection"""
+        indonesian_words = [
+            'bagaimana', 'cara', 'saya', 'apa', 'yang', 'untuk', 'dan',
+            'dengan', 'ini', 'bisa', 'mau', 'gimana', 'berapa', 'kirim',
+            'pesan', 'akun', 'halo', 'terima', 'kasih', 'tolong'
+        ]
+        
+        text_lower = text.lower()
+        indo_count = sum(1 for word in indonesian_words if word in text_lower)
+        
+        return 'id' if indo_count > 0 else 'en'
+    
     def predict(self, text):
         """Predict with confidence"""
+        lang = self.detect_language(text)
+        
         # Encode
         encoded = self.preprocessor.encode(text)
         input_tensor = torch.tensor([encoded], dtype=torch.long).to(self.device)
@@ -519,18 +534,27 @@ class ChatteaBot:
         conf = confidence.item()
         
         # Get response
-        if conf < self.confidence_threshold:
-            response = self.responses.get('out_of_scope', 
-                "Maaf, saya kurang mengerti. Bisa tolong diulang dengan cara lain?")
-            intent = "out_of_scope_low_confidence"
+        response_dict = self.responses.get(intent, self.responses.get("out_of_scope"))
+        
+        if isinstance(response_dict, dict):
+            response = response_dict.get(lang, response_dict.get('en', 'Response not found'))
         else:
-            response = self.responses.get(intent, 
-                f"Intent '{intent}' recognized but no response configured.")
+            response = response_dict
+        
+        # Handle low confidence
+        if conf < self.confidence_threshold:
+            fallback = self.responses.get("out_of_scope")
+            if isinstance(fallback, dict):
+                response = fallback.get(lang, fallback.get('en', 'I don\'t understand'))
+            else:
+                response = fallback
+            intent = "out_of_scope"
         
         return {
             'intent': intent,
             'confidence': conf,
-            'response': response
+            'language': lang,
+            'response': response  # This is now guaranteed to be a string
         }
     
     def chat(self):
@@ -659,7 +683,6 @@ def main():
     
     print("✓ Model saved to 'chattea_complete_model.pth'")
     
-    # 10. Create simple responses (you should customize these)
     # 10. Load or create responses safely
     if os.path.exists(Config.RESPONSES_PATH):
         # Load existing predefined responses
@@ -683,29 +706,45 @@ def main():
         
     print(f"✓ Responses template saved to '{Config.RESPONSES_PATH}'")
     
-    # 11. Test interactive mode
+    # 11. Initialize bot for testing
+    print("\n🤖 Initializing chatbot...")
+    bot = ChatteaBot(model, preprocessor, idx_to_intent, responses)
+    print("✓ Bot ready!")
+    
+    # ============================================================================
+    # TEST PREDICTIONS
+    # ============================================================================
     print("\n" + "="*70)
     print("🧪 TESTING MODEL")
     print("="*70)
-    
-    bot = ChatteaBot(model, preprocessor, idx_to_intent, responses)
-    
-    # Test queries
+
     test_queries = [
         "How do I create an account?",
-        "send bulk message",
-        "what is chattea",
-        "asdfasdfasdf",  # Out of scope
-        "help me with payment"
+        "Bagaimana cara membuat akun?",
+        "Send bulk messages",
+        "Kirim pesan massal",
+        "What is warmup?",
+        "Apa itu warmup?",
     ]
-    
-    print("\nTest predictions:")
+
+    print("Test predictions:")
     for query in test_queries:
         result = bot.predict(query)
+        
+        # Handle response display
+        response = result['response']
+        if isinstance(response, dict):
+            # Show detected language version
+            lang = result.get('language', 'en')
+            response_text = response.get(lang, response.get('en', str(response)))
+        else:
+            response_text = str(response)
+        
         print(f"\nQuery: {query}")
         print(f"  Intent: {result['intent']}")
+        print(f"  Language: {result.get('language', 'unknown')}")
         print(f"  Confidence: {result['confidence']:.3f}")
-        print(f"  Response: {result['response'][:80]}...")
+        print(f"  Response: {response_text[:100]}...")
     
     # Start interactive chat
     print("\n" + "="*70)
