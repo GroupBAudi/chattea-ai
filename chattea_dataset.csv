@@ -1,0 +1,658 @@
+text,intent
+"hello",greeting
+"hi",greeting
+"hey there",greeting
+"good morning",greeting
+"good evening",greeting
+"hi there",greeting
+"hey",greeting
+"greetings",greeting
+"what's up",greeting
+"hello bot",greeting
+"morning",greeting
+"afternoon",greeting
+"evening",greeting
+"hiya",greeting
+"yo",greeting
+"sup",greeting
+"nice to meet you",greeting
+"hello, can you help?",greeting
+"hey, quick question",greeting
+"hi, I need assistance",greeting
+"goodbye",goodbye
+"bye",goodbye
+"see you later",goodbye
+"talk to you later",goodbye
+"catch you later",goodbye
+"take care",goodbye
+"farewell",goodbye
+"bye for now",goodbye
+"thanks, bye",goodbye
+"goodnight",goodbye
+"see ya",goodbye
+"i'm off, bye",goodbye
+"ok bye",goodbye
+"later",goodbye
+"bye bot",goodbye
+"bye for now, thanks",goodbye
+"peace",goodbye
+"bye bye",goodbye
+"end chat",goodbye
+"thanks",gratitude
+"thank you",gratitude
+"thanks a lot",gratitude
+"appreciate it",gratitude
+"thank you so much",gratitude
+"thx",gratitude
+"many thanks",gratitude
+"cheers",gratitude
+"thanks for the help",gratitude
+"thanks, that helps",gratitude
+"great, thanks",gratitude
+"thanks buddy",gratitude
+"i appreciate it",gratitude
+"thanks a million",gratitude
+"much appreciated",gratitude
+"thanks again",gratitude
+"thanks for that",gratitude
+"ta",gratitude
+"you saved me, thanks",gratitude
+"thank you very much",gratitude
+"help",help
+"I need help",help
+"can you assist me?",help
+"support",help
+"help me please",help
+"how can you help?",help
+"what can you do?",help
+"I need assistance",help
+"need support",help
+"help me with this",help
+"where can I get help?",help
+"customer support",help
+"how do I get support?",help
+"show me help options",help
+"helpdesk",help
+"contact support",help
+"guide me",help
+"assistance please",help
+"i'm stuck, help",help
+"please help",help
+"what is Chattea?",definition
+"describe Chattea briefly",definition
+"tell me about Chattea",definition
+"explain what Chattea does",definition
+"what does Chattea do?",definition
+"give me info about Chattea",definition
+"what is this app for?",definition
+"what's Chattea?",definition
+"what is Chattea used for?",definition
+"what does Chattea offer?",definition
+"overview of Chattea",definition
+"short description of Chattea",definition
+"what features does Chattea have?",definition
+"what is Chattea's purpose?",definition
+"introduce Chattea",definition
+"explain Chattea simply",definition
+"what can Chattea do?",definition
+"what is the platform about?",definition
+"quick info about Chattea",definition
+"what is Chattea in one sentence?",definition
+"nevermind",cancel
+"forget it",cancel
+"cancel that",cancel
+"stop",cancel
+"abort",cancel
+"no thanks",cancel
+"that's not needed",cancel
+"don't do that",cancel
+"cancel request",cancel
+"never mind that",cancel
+"discard that",cancel
+"ignore previous",cancel
+"please cancel",cancel
+"i changed my mind",cancel
+"no, don't proceed",cancel
+"undo that",cancel
+"cancel action",cancel
+"cancel it",cancel
+"scratch that",cancel
+"that's cancelled",cancel
+"create instance",instance_create
+"add instance",instance_create
+"set up new instance",instance_create
+"initialize instance",instance_create
+"create a WhatsApp instance",instance_create
+"make new instance",instance_create
+"how to add instance?",instance_create
+"help me create instance",instance_create
+"add a new instance",instance_create
+"create instance for sales",instance_create
+"start new instance",instance_create
+"register a new instance",instance_create
+"setup instance",instance_create
+"create instance now",instance_create
+"provision instance",instance_create
+"create instance guide",instance_create
+"i want to add instance",instance_create
+"please create instance",instance_create
+"create instance for marketing",instance_create
+"new instance setup",instance_create
+"list instances",instance_manage
+"show my instances",instance_manage
+"view instances",instance_manage
+"display instances",instance_manage
+"what instances do I have?",instance_manage
+"list all instances",instance_manage
+"show all instances",instance_manage
+"view my instances",instance_manage
+"how many instances do I have?",instance_manage
+"instances list",instance_manage
+"manage instances",instance_manage
+"edit instances",instance_manage
+"remove an instance",instance_manage
+"instance overview",instance_manage
+"instances status list",instance_manage
+"instances dashboard",instance_manage
+"where are my instances?",instance_manage
+"get instances",instance_manage
+"show instance names",instance_manage
+"list available instances",instance_manage
+"pair with QR code",instance_connect
+"scan QR to connect",instance_connect
+"pair using QR",instance_connect
+"scan the QR code",instance_connect
+"how to pair with QR?",instance_connect
+"connect with QR",instance_connect
+"use QR code pairing",instance_connect
+"pair device via QR",instance_connect
+"connect instance with QR",instance_connect
+"pair account using QR",instance_connect
+"how to use QR pairing?",instance_connect
+"show QR code to pair",instance_connect
+"QR code connect",instance_connect
+"pair phone via QR",instance_connect
+"scan to pair",instance_connect
+"start QR pairing",instance_connect
+"pair now",instance_connect
+"pair using code",instance_connect
+"pairing instructions",instance_connect
+"pair with device",instance_connect
+"check instance status",instance_status
+"is my instance online?",instance_status
+"instance connection status",instance_status
+"verify instance status",instance_status
+"check connection for instance",instance_status
+"is instance connected?",instance_status
+"instance health check",instance_status
+"what is instance status?",instance_status
+"show connection status",instance_status
+"check if instance is online",instance_status
+"am I connected?",instance_status
+"instance up or down?",instance_status
+"status of my instance",instance_status
+"instance is offline?",instance_status
+"how is my instance?",instance_status
+"connection info for instance",instance_status
+"instance connectivity",instance_status
+"show instance connection",instance_status
+"check if instance works",instance_status
+"get instance status",instance_status
+"send message",message_send
+"message someone",message_send
+"send text",message_send
+"send a message to a contact",message_send
+"help me send a message",message_send
+"i want to send a message",message_send
+"text a contact",message_send
+"message this number",message_send
+"send whatsapp message",message_send
+"compose message",message_send
+"send message now",message_send
+"send SMS",message_send
+"deliver a message",message_send
+"message my customer",message_send
+"send message to client",message_send
+"send promo message",message_send
+"how to send a message?",message_send
+"quick send message",message_send
+"message to a number",message_send
+"send message please",message_send
+"broadcast message",message_blast
+"send bulk message",message_blast
+"mass message",message_blast
+"send to multiple people",message_blast
+"blast message",message_blast
+"broadcast to contacts",message_blast
+"send bulk to group",message_blast
+"how to do a blast?",message_blast
+"bulk send",message_blast
+"send mass message",message_blast
+"run a broadcast",message_blast
+"start blast",message_blast
+"create broadcast",message_blast
+"blast to customers",message_blast
+"bulk broadcast",message_blast
+"schedule a blast",message_blast
+"do a mass send",message_blast
+"send promo to all",message_blast
+"how to broadcast?",message_blast
+"blast to list",message_blast
+"schedule message for later",message_schedule
+"set a message for tomorrow",message_schedule
+"schedule a text",message_schedule
+"send later",message_schedule
+"how to schedule messages?",message_schedule
+"timed message",message_schedule
+"set message delivery time",message_schedule
+"schedule for 9am tomorrow",message_schedule
+"plan a message send",message_schedule
+"automate message sending",message_schedule
+"schedule recurring message",message_schedule
+"set recurring message",message_schedule
+"schedule weekly message",message_schedule
+"schedule a campaign",message_schedule
+"set a delayed message",message_schedule
+"schedule a promotion",message_schedule
+"send message at later time",message_schedule
+"set up scheduled messages",message_schedule
+"how to set scheduled message",message_schedule
+"create scheduled send",message_schedule
+"check message delivery",message_status
+"message delivery status",message_status
+"track message delivery",message_status
+"did my message send?",message_status
+"get delivery report",message_status
+"message delivered?",message_status
+"check delivery report",message_status
+"see message status",message_status
+"message failed?",message_status
+"delivery failed?",message_status
+"show message report",message_status
+"report for sent messages",message_status
+"status of broadcast",message_status
+"check blast delivery",message_status
+"message send report",message_status
+"delivery insights",message_status
+"message delivered to how many",message_status
+"did broadcast succeed?",message_status
+"view delivery stats",message_status
+"show delivery status",message_status
+"open chat tab",chat_view
+"go to chat",chat_view
+"show chats",chat_view
+"view conversations",chat_view
+"open conversations",chat_view
+"show chat history",chat_view
+"open messages",chat_view
+"view chat with contact",chat_view
+"display recent chats",chat_view
+"see previous chats",chat_view
+"open inbox",chat_view
+"show my messages",chat_view
+"view chat logs",chat_view
+"open conversation list",chat_view
+"view chat thread",chat_view
+"show conversation history",chat_view
+"display chat records",chat_view
+"open chat window",chat_view
+"view latest messages",chat_view
+"load chat history",chat_view
+"manage contacts",contacts
+"add contact",contacts
+"create contact",contacts
+"edit contact",contacts
+"delete contact",contacts
+"view contacts",contacts
+"open contacts",contacts
+"import contacts",contacts
+"export contacts",contacts
+"search contacts",contacts
+"find contacts",contacts
+"filter contacts",contacts
+"sort contacts",contacts
+"manage address book",contacts
+"add a new contact",contacts
+"contact list",contacts
+"update contact",contacts
+"remove contact",contacts
+"show my contacts",contacts
+"contacts management",contacts
+"create a group",groups
+"add group",groups
+"make group",groups
+"create group chat",groups
+"new group",groups
+"setup group",groups
+"create a WhatsApp group",groups
+"make a broadcast group",groups
+"start new group",groups
+"group creation",groups
+"create team group",groups
+"create group 'VIP Customers'",groups
+"initialize group",groups
+"create customer group",groups
+"create marketing group",groups
+"add members to group",groups
+"group setup",groups
+"create group for campaign",groups
+"make group chat",groups
+"check phone number",phone_check
+"verify phone number",phone_check
+"is this number on WhatsApp?",phone_check
+"check if number registered",phone_check
+"verify if number exists",phone_check
+"phone validation",phone_check
+"check WhatsApp registration",phone_check
+"is number active on WhatsApp?",phone_check
+"validate phone",phone_check
+"check contact number",phone_check
+"is 0812... registered?",phone_check
+"check if 0812 is on whatsapp",phone_check
+"verify contact on whatsapp",phone_check
+"check phone status",phone_check
+"is this user on WhatsApp?",phone_check
+"confirm phone registration",phone_check
+"phone number check",phone_check
+"verify mobile number",phone_check
+"check if number exists",phone_check
+"lookup number",phone_check
+"go to dashboard",navigation
+"open main page",navigation
+"show dashboard",navigation
+"take me to homepage",navigation
+"open dashboard view",navigation
+"navigate to dashboard",navigation
+"show me home",navigation
+"open main menu",navigation
+"take me to instances",navigation
+"open payments tab",navigation
+"go to analytics",navigation
+"navigate to files",navigation
+"open settings page",navigation
+"show navigation options",navigation
+"take me to groups",navigation
+"open contacts tab",navigation
+"go to chat tab",navigation
+"show dashboard overview",navigation
+"open instances tab",navigation
+"navigate to tasks",navigation
+"cloud vs desktop",platform_info
+"which version to use, cloud or desktop?",platform_info
+"compare cloud and desktop",platform_info
+"platform differences",platform_info
+"cloud or desktop recommendations",platform_info
+"which platform is better?",platform_info
+"desktop app info",platform_info
+"cloud features",platform_info
+"platform comparison",platform_info
+"what versions exist?",platform_info
+"web vs desktop",platform_info
+"cloud version details",platform_info
+"desktop install guide",platform_info
+"platform benefits",platform_info
+"which platform should I pick",platform_info
+"platform selection help",platform_info
+"desktop offline support?",platform_info
+"how is the desktop app?",platform_info
+"cloud vs local",platform_info
+"platform overview",platform_info
+"how do I create an account?",account
+"sign up",account
+"register account",account
+"create new account",account
+"where to log in?",account
+"help me register",account
+"account setup",account
+"how to sign up?",account
+"forgot password",account
+"reset password",account
+"change password",account
+"account settings",account
+"login issue",account
+"how to login?",account
+"register new user",account
+"create user account",account
+"account creation steps",account
+"username help",account
+"sign up for trial",account
+"manage my account",account
+"change settings",settings
+"app settings",settings
+"configure preferences",settings
+"update settings",settings
+"notification settings",settings
+"change language",settings
+"adjust preferences",settings
+"privacy settings",settings
+"modify configuration",settings
+"save my settings",settings
+"reset to defaults",settings
+"settings page",settings
+"where are settings?",settings
+"account settings",settings
+"application settings",settings
+"customize app",settings
+"settings menu",settings
+"change timezone",settings
+"set preferences",settings
+"update profile settings",settings
+"what are the prices?",pricing
+"pricing info",pricing
+"how much does it cost?",pricing
+"show subscription plans",pricing
+"what are the plans?",pricing
+"price list",pricing
+"pricing details",pricing
+"cost of subscription",pricing
+"plans and pricing",pricing
+"what is the price?",pricing
+"monthly cost",pricing
+"annual pricing",pricing
+"price in USD",pricing
+"price in IDR",pricing
+"pricing tiers",pricing
+"compare plans",pricing
+"pricing options",pricing
+"which plan is best?",pricing
+"pricing for business",pricing
+"pricing info please",pricing
+"subscribe to plan",payment
+"upgrade plan",payment
+"purchase subscription",payment
+"how to pay?",payment
+"payment methods",payment
+"billing",payment
+"view invoice",payment
+"payment status",payment
+"complete payment",payment
+"renew subscription",payment
+"start subscription",payment
+"cancel subscription",payment
+"change plan",payment
+"payment failed",payment
+"payment issue",payment
+"payment options",payment
+"how do I subscribe?",payment
+"upgrade my subscription",payment
+"subscription purchase",payment
+"purchase plan",payment
+"quota exceeded",quota
+"my quota is full",quota
+"instance limit reached",quota
+"no more instances available",quota
+"quota reached",quota
+"how many instances allowed?",quota
+"instance quota",quota
+"exceeded limit",quota
+"reach usage limit",quota
+"quota info",quota
+"usage limits",quota
+"limit reached",quota
+"quota status",quota
+"check quota",quota
+"quota policy",quota
+"instance restriction",quota
+"plan limits",quota
+"quota remaining",quota
+"how to increase quota?",quota
+"what is my quota?",quota
+"view analytics",analytics
+"show analytics",analytics
+"analytics dashboard",analytics
+"message metrics",analytics
+"view reporting",analytics
+"performance report",analytics
+"analytics overview",analytics
+"show campaign metrics",analytics
+"view message stats",analytics
+"engagement metrics",analytics
+"analytics insights",analytics
+"view delivery metrics",analytics
+"report generation",analytics
+"display analytics",analytics
+"show stats",analytics
+"view KPI",analytics
+"export analytics",analytics
+"dashboard analytics",analytics
+"analytics for campaign",analytics
+"performance metrics",analytics
+"create template",templates
+"use template",templates
+"save message template",templates
+"apply template",templates
+"create message template",templates
+"template management",templates
+"edit template",templates
+"delete template",templates
+"list templates",templates
+"new template",templates
+"template for promo",templates
+"use saved template",templates
+"apply saved template",templates
+"create reusable template",templates
+"template gallery",templates
+"template settings",templates
+"template help",templates
+"how to create template",templates
+"manage templates",templates
+"upload file",files
+"upload document",files
+"manage files",files
+"share file",files
+"add file",files
+"download file",files
+"view uploaded files",files
+"send file",files
+"attach document",files
+"file management",files
+"upload brochure",files
+"share brochure",files
+"file storage",files
+"delete file",files
+"file list",files
+"show files",files
+"open files tab",files
+"files upload",files
+"file sharing",files
+"manage uploads",files
+"view tasks",tasks
+"open tasks",tasks
+"show scheduled tasks",tasks
+"monitor tasks",tasks
+"task status",tasks
+"view failed tasks",tasks
+"list scheduled messages",tasks
+"task progress",tasks
+"task overview",tasks
+"open tasks tab",tasks
+"show my tasks",tasks
+"scheduled jobs",tasks
+"task monitoring",tasks
+"pending tasks",tasks
+"task details",tasks
+"view task log",tasks
+"task history",tasks
+"check tasks",tasks
+"tasks dashboard",tasks
+"task report",tasks
+"enable warmup",warmup
+"start warmup process",warmup
+"enable account warmup",warmup
+"turn on warmup",warmup
+"what is warmup?",warmup
+"warmup explanation",warmup
+"why warmup helps",warmup
+"warmup to avoid ban",warmup
+"activate warmup",warmup
+"warmup settings",warmup
+"warmup between instances",warmup
+"warmup for new accounts",warmup
+"warmup process info",warmup
+"warmup guide",warmup
+"warmup best practices",warmup
+"enable warming",warmup
+"warmup feature",warmup
+"warmup help",warmup
+"warmup overview",warmup
+"warmup recommendations",warmup
+"api docs",api
+"api documentation",api
+"list API endpoints",api
+"how to use API",api
+"send message via API",api
+"api reference",api
+"setup webhook",api
+"configure webhook",api
+"api integration",api
+"api guide",api
+"webhook setup",api
+"api endpoints list",api
+"rest API docs",api
+"api examples",api
+"api authentication",api
+"api keys",api
+"developer API",api
+"api quickstart",api
+"api instructions",api
+"api help",api
+"connection timeout",troubleshoot
+"can't connect",troubleshoot
+"qr code not showing",troubleshoot
+"fix QR code issue",troubleshoot
+"connection error",troubleshoot
+"retry pairing",troubleshoot
+"how to troubleshoot connection?",troubleshoot
+"login problem",troubleshoot
+"app crashing",troubleshoot
+"failed to connect",troubleshoot
+"problem with instance",troubleshoot
+"issue with pairing",troubleshoot
+"connection lost",troubleshoot
+"network problem",troubleshoot
+"troubleshoot QR",troubleshoot
+"how to fix connection",troubleshoot
+"help with error",troubleshoot
+"debug connection issue",troubleshoot
+"troubleshoot login",troubleshoot
+"resolve connection issue",troubleshoot
+"is my data secure?",security
+"how secure is the platform?",security
+"privacy policy",security
+"where is my data stored?",security
+"data security",security
+"payment security",security
+"is data encrypted?",security
+"how do you protect data?",security
+"security and privacy",security
+"what about user privacy?",security
+"gdpr compliance",security
+"cloud data security",security
+"secure payments",security
+"safe to use?",security
+"security features",security
+"privacy settings",security
+"security best practices",security
+"is information safe?",security
+"data protection",security
+"security policy",security
