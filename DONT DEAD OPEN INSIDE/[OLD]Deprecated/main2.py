@@ -1,4 +1,3 @@
-# main.py - FINAL 100% WORKING VERSION (Tested on Windows CPU + GPU)
 import json
 import pandas as pd
 import re
@@ -8,6 +7,8 @@ import torch.nn.functional as F
 from sentence_transformers import SentenceTransformer, util
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
+from difflib import get_close_matches
+import itertools  
 
 # ================== DEVICE SETUP ==================
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -17,6 +18,29 @@ print(f"Using device: {device}")
 df = pd.read_csv("chattea_dataset.csv")
 with open("responses.json", "r", encoding="utf-8") as f:
     RESPONSES = json.load(f)
+
+# ================== BUILD VOCABULARY FOR FUZZY MATCHING  ==================
+# Extract all words from training data
+all_words = set()
+for text in df['text'].str.lower():
+    all_words.update(re.findall(r'\w+', text))
+VOCAB = all_words  # global vocabulary
+
+def fuzzy_correct(text: str, cutoff: float = 0.8) -> str:
+    """
+    Simple but extremely effective typo correction using difflib
+    """
+    words = re.findall(r'\w+', text.lower())
+    corrected = []
+    for word in words:
+        matches = get_close_matches(word, VOCAB, n=1, cutoff=cutoff)
+        corrected.append(matches[0] if matches else word)
+    # Reconstruct sentence preserving original capitalization/punctuation
+    result = text
+    for orig, corr in zip(words, corrected):
+        if orig != corr:
+            result = re.sub(rf'\b{orig}\b', corr, result, count=1, flags=re.IGNORECASE)
+    return result
 
 # ================== LABEL ENCODING ==================
 le = LabelEncoder()
@@ -56,7 +80,18 @@ except:
     X = embedder.encode(df['text'].tolist(), convert_to_tensor=True).to(device)
     y = torch.tensor(df['label'].values, dtype=torch.long).to(device)
 
-    X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
+    train_idx, val_idx = train_test_split(
+        torch.arange(len(X)),
+        test_size=0.2,
+        random_state=42,
+        stratify=y.cpu()      # stratify uses NumPy so move labels to CPU
+    )
+
+    X_train = X[train_idx].to(device)
+    X_val   = X[val_idx].to(device)
+    y_train = y[train_idx].to(device)
+    y_val   = y[val_idx].to(device)
+
 
     cnn_model = TextCNN().to(device)
     optimizer = torch.optim.Adam(cnn_model.parameters(), lr=0.002)
