@@ -1,415 +1,423 @@
+#!/usr/bin/env python3
 """
-CHATTEA INTENT CLASSIFICATION SYSTEM
-Algorithms: NLP Preprocessing + Word2Vec + CNN + Fuzzy Matching
-+ Rule-Based Response System
+Chattea Intent Classifier - Production Script
+Run with: python main.py
 
-Author: ChatGPT
-Version: Clean-Modular 2025
+Required files:
+- chattea_dataset.csv
+- responses.json
+
+First run: Trains model and saves to cnn_chattea.pth
+Subsequent runs: Loads pre-trained model for instant inference
 """
 
-# ============================
-# IMPORTS
-# ============================
-
-import os
-import re
 import json
-import numpy as np
 import pandas as pd
-
-from pathlib import Path
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
-
+import re
+import os
 import torch
 import torch.nn as nn
-import torch.optim as optim
-from torch.utils.data import Dataset, DataLoader
+from sentence_transformers import SentenceTransformer, util
+from sklearn.preprocessing import LabelEncoder
+from sklearn.model_selection import train_test_split
+from difflib import get_close_matches
+import warnings
+warnings.filterwarnings('ignore')
 
-from gensim.models import Word2Vec
-from difflib import SequenceMatcher
-
-
-# ============================
-# CONFIG
-# ============================
+# ============================================================================
+# CONFIGURATION
+# ============================================================================
 
 class Config:
-    DATA_PATH = "chattea_dataset.csv"
+    # File paths
+    DATASET_PATH = "chattea_dataset.csv"
     RESPONSES_PATH = "responses.json"
-
-    EMBEDDING_DIM = 100
-    MAX_LEN = 20
-    CNN_FILTERS = 128
-    KERNEL_SIZES = [2, 3, 4]
-
+    MODEL_PATH = "cnn_chattea.pth"
+    
+    # Training parameters
     BATCH_SIZE = 32
-    EPOCHS = 15
-    LR = 0.001
+    EPOCHS = 50
+    LEARNING_RATE = 0.001
+    TEST_SIZE = 0.2
+    RANDOM_SEED = 42
+    
+    # Model parameters
+    EMBED_DIM = 384
+    HIDDEN_DIM_1 = 256
+    HIDDEN_DIM_2 = 128
+    DROPOUT = 0.3
+    
+    # Inference parameters
+    CONFIDENCE_THRESHOLD = 0.90
 
-    FUZZY_THRESHOLD = 0.75
-    DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+config = Config()
 
-    SEED = 42
+# ============================================================================
+# DEVICE SETUP
+# ============================================================================
 
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print("=" * 80)
+print("CHATTEA INTENT CLASSIFIER")
+print("=" * 80)
+print(f"Device: {device}")
+if torch.cuda.is_available():
+    print(f"GPU: {torch.cuda.get_device_name(0)}")
+print("=" * 80)
 
-np.random.seed(Config.SEED)
-torch.manual_seed(Config.SEED)
+# ============================================================================
+# MODEL ARCHITECTURE
+# ============================================================================
 
-
-# ============================
-# NLP PREPROCESSING
-# ============================
-
-class NLPPreprocessor:
-    """Cleans, normalizes, tokenizes text."""
-
-    def clean(self, text):
-        text = text.lower()
-        text = re.sub(r"[^\w\s]", "", text)
-        text = re.sub(r"\s+", " ", text).strip()
-        return text
-
-    def tokenize(self, text):
-        return self.clean(text).split()
-
-    def __call__(self, text):
-        return self.tokenize(text)
-
-
-# ============================
-# WORD2VEC EMBEDDINGS
-# ============================
-
-class WordEmbedder:
-    def __init__(self, dim=100):
-        self.dim = dim
-        self.model = None
-        self.word2idx = {"<PAD>": 0, "<UNK>": 1}
-        self.idx2word = {}
-        self.embedding_matrix = None
-
-    def train(self, tokenized_sentences):
-        print("Training Word2Vec...")
-
-        self.model = Word2Vec(
-            sentences=tokenized_sentences,
-            vector_size=self.dim,
-            min_count=1,
-            window=5,
-            sg=1
-        )
-
-        # Build vocab
-        idx = 2
-        for word in self.model.wv.index_to_key:
-            self.word2idx[word] = idx
-            idx += 1
-
-        # Build reverse
-        self.idx2word = {v: k for k, v in self.word2idx.items()}
-
-        # Embedding matrix
-        vocab_size = len(self.word2idx)
-        self.embedding_matrix = np.zeros((vocab_size, self.dim))
-
-        for word, idx in self.word2idx.items():
-            if word in ["<PAD>", "<UNK>"]:
-                continue
-            self.embedding_matrix[idx] = self.model.wv[word]
-
-        print(f"✓ Word2Vec training complete: {vocab_size} tokens")
-        return self
-
-    def encode(self, tokens, max_len):
-        indices = [self.word2idx.get(t, 1) for t in tokens[:max_len]]
-        while len(indices) < max_len:
-            indices.append(0)
-        return indices
-
-
-# ============================
-# CNN MODEL
-# ============================
-
-class TextCNN(nn.Module):
-    def __init__(self, embedding_matrix, num_classes, max_len, filters=128, kernels=[2, 3, 4]):
+class EmbeddingClassifier(nn.Module):
+    """
+    Feedforward Neural Network for Intent Classification
+    
+    Why Feedforward (not CNN)?
+    - Sentence embeddings are feature vectors, not sequences
+    - MLP treats each dimension as independent feature
+    - CNN would incorrectly assume spatial relationships
+    """
+    
+    def __init__(self, embed_dim=384, num_classes=33):
         super().__init__()
-        vocab_size, dim = embedding_matrix.shape
-
-        self.embedding = nn.Embedding(vocab_size, dim)
-        self.embedding.weight = nn.Parameter(torch.tensor(embedding_matrix, dtype=torch.float32))
-        self.embedding.weight.requires_grad = True
-
-        self.convs = nn.ModuleList([
-            nn.Conv1d(dim, filters, k)
-            for k in kernels
-        ])
-
-        self.dropout = nn.Dropout(0.5)
-        self.fc = nn.Linear(filters * len(kernels), num_classes)
-
+        
+        self.network = nn.Sequential(
+            nn.Linear(embed_dim, 256),
+            nn.ReLU(),
+            nn.Dropout(0.3),
+            
+            nn.Linear(256, 128),
+            nn.ReLU(),
+            nn.Dropout(0.3),
+            
+            nn.Linear(128, num_classes)
+        )
+    
     def forward(self, x):
-        x = self.embedding(x).permute(0, 2, 1)
+        return self.network(x)
 
-        conv_results = []
-        for conv in self.convs:
-            c = torch.relu(conv(x))
-            pooled = torch.max_pool1d(c, c.shape[2]).squeeze(2)
-            conv_results.append(pooled)
-
-        out = torch.cat(conv_results, dim=1)
-        out = self.dropout(out)
-        return self.fc(out)
-
-
-# ============================
-# DATASET WRAPPER
-# ============================
-
-class IntentDataset(Dataset):
-    def __init__(self, X, y):
-        self.X = X
-        self.y = y
-
-    def __getitem__(self, idx):
-        return torch.tensor(self.X[idx], dtype=torch.long), torch.tensor(self.y[idx])
-
-    def __len__(self):
-        return len(self.X)
-
-
-# ============================
+# ============================================================================
 # FUZZY MATCHING
-# ============================
+# ============================================================================
 
-class FuzzyMatcher:
-    def __init__(self, vocab, threshold=0.75):
-        self.vocab = list(vocab)
-        self.threshold = threshold
+def build_vocabulary(texts):
+    """Extract all unique words from texts"""
+    vocab = set()
+    for text in texts:
+        vocab.update(re.findall(r'\w+', text.lower()))
+    return vocab
 
-    def correct(self, word):
-        best = word
-        best_score = 0
+def fuzzy_correct(text, vocab, cutoff=0.8):
+    """Correct typos using Levenshtein distance"""
+    words = re.findall(r'\w+', text.lower())
+    corrected = []
+    
+    for word in words:
+        matches = get_close_matches(word, vocab, n=1, cutoff=cutoff)
+        corrected.append(matches[0] if matches else word)
+    
+    result = text
+    for orig, corr in zip(words, corrected):
+        if orig != corr:
+            result = re.sub(rf'\b{orig}\b', corr, result, count=1, flags=re.IGNORECASE)
+    
+    return result
 
-        for v in self.vocab:
-            score = SequenceMatcher(None, word, v).ratio()
-            if score > best_score:
-                best_score = score
-                best = v
+# ============================================================================
+# PHONE EXTRACTION (NER)
+# ============================================================================
 
-        return best if best_score >= self.threshold else word
+PHONE_PATTERN = re.compile(
+    r'(\b08[1-9]\d{7,12}\b|\b628[1-9]\d{7,12}\b|\b\+628[1-9]\d{7,12}\b)', 
+    re.IGNORECASE
+)
 
-    def apply(self, text):
-        return " ".join(self.correct(w) for w in text.lower().split())
+def extract_phone(text):
+    """Extract and normalize Indonesian phone numbers"""
+    phone_match = PHONE_PATTERN.search(text)
+    
+    if phone_match:
+        num = phone_match.group(0).replace(" ", "").replace("-", "")
+        
+        if num.startswith("08"):
+            return num
+        elif num.startswith("628"):
+            return "0" + num[2:]
+        elif num.startswith("+628"):
+            return "0" + num[3:]
+    
+    return None
 
+# ============================================================================
+# TRAINING
+# ============================================================================
 
-# ============================
-# RULE-BASED RESPONSE SYSTEM
-# ============================
+def create_batches(X, y, batch_size):
+    """Create mini-batches with shuffling"""
+    indices = torch.randperm(len(X))
+    for i in range(0, len(X), batch_size):
+        batch_idx = indices[i:i+batch_size]
+        yield X[batch_idx], y[batch_idx]
 
-class ResponseSystem:
-    def __init__(self, path):
-        with open(path, "r", encoding="utf-8") as f:
-            self.data = json.load(f)
-
-    def get(self, intent, lang="en"):
-        if intent in self.data:
-            return self.data[intent].get(lang, self.data[intent]["en"])
-        return "Sorry, I don't understand."
-
-
-# ============================
-# MAIN CLASSIFIER
-# ============================
-
-class ChatteaClassifier:
-    def __init__(self):
-        self.pre = NLPPreprocessor()
-        self.embedder = None
-        self.model = None
-        self.label_map = {}
-        self.inv_label_map = {}
-        self.fuzzy = None
-        self.responses = None
-
-    # ---- data loading ----
-    def load_dataset(self, path):
-        df = pd.read_csv(path)
-        print(f"Loaded dataset: {len(df)} samples")
-        return df
-
-    # ---- preprocess ----
-    def prepare(self, df):
-        df["tokens"] = df["text"].apply(self.pre)
-
-        intents = sorted(df["intent"].unique())
-        self.label_map = {i: idx for idx, i in enumerate(intents)}
-        self.inv_label_map = {v: k for k, v in self.label_map.items()}
-
-        df["label"] = df["intent"].map(self.label_map)
-
-        train, temp = train_test_split(df, test_size=0.3, stratify=df["label"], random_state=Config.SEED)
-        val, test = train_test_split(temp, test_size=0.5, stratify=temp["label"], random_state=Config.SEED)
-
-        return train, val, test
-
-    # ---- embeddings ----
-    def build_embeddings(self, train):
-        sentences = train["tokens"].tolist()
-        self.embedder = WordEmbedder(Config.EMBEDDING_DIM).train(sentences)
-
-        vocab = set(w for s in sentences for w in s)
-        self.fuzzy = FuzzyMatcher(vocab, Config.FUZZY_THRESHOLD)
-
-    # ---- encoding ----
-    def encode(self, df):
-        X = [self.embedder.encode(tokens, Config.MAX_LEN) for tokens in df["tokens"]]
-        y = df["label"].values
-        return np.array(X), np.array(y)
-
-    # ---- build model ----
-    def build_model(self):
-        num_classes = len(self.label_map)
-        self.model = TextCNN(
-            embedding_matrix=self.embedder.embedding_matrix,
-            num_classes=num_classes,
-            max_len=Config.MAX_LEN,
-            filters=Config.CNN_FILTERS,
-            kernels=Config.KERNEL_SIZES
-        ).to(Config.DEVICE)
-
-    # ---- train ----
-    def train(self, train, val):
-        X_train, y_train = self.encode(train)
-        X_val, y_val = self.encode(val)
-
-        train_loader = DataLoader(IntentDataset(X_train, y_train), batch_size=Config.BATCH_SIZE, shuffle=True)
-        val_loader = DataLoader(IntentDataset(X_val, y_val), batch_size=Config.BATCH_SIZE)
-
-        opt = optim.Adam(self.model.parameters(), lr=Config.LR)
-        loss_fn = nn.CrossEntropyLoss()
-
-        best_acc = 0
-
-        for epoch in range(Config.EPOCHS):
-            self.model.train()
-            total, correct, total_loss = 0, 0, 0
-
-            for X, y in train_loader:
-                X, y = X.to(Config.DEVICE), y.to(Config.DEVICE)
-
-                opt.zero_grad()
-                logits = self.model(X)
-                loss = loss_fn(logits, y)
-                loss.backward()
-                opt.step()
-
-                total_loss += loss.item()
-                _, pred = torch.max(logits, 1)
-                correct += (pred == y).sum().item()
-                total += y.size(0)
-
-            train_acc = correct / total
-
-            # validation
-            self.model.eval()
-            val_correct, val_total = 0, 0
-
-            with torch.no_grad():
-                for X, y in val_loader:
-                    X, y = X.to(Config.DEVICE), y.to(Config.DEVICE)
-                    logits = self.model(X)
-                    _, pred = torch.max(logits, 1)
-                    val_correct += (pred == y).sum().item()
-                    val_total += y.size(0)
-
-            val_acc = val_correct / val_total
-
-            print(f"Epoch {epoch+1}/{Config.EPOCHS} | Train Acc={train_acc:.3f} | Val Acc={val_acc:.3f}")
-
-            # save best
-            if val_acc > best_acc:
-                best_acc = val_acc
-                torch.save(self.model.state_dict(), "best_cnn.pth")
-
-        print("Training complete. Best Val Acc:", best_acc)
-
-    # ---- evaluate ----
-    def evaluate(self, test):
-        X_test, y_test = self.encode(test)
-        loader = DataLoader(IntentDataset(X_test, y_test), batch_size=Config.BATCH_SIZE)
-
-        self.model.load_state_dict(torch.load("best_cnn.pth"))
-        self.model.eval()
-
-        preds = []
+def train_model(X_train, y_train, X_val, y_val, num_classes):
+    """Train the classifier"""
+    print("\n" + "=" * 80)
+    print("TRAINING MODEL")
+    print("=" * 80)
+    
+    model = EmbeddingClassifier(
+        embed_dim=config.EMBED_DIM,
+        num_classes=num_classes
+    ).to(device)
+    
+    optimizer = torch.optim.Adam(model.parameters(), lr=config.LEARNING_RATE)
+    criterion = nn.CrossEntropyLoss()
+    
+    best_val_acc = 0
+    
+    print("\nEpoch | Train Acc | Train Loss | Val Acc | Val Loss")
+    print("-" * 65)
+    
+    for epoch in range(config.EPOCHS):
+        # Training
+        model.train()
+        train_loss = 0
+        train_correct = 0
+        train_total = 0
+        
+        for batch_X, batch_y in create_batches(X_train, y_train, config.BATCH_SIZE):
+            optimizer.zero_grad()
+            outputs = model(batch_X)
+            loss = criterion(outputs, batch_y)
+            loss.backward()
+            optimizer.step()
+            
+            train_loss += loss.item()
+            train_correct += (outputs.argmax(1) == batch_y).sum().item()
+            train_total += len(batch_y)
+        
+        train_acc = train_correct / train_total
+        train_loss = train_loss / (len(X_train) // config.BATCH_SIZE + 1)
+        
+        # Validation
+        model.eval()
         with torch.no_grad():
-            for X, _ in loader:
-                X = X.to(Config.DEVICE)
-                logits = self.model(X)
-                _, p = torch.max(logits, 1)
-                preds.extend(p.cpu().numpy())
+            val_outputs = model(X_val)
+            val_loss = criterion(val_outputs, y_val).item()
+            val_acc = (val_outputs.argmax(1) == y_val).float().mean().item()
+        
+        # Print progress
+        if epoch % 5 == 0 or epoch == config.EPOCHS - 1:
+            print(f"{epoch:5d} | {train_acc:9.4f} | {train_loss:10.4f} | {val_acc:7.4f} | {val_loss:8.4f}")
+        
+        # Save best model
+        if val_acc > best_val_acc:
+            best_val_acc = val_acc
+            torch.save(model.state_dict(), config.MODEL_PATH)
+    
+    print("\n" + "=" * 80)
+    print(f"✓ Best Validation Accuracy: {best_val_acc:.4f} ({best_val_acc*100:.2f}%)")
+    print(f"✓ Model saved to: {config.MODEL_PATH}")
+    print("=" * 80)
+    
+    return model
 
-        print("\n=== TEST RESULTS ===")
-        print("Accuracy:", accuracy_score(y_test, preds))
-        print(classification_report(y_test, preds, target_names=[self.inv_label_map[i] for i in range(len(self.inv_label_map))], zero_division=0))
+# ============================================================================
+# CHATBOT CLASS
+# ============================================================================
 
-    # ---- inference ----
-    def predict(self, text):
-        corrected = self.fuzzy.apply(text)
-        tokens = self.pre(corrected)
-        encoded = self.embedder.encode(tokens, Config.MAX_LEN)
-
-        x = torch.tensor([encoded], dtype=torch.long).to(Config.DEVICE)
+class ChatteaBot:
+    """Main chatbot class"""
+    
+    def __init__(self, model, embedder, label_encoder, responses, df, sentence_embeddings, vocab):
+        self.model = model
+        self.embedder = embedder
+        self.label_encoder = label_encoder
+        self.responses = responses
+        self.df = df
+        self.sentence_embeddings = sentence_embeddings
+        self.vocab = vocab
+        
         self.model.eval()
-
+        self.intent_map = dict(enumerate(label_encoder.classes_))
+    
+    def get_reply(self, user_input):
+        """Get chatbot response"""
+        text = user_input.strip().lower()
+        
+        # Rule-based filters
+        if any(g in text for g in ["hai", "halo", "hello", "hi", "hey", "pagi", "siang", "malam"]):
+            return self._get_response("greeting")
+        
+        if any(g in text for g in ["bye", "goodbye", "dadah", "sampai jumpa"]):
+            return self._get_response("goodbye")
+        
+        # Phone extraction
+        extracted_phone = extract_phone(user_input)
+        
+        # Classification
         with torch.no_grad():
-            logits = self.model(x)
-            probs = torch.softmax(logits, 1)
-            conf, pred = torch.max(probs, 1)
+            user_emb = self.embedder.encode(user_input, convert_to_tensor=True).to(device)
+            user_emb = user_emb.unsqueeze(0)
+            
+            # Model prediction
+            logits = self.model(user_emb)
+            probs = logits.softmax(1)
+            confidence = probs.max().item()
+            intent_idx = logits.argmax(1).item()
+            model_intent = self.intent_map[intent_idx]
+            
+            # Retrieval fallback
+            cos_scores = util.cos_sim(user_emb, self.sentence_embeddings)[0]
+            best_match_idx = cos_scores.argmax().item()
+            retrieval_intent = self.df.iloc[best_match_idx]['intent']
+            
+            # Choose final intent
+            if confidence > config.CONFIDENCE_THRESHOLD:
+                final_intent = model_intent
+            else:
+                final_intent = retrieval_intent
+        
+        # Special case: phone check
+        if final_intent == "phone_check" and extracted_phone:
+            return f"Checking {extracted_phone}...\nYes, this number is registered and active on WhatsApp!\n\nYou can safely include it in your blast list."
+        
+        return self._get_response(final_intent)
+    
+    def _get_response(self, intent):
+        """Get response for intent"""
+        response = self.responses.get(intent, self.responses.get("help", "I'm not sure how to help with that."))
+        
+        if isinstance(response, dict):
+            return response.get("en", response.get("id", "I'm not sure how to help with that."))
+        
+        return response
 
-        return self.inv_label_map[pred.item()], conf.item()
-
-    # ---- response system ----
-    def load_responses(self):
-        self.responses = ResponseSystem(Config.RESPONSES_PATH)
-
-    # ---- CLI demo ----
-    def demo(self):
-        print("\nChattea Demo — type 'quit' to exit.\n")
-        while True:
-            text = input("You: ")
-
-            if text.lower() == "quit":
-                break
-
-            intent, conf = self.predict(text)
-            reply = self.responses.get(intent)
-
-            print(f"\nIntent: {intent} ({conf:.2f})")
-            print("Bot:", reply)
-            print()
-
-
-# ============================
-# MAIN
-# ============================
+# ============================================================================
+# MAIN PIPELINE
+# ============================================================================
 
 def main():
-    clf = ChatteaClassifier()
+    """Main execution pipeline"""
+    
+    # Load data
+    print("\n📂 Loading data...")
+    df = pd.read_csv(config.DATASET_PATH)
+    
+    with open(config.RESPONSES_PATH, "r", encoding="utf-8") as f:
+        responses = json.load(f)
+    
+    print(f"✓ Loaded {len(df)} samples, {df['intent'].nunique()} intents")
+    
+    # Build vocabulary
+    print("\n📚 Building vocabulary...")
+    vocab = build_vocabulary(df['text'])
+    print(f"✓ Vocabulary: {len(vocab)} words")
+    
+    # Label encoding
+    print("\n🏷️  Encoding labels...")
+    le = LabelEncoder()
+    df['label'] = le.fit_transform(df['intent'])
+    num_classes = len(le.classes_)
+    print(f"✓ Classes: {num_classes}")
+    
+    # Load embedder
+    print("\n🧠 Loading sentence transformer...")
+    embedder = SentenceTransformer('all-MiniLM-L6-v2')
+    print("✓ Embedder loaded")
+    
+    # Generate embeddings
+    print("\n📊 Generating embeddings...")
+    sentence_embeddings = embedder.encode(
+        df['text'].tolist(),
+        convert_to_tensor=True,
+        show_progress_bar=True
+    ).to(device)
+    print(f"✓ Embeddings shape: {sentence_embeddings.shape}")
+    
+    # Train or load model
+    if os.path.exists(config.MODEL_PATH):
+        print(f"\n✓ Found existing model: {config.MODEL_PATH}")
+        print("Loading pre-trained model...")
+        model = EmbeddingClassifier(embed_dim=config.EMBED_DIM, num_classes=num_classes).to(device)
+        model.load_state_dict(torch.load(config.MODEL_PATH, map_location=device))
+        model.eval()
+        print("✓ Model loaded!")
+    else:
+        print("\n⚠️  No pre-trained model found. Training from scratch...")
+        
+        # Prepare data
+        X = sentence_embeddings.to(device)
+        y = torch.tensor(df['label'].values, dtype=torch.long).to(device)
+        
+        # Split data
+        train_idx, val_idx = train_test_split(
+            list(range(len(X))),
+            test_size=config.TEST_SIZE,
+            random_state=config.RANDOM_SEED,
+            stratify=y.cpu()
+        )
+        
+        X_train = X[train_idx]
+        X_val = X[val_idx]
+        y_train = y[train_idx]
+        y_val = y[val_idx]
+        
+        # Train
+        model = train_model(X_train, y_train, X_val, y_val, num_classes)
+        model.load_state_dict(torch.load(config.MODEL_PATH))
+    
+    # Create bot
+    print("\n🤖 Initializing chatbot...")
+    bot = ChatteaBot(model, embedder, le, responses, df, sentence_embeddings, vocab)
+    print("✓ Chatbot ready!")
+    
+    # Test queries
+    print("\n" + "=" * 80)
+    print("🧪 TESTING")
+    print("=" * 80)
+    
+    test_queries = [
+        "hello",
+        "what is chattea",
+        "how to blast message",
+        "check 08123456789",
+        "create instance"
+    ]
+    
+    for query in test_queries:
+        print(f"\n👤 User: {query}")
+        response = bot.get_reply(query)
+        print(f"🤖 Bot: {response[:100]}{'...' if len(response) > 100 else ''}")
 
-    df = clf.load_dataset(Config.DATA_PATH)
-    train, val, test = clf.prepare(df)
-
-    clf.build_embeddings(train)
-    clf.build_model()
-    clf.train(train, val)
-    clf.evaluate(test)
-
-    clf.load_responses()
-    clf.demo()
-
+    
+    # Interactive mode
+    print("\n" + "=" * 80)
+    print("💬 INTERACTIVE MODE")
+    print("=" * 80)
+    print("Type your messages (or 'quit' to exit)\n")
+    
+    while True:
+        try:
+            user_input = input("You: ").strip()
+            
+            if user_input.lower() in ['quit', 'exit', 'q', 'bye']:
+                print("Bot:", bot.get_reply("goodbye"))
+                break
+            
+            if not user_input:
+                continue
+            
+            response = bot.get_reply(user_input)
+            print("Bot:", response, "\n")
+            
+        except KeyboardInterrupt:
+            print("\n\nBot: Goodbye!")
+            break
+        except Exception as e:
+            print(f"Error: {e}")
+            continue
 
 if __name__ == "__main__":
     main()
