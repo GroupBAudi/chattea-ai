@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Chattea Intent Classifier - Production Script
+Chattea Intent Classifier
 Run with: python main.py
 
 Required files:
@@ -30,9 +30,9 @@ warnings.filterwarnings('ignore')
 
 class Config:
     # File paths
-    DATASET_PATH = "chattea_dataset.csv"
+    DATASET_PATH = "chatbot_dataset.csv"
     RESPONSES_PATH = "responses.json"
-    MODEL_PATH = "cnn_chattea.pth"
+    MODEL_PATH = "chattea.pth"
     
     # Training parameters
     BATCH_SIZE = 32
@@ -97,6 +97,7 @@ class EmbeddingClassifier(nn.Module):
     def forward(self, x):
         return self.network(x)
 
+
 # ============================================================================
 # FUZZY MATCHING
 # ============================================================================
@@ -125,31 +126,6 @@ def fuzzy_correct(text, vocab, cutoff=0.8):
     return result
 
 # ============================================================================
-# PHONE EXTRACTION (NER)
-# ============================================================================
-
-PHONE_PATTERN = re.compile(
-    r'(\b08[1-9]\d{7,12}\b|\b628[1-9]\d{7,12}\b|\b\+628[1-9]\d{7,12}\b)', 
-    re.IGNORECASE
-)
-
-def extract_phone(text):
-    """Extract and normalize Indonesian phone numbers"""
-    phone_match = PHONE_PATTERN.search(text)
-    
-    if phone_match:
-        num = phone_match.group(0).replace(" ", "").replace("-", "")
-        
-        if num.startswith("08"):
-            return num
-        elif num.startswith("628"):
-            return "0" + num[2:]
-        elif num.startswith("+628"):
-            return "0" + num[3:]
-    
-    return None
-
-# ============================================================================
 # TRAINING
 # ============================================================================
 
@@ -166,6 +142,7 @@ def train_model(X_train, y_train, X_val, y_val, num_classes):
     print("TRAINING MODEL")
     print("=" * 80)
     
+    print("Using Feedforward architecture")
     model = EmbeddingClassifier(
         embed_dim=config.EMBED_DIM,
         num_classes=num_classes
@@ -242,19 +219,15 @@ class ChatteaBot:
         self.model.eval()
         self.intent_map = dict(enumerate(label_encoder.classes_))
     
-    def get_reply(self, user_input):
-        """Get chatbot response"""
+    def get_reply(self, user_input, debug=False):
+        """Get chatbot response with optional debug output"""
         text = user_input.strip().lower()
         
-        # Rule-based filters
+        # Rule-based filters for greetings only
         if any(g in text for g in ["hai", "halo", "hello", "hi", "hey", "pagi", "siang", "malam"]):
+            if debug:
+                self._print_debug(user_input, "greeting", 1.0, "greeting", 1.0, "greeting", "RULE-BASED")
             return self._get_response("greeting")
-        
-        if any(g in text for g in ["bye", "goodbye", "dadah", "sampai jumpa"]):
-            return self._get_response("goodbye")
-        
-        # Phone extraction
-        extracted_phone = extract_phone(user_input)
         
         # Classification
         with torch.no_grad():
@@ -272,18 +245,33 @@ class ChatteaBot:
             cos_scores = util.cos_sim(user_emb, self.sentence_embeddings)[0]
             best_match_idx = cos_scores.argmax().item()
             retrieval_intent = self.df.iloc[best_match_idx]['intent']
+            retrieval_score = cos_scores[best_match_idx].item()
             
             # Choose final intent
             if confidence > config.CONFIDENCE_THRESHOLD:
                 final_intent = model_intent
+                decision = "MODEL"
             else:
                 final_intent = retrieval_intent
+                decision = "RETRIEVAL"
         
-        # Special case: phone check
-        if final_intent == "phone_check" and extracted_phone:
-            return f"Checking {extracted_phone}...\nYes, this number is registered and active on WhatsApp!\n\nYou can safely include it in your blast list."
+        # Debug output
+        if debug:
+            self._print_debug(user_input, model_intent, confidence, retrieval_intent, 
+                            retrieval_score, final_intent, decision)
         
         return self._get_response(final_intent)
+    
+    def _print_debug(self, query, model_intent, model_conf, retrieval_intent, 
+                     retrieval_score, final_intent, decision):
+        """Print detailed debug information"""
+        print("\n" + "=" * 80)
+        print(f"QUERY         : {query}")
+        print(f"Model Predict : {model_intent:<20} Confidence: {model_conf:.4f} ({model_conf*100:6.2f}%)")
+        print(f"Threshold     : {config.CONFIDENCE_THRESHOLD} → Use Model?: {'YES' if model_conf > config.CONFIDENCE_THRESHOLD else 'NO'}")
+        print(f"Retrieval     : {retrieval_intent:<20} Score: {retrieval_score:.4f}")
+        print(f"FINAL INTENT  : → {final_intent} ← (Source: {decision})")
+        print("=" * 80)
     
     def _get_response(self, intent):
         """Get response for intent"""
@@ -388,7 +376,7 @@ def main():
     
     for query in test_queries:
         print(f"\n👤 User: {query}")
-        response = bot.get_reply(query)
+        response = bot.get_reply(query, debug=False)
         print(f"🤖 Bot: {response[:100]}{'...' if len(response) > 100 else ''}")
 
     
@@ -396,24 +384,25 @@ def main():
     print("\n" + "=" * 80)
     print("💬 INTERACTIVE MODE")
     print("=" * 80)
-    print("Type your messages (or 'quit' to exit)\n")
+    print("Type your messages (or 'quit'/'exit'/'q' to exit)")
     
     while True:
         try:
             user_input = input("You: ").strip()
             
-            if user_input.lower() in ['quit', 'exit', 'q', 'bye']:
-                print("Bot:", bot.get_reply("goodbye"))
+            # Exit commands only - don't use chatbot for these
+            if user_input.lower() in ['quit', 'exit', 'q']:
+                print("\n👋 Exiting Chattea. Goodbye!")
                 break
             
             if not user_input:
                 continue
             
-            response = bot.get_reply(user_input)
-            print("Bot:", response, "\n")
+            response = bot.get_reply(user_input, debug=True)
+            print(f"\nBot: {response}\n")
             
         except KeyboardInterrupt:
-            print("\n\nBot: Goodbye!")
+            print("\n\n👋 Exiting Chattea. Goodbye!")
             break
         except Exception as e:
             print(f"Error: {e}")
