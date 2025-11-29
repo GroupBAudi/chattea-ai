@@ -1,129 +1,71 @@
 {
   "greeting": {
-    "en": "Hello! 👋 Welcome to Chattea.\n\nI'm here to help you navigate features like sending messages, managing instances, filtering contacts, scheduling messages, and more.\n\nHow can I assist you today?"
+    "en": "Hello! 👋 Welcome to Chattea.\n\nI'm here to help you navigate features like sending messages, managing instances, filtering contacts, scheduling messages, and more.\n\nHow can I assist you today?",
+    "id": "Halo! 👋 Selamat datang di Chattea.\n\nSaya di sini untuk membantu Anda menavigasi fitur seperti mengirim pesan, mengelola instance, menyaring kontak, menjadwalkan pesan, dan lainnya.\n\nBagaimana saya bisa membantu Anda hari ini?"
   },
 
-  "goodbye": {
-    "en": "Thanks for using Chattea! 👋\n\nIf you need help again, feel free to return anytime.\nWishing you success in your campaigns!"
+  "send_message": {
+    "en": "To send a message:\n\n1. Choose an active instance\n2. Enter the destination number (e.g., 628123456789)\n3. Type your message\n4. Click **Send**\n\nThe message will be delivered immediately.\n\n💡 Tip: Use variables like {name} with templates for personalization!",
+    "id": "Untuk mengirim pesan:\n\n1. Pilih instance yang aktif\n2. Masukkan nomor tujuan (contoh: 628123456789)\n3. Ketik pesan Anda\n4. Klik **Kirim**\n\nPesan akan terkirim segera.\n\n💡 Tips: Gunakan variabel seperti {name} dengan template untuk personalisasi!"
   },
 
-  "gratitude": {
-    "en": "You're welcome! 😊 Happy to help.\nIf you need anything else, just let me know!"
+  "schedule_message": {
+    "en": "To schedule a message:\n\n1. Compose your message normally\n2. Click the **Schedule (⏰)** button\n3. Select the send date and time\n4. Save the scheduled message\n\nChattea will send it automatically at the chosen time.\n\n📅 View/edit scheduled messages in the **Tasks** tab.",
+    "id": "Untuk menjadwalkan pesan:\n\n1. Tulis pesan Anda seperti biasa\n2. Klik tombol **Jadwalkan (⏰)**\n3. Pilih tanggal dan waktu pengiriman\n4. Simpan pesan terjadwal\n\nChattea akan mengirimnya otomatis pada waktu yang dipilih.\n\n📅 Lihat/edit pesan terjadwal di tab **Tugas**."
   },
 
-  "help": {
-    "en": "Here are things I can help you with:\n\n• Creating & managing instances\n• Sending or scheduling messages\n• Blast messaging (bulk send)\n• Contact management\n• Troubleshooting (QR errors, connection issues)\n• Viewing analytics\n• Payment & subscription questions\n• Platform info (Cloud vs Desktop)\n• Warmup setup\n\nJust type your question and I'll guide you!"
+  "filter_number": {
+    "en": "To filter/check phone numbers:\n\n1. Open **Tools** → **Phone Checker**\n2. Enter a phone number or upload a CSV file\n3. Click **Check**\n4. See results:\n   • ✅ Valid (registered on WhatsApp)\n   • ❌ Invalid (not on WhatsApp)\n\n💡 This is recommended before sending blasts to avoid wasted sends and potential blocks!",
+    "id": "Untuk menyaring/mengecek nomor telepon:\n\n1. Buka **Tools** → **Pengecek Nomor**\n2. Masukkan nomor atau upload file CSV\n3. Klik **Cek**\n4. Lihat hasil:\n   • ✅ Valid (terdaftar di WhatsApp)\n   • ❌ Invalid (tidak di WhatsApp)\n\n💡 Ini direkomendasikan sebelum mengirim blast untuk menghindari pengiriman sia-sia dan potensi blokir!"
   },
 
-  "definition": {
-    "en": "Chattea is a WhatsApp marketing automation platform designed for businesses.\n\nKey features:\n• Send mass messages (blast)\n• Schedule messages\n• Manage multiple WhatsApp instances\n• Filter & validate numbers\n• Auto-reply & chatbot tools\n• Analytics & reporting\n• File sharing & contact management\n\nChattea helps sales, marketing, and customer service teams operate efficiently."
-  },
-
-  "cancel": {
-    "en": "Alright, the request has been canceled. ❌\nAnything else I can help you with?"
-  },
-
-  "instance_create": {
-    "en": "To create a new WhatsApp instance:\n\n1. Open the **Instances** tab\n2. Click **+ New Instance**\n3. Enter a name (e.g., Marketing, Support)\n4. Scan the QR code with WhatsApp via: Settings → Linked Devices\n5. The instance will activate once paired\n\nEach instance represents a separate WhatsApp account you can control from Chattea."
-  },
-
-  "instance_manage": {
-    "en": "To manage your instances:\n\n1. Open the **Instances** tab\n2. You'll see all instances with their statuses (Online/Offline)\n3. Click an instance to:\n   • Edit its name\n   • Remove/delete it\n   • View details\n   • Manage settings\n\nUse this menu to organize multiple WhatsApp accounts."
-  },
-
-  "instance_connect": {
-    "en": "To connect or pair an instance via QR code:\n\n1. Go to **Instances** → Select/Create instance\n2. Click **Pair with QR**\n3. On your phone: WhatsApp → Settings → Linked Devices → Link a Device\n4. Scan the QR code shown on Chattea\n5. Wait for the connection to establish\n\nYou can also use pairing code on supported versions."
-  },
-
-  "instance_status": {
-    "en": "To check an instance’s connection status:\n\n1. Open the **Instances** tab\n2. Look at the status indicators:\n   🟢 Connected\n   🟡 Connecting\n   🔴 Disconnected\n3. If disconnected:\n   • Reconnect by clicking **Reconnect**\n   • Rescan QR code if needed\n\nStable connection is required for sending messages and blasts."
-  },
-
-  "message_send": {
-    "en": "To send a message:\n\n1. Choose an active instance\n2. Enter the destination number (e.g., 628123456789)\n3. Type your message\n4. Click **Send**\n\nThe message will be delivered immediately.\n\nTip: Use {name} and other variables with templates for personalization."
-  },
-
-  "message_blast": {
-    "en": "To send a blast (mass message):\n\n1. Go to **Blast Message** → **New Blast**\n2. Select contacts, groups, or segments\n3. Write your message (variables supported: {name})\n4. Preview your message\n5. Click **Send Blast**\n\n⚠ Tips:\n• Avoid blasting too fast to new accounts\n• Break large blasts into chunks\n• Warmup new WhatsApp numbers first"
-  },
-
-  "message_schedule": {
-    "en": "To schedule a message:\n\n1. Compose your message normally\n2. Click the **Schedule (⏰)** button\n3. Select the send date and time\n4. Save the scheduled message\n\nChattea will send it automatically at the chosen time.\nYou can view/edit scheduled messages in the **Tasks** tab."
-  },
-
-  "message_status": {
-    "en": "To check the delivery status of a message:\n\n1. Open the **Tasks** or **Blast History** tab\n2. Select the message or blast\n3. View the status:\n   • ✅ Sent\n   • ⏳ Pending\n   • ❌ Failed\n4. Check detailed logs for delivery results\n5. Retry failed messages if available\n\nThis helps evaluate campaign performance."
-  },
-
-  "chat_view": {
-    "en": "To view chats or conversation history:\n\n1. Open the **Chat** tab\n2. Select an instance\n3. Choose a contact to view the chat thread\n4. Scroll through full conversation history\n\nYou can search chats and load previous messages as needed."
-  },
-
-  "contacts": {
-    "en": "Contact Management:\n\nYou can:\n• Add contacts\n• Edit/update contact details\n• Delete contacts\n• Import/export contacts (CSV)\n• Filter/search contacts\n• Create segments for campaigns\n\nOpen the **Contacts** tab to manage your address book."
-  },
-
-  "groups": {
-    "en": "To manage or create WhatsApp groups:\n\n1. Go to the **Groups** tab\n2. Click **Create Group**\n3. Enter group name\n4. Add members from your contacts\n5. Save the group\n\nYou can also export group members or configure group settings depending on platform support."
-  },
-
-  "phone_check": {
-    "en": "To check whether a phone number is registered on WhatsApp:\n\n1. Open **Tools** → **Phone Checker**\n2. Enter a phone number or upload a CSV\n3. Click **Check**\n4. See results:\n   • ✅ Valid (registered)\n   • ❌ Invalid (not on WhatsApp)\n\nThis is recommended before blasts to avoid wasted sends."
-  },
-
-  "navigation": {
-    "en": "Navigation overview:\n\nYou can move around Chattea using the left sidebar:\n• Dashboard\n• Instances\n• Chat\n• Contacts\n• Groups\n• Files\n• Tasks\n• Payments\n• Settings\n• Analytics\n\nSimply click the section you want to open. Keyboard shortcuts may be available on some versions."
-  },
-
-  "platform_info": {
-    "en": "Chattea Platform Options:\n\n🌐 **Cloud/Web Version**\n• Access via browser\n• Auto updates\n• Easy to use anywhere\n\n💻 **Desktop App**\n• Faster performance\n• Unlimited instances (Pro/Enterprise)\n• Works offline (read-only)\n• More stable for high-volume operations\n\nChoose based on your workflow and needs."
-  },
-
-  "account": {
-    "en": "Account management:\n\nTo create an account:\n1. Visit chattea.com or open the app\n2. Click **Register**\n3. Enter email & password\n4. Verify email\n5. Log in\n\nYou can also reset your password or adjust account settings under **Settings → Account**."
-  },
-
-  "settings": {
-    "en": "In the Settings menu, you can:\n• Change notification preferences\n• Adjust language or timezone\n• Configure privacy options\n• Update account details\n• Manage API keys\n\nOpen the **Settings** tab to modify your preferences."
+  "what_for": {
+    "en": "Chattea is a WhatsApp marketing automation platform designed for businesses.\n\n🎯 Key features:\n• Send mass messages (blast)\n• Schedule messages\n• Manage multiple WhatsApp instances\n• Filter & validate numbers\n• Auto-reply & chatbot tools\n• Analytics & reporting\n• File sharing & contact management\n\nChattea helps sales, marketing, and customer service teams operate efficiently and reach customers at scale!",
+    "id": "Chattea adalah platform otomasi marketing WhatsApp untuk bisnis.\n\n🎯 Fitur utama:\n• Kirim pesan massal (blast)\n• Jadwalkan pesan\n• Kelola banyak instance WhatsApp\n• Filter & validasi nomor\n• Auto-reply & chatbot\n• Analitik & laporan\n• Berbagi file & manajemen kontak\n\nChattea membantu tim sales, marketing, dan customer service bekerja efisien dan menjangkau pelanggan secara massal!"
   },
 
   "pricing": {
-    "en": "Chattea Pricing:\n\n📱 **Basic** — 1 instance, core features\n🚀 **Pro** — 5 instances, unlimited messaging\n💼 **Enterprise** — Unlimited instances, priority support\n\nYearly plans offer ~20% savings.\nVisit: https://chattea.com/pricing"
+    "en": "Chattea Pricing Plans:\n\n📱 **Basic** — 1 instance, core features, perfect for startups\n🚀 **Pro** — 5 instances, unlimited messaging, advanced automation\n💼 **Enterprise** — Unlimited instances, priority support, custom features\n\n💰 Yearly plans offer ~20% savings!\n\nVisit: https://chattea.com/pricing for detailed comparison and current promotions.",
+    "id": "Paket Harga Chattea:\n\n📱 **Basic** — 1 instance, fitur inti, cocok untuk startup\n🚀 **Pro** — 5 instance, pesan unlimited, otomasi lanjutan\n💼 **Enterprise** — Instance unlimited, support prioritas, fitur custom\n\n💰 Paket tahunan hemat ~20%!\n\nKunjungi: https://chattea.com/pricing untuk perbandingan detail dan promo terkini."
   },
 
-  "payment": {
-    "en": "Payments & Subscription:\n\nIn the **Payments** tab you can:\n• Subscribe to a plan\n• Upgrade/downgrade plans\n• View payment history\n• Renew subscriptions\n• Check invoice status\n\nSupported payment methods: Bank Transfer, E-Wallet, Card, Retail stores."
+  "create_instance": {
+    "en": "To create a new WhatsApp instance:\n\n1. Open the **Instances** tab\n2. Click **+ New Instance**\n3. Enter a name (e.g., Marketing, Support, Sales)\n4. Scan the QR code with WhatsApp via:\n   Settings → Linked Devices → Link a Device\n5. The instance will activate once paired\n\n📱 Each instance represents a separate WhatsApp account you can control from Chattea.",
+    "id": "Untuk membuat instance WhatsApp baru:\n\n1. Buka tab **Instances**\n2. Klik **+ Instance Baru**\n3. Masukkan nama (contoh: Marketing, Support, Sales)\n4. Scan QR code dengan WhatsApp via:\n   Pengaturan → Perangkat Tertaut → Tautkan Perangkat\n5. Instance akan aktif setelah dipasangkan\n\n📱 Setiap instance mewakili akun WhatsApp terpisah yang bisa Anda kontrol dari Chattea."
   },
 
-  "quota": {
-    "en": "Instance quota reached! ⚠️\n\nOptions:\n\n1️⃣ Delete unused instances\n2️⃣ Upgrade your plan for more instances\n3️⃣ Contact sales for custom quotas\n\nManage instance limits in the **Instances** or **Payments** tab."
+  "edit_instance": {
+    "en": "To edit/manage an existing instance:\n\n1. Open the **Instances** tab\n2. Find the instance you want to modify\n3. Click the **Edit (✏️)** or **Settings (⚙️)** icon\n4. You can:\n   • Change the instance name\n   • Update settings\n   • View connection details\n   • Configure webhooks\n   • Adjust rate limits\n5. Save changes\n\n💡 Tip: Keep instance names descriptive (e.g., 'Sales-Team-1', 'Support-Primary').",
+    "id": "Untuk mengedit/mengelola instance yang ada:\n\n1. Buka tab **Instances**\n2. Temukan instance yang ingin diubah\n3. Klik ikon **Edit (✏️)** atau **Pengaturan (⚙️)**\n4. Anda bisa:\n   • Ubah nama instance\n   • Update pengaturan\n   • Lihat detail koneksi\n   • Konfigurasi webhook\n   • Atur batas rate\n5. Simpan perubahan\n\n💡 Tips: Gunakan nama instance yang deskriptif (contoh: 'Sales-Team-1', 'Support-Utama')."
   },
 
-  "analytics": {
-    "en": "Analytics Dashboard:\n\nYou can view:\n• Delivery rates\n• Open rates\n• Response rates\n• Blast performance\n• Campaign insights\n\nReports can be exported for deeper analysis.\nGo to the **Analytics** tab to explore your data."
+  "delete_instance": {
+    "en": "To delete an instance:\n\n1. Open the **Instances** tab\n2. Find the instance you want to remove\n3. Click the **Delete (🗑️)** or **Remove** button\n4. Confirm deletion (this action cannot be undone!)\n5. The instance will be permanently removed\n\n⚠️ Warning:\n• All messages and data associated with this instance will be lost\n• The WhatsApp number will be unlinked\n• You can create a new instance with the same number later\n\n💡 Consider disabling instead of deleting if you might need it again.",
+    "id": "Untuk menghapus instance:\n\n1. Buka tab **Instances**\n2. Temukan instance yang ingin dihapus\n3. Klik tombol **Hapus (🗑️)** atau **Remove**\n4. Konfirmasi penghapusan (aksi ini tidak bisa dibatalkan!)\n5. Instance akan dihapus permanen\n\n⚠️ Peringatan:\n• Semua pesan dan data terkait instance ini akan hilang\n• Nomor WhatsApp akan terputus\n• Anda bisa membuat instance baru dengan nomor yang sama nanti\n\n💡 Pertimbangkan untuk menonaktifkan daripada menghapus jika mungkin diperlukan lagi."
   },
 
-  "templates": {
-    "en": "Template Management:\n\nCreate and use message templates to speed up messaging:\n1. Go to **Templates** tab\n2. Click **New Template**\n3. Write a template using variables like {name}\n4. Save and reuse for blasts or messages\n\nTemplates help maintain consistency and save time."
+  "create_group": {
+    "en": "To create a WhatsApp group:\n\n1. Go to the **Groups** tab\n2. Click **+ New Group** or **Create Group**\n3. Enter group name (e.g., 'VIP Customers', 'Product Updates')\n4. Add members from your contacts\n   • Search by name or number\n   • Select multiple contacts\n5. Click **Create**\n6. The group will be created on your WhatsApp instance\n\n💡 Groups are great for:\n• Customer communities\n• Product announcements\n• Exclusive offers\n• Support channels",
+    "id": "Untuk membuat grup WhatsApp:\n\n1. Buka tab **Groups**\n2. Klik **+ Grup Baru** atau **Buat Grup**\n3. Masukkan nama grup (contoh: 'Pelanggan VIP', 'Update Produk')\n4. Tambahkan anggota dari kontak Anda\n   • Cari berdasarkan nama atau nomor\n   • Pilih beberapa kontak\n5. Klik **Buat**\n6. Grup akan dibuat di instance WhatsApp Anda\n\n💡 Grup cocok untuk:\n• Komunitas pelanggan\n• Pengumuman produk\n• Penawaran eksklusif\n• Channel support"
   },
 
-  "files": {
-    "en": "File Management:\n\nIn the **Files** tab you can:\n• Upload files\n• Preview files\n• Share across instances\n• Delete or manage uploaded documents\n\nFiles can be used as attachments in messages and blasts."
+  "edit_group": {
+    "en": "To edit/manage a WhatsApp group:\n\n1. Go to the **Groups** tab\n2. Select the group you want to modify\n3. Click **Edit (✏️)** or **Manage**\n4. You can:\n   • Change group name\n   • Update group description\n   • Add new members\n   • Remove members\n   • Change group settings\n   • Export member list\n5. Save changes\n\n⚙️ Group settings you can configure:\n• Who can send messages\n• Who can edit group info\n• Message approval settings",
+    "id": "Untuk mengedit/mengelola grup WhatsApp:\n\n1. Buka tab **Groups**\n2. Pilih grup yang ingin diubah\n3. Klik **Edit (✏️)** atau **Kelola**\n4. Anda bisa:\n   • Ubah nama grup\n   • Update deskripsi grup\n   • Tambah anggota baru\n   • Hapus anggota\n   • Ubah pengaturan grup\n   • Export daftar anggota\n5. Simpan perubahan\n\n⚙️ Pengaturan grup yang bisa dikonfigurasi:\n• Siapa yang bisa kirim pesan\n• Siapa yang bisa edit info grup\n• Pengaturan persetujuan pesan"
   },
 
-  "tasks": {
-    "en": "Tasks Overview:\n\nThe **Tasks** tab allows you to:\n• View scheduled messages\n• Monitor blast progress\n• Check failed tasks\n• Retry failed messages\n• Track automation runs\n\nThis is your main control center for message scheduling."
+  "delete_group": {
+    "en": "To delete a WhatsApp group:\n\n1. Go to the **Groups** tab\n2. Find the group you want to delete\n3. Click **Delete (🗑️)** or **Remove Group**\n4. Confirm deletion\n5. Choose what happens:\n   • **Exit & Delete** - You leave the group and remove it from Chattea\n   • **Delete for Everyone** - Completely dissolve the group (admin only)\n\n⚠️ Warning:\n• If you're the admin and delete for everyone, all members will be removed\n• This action cannot be undone\n• Group chat history will be lost\n\n💡 Alternative: Just exit the group without deleting if you're not the admin.",
+    "id": "Untuk menghapus grup WhatsApp:\n\n1. Buka tab **Groups**\n2. Temukan grup yang ingin dihapus\n3. Klik **Hapus (🗑️)** atau **Hapus Grup**\n4. Konfirmasi penghapusan\n5. Pilih apa yang terjadi:\n   • **Keluar & Hapus** - Anda keluar dari grup dan hapus dari Chattea\n   • **Hapus untuk Semua** - Bubarkan grup sepenuhnya (hanya admin)\n\n⚠️ Peringatan:\n• Jika Anda admin dan hapus untuk semua, semua anggota akan dihapus\n• Aksi ini tidak bisa dibatalkan\n• Riwayat chat grup akan hilang\n\n💡 Alternatif: Cukup keluar dari grup tanpa menghapus jika Anda bukan admin."
   },
 
-  "troubleshoot": {
-    "en": "Troubleshooting guide:\n\nCommon issues include:\n• QR code not loading\n• Connection timeout\n• Instance disconnected\n• Login problems\n\nTry:\n1. Refreshing the page\n2. Reconnecting the instance\n3. Checking your internet\n4. Clearing browser cache\n5. Trying a different browser\n\nIf issues persist, contact support@chattea.com."
+  "contact": {
+    "en": "Contact Management:\n\n📋 You can:\n• **Add contacts** - Manually or import CSV\n• **Edit contacts** - Update name, number, tags\n• **Delete contacts** - Remove single or bulk\n• **Import/Export** - CSV format for bulk operations\n• **Search contacts** - Find by name, number, or tag\n• **Create segments** - Group contacts for targeted campaigns\n• **Tag contacts** - Organize with labels (VIP, Active, Lead, etc.)\n\n📂 Open the **Contacts** tab to manage your address book.\n\n💡 Tip: Keep your contacts organized with tags for better campaign targeting!",
+    "id": "Manajemen Kontak:\n\n📋 Anda bisa:\n• **Tambah kontak** - Manual atau import CSV\n• **Edit kontak** - Update nama, nomor, tag\n• **Hapus kontak** - Hapus satu atau banyak\n• **Import/Export** - Format CSV untuk operasi massal\n• **Cari kontak** - Temukan berdasarkan nama, nomor, atau tag\n• **Buat segmen** - Kelompokkan kontak untuk kampanye tertarget\n• **Tag kontak** - Organisir dengan label (VIP, Aktif, Lead, dll.)\n\n📂 Buka tab **Contacts** untuk mengelola buku alamat Anda.\n\n💡 Tips: Jaga kontak terorganisir dengan tag untuk targeting kampanye yang lebih baik!"
   },
 
-  "security": {
-    "en": "Security & Privacy:\n\nChattea protects your data with:\n• AES-256 encryption\n• SSL/TLS secure connections\n• Regular security audits\n• GDPR compliance\n• Secure payment gateways\n\nYour data is safe and never shared with third parties."
-  },
-
-  "warmup": {
-    "en": "Warmup Feature:\n\nWarmup prepares new WhatsApp accounts to avoid bans.\n\nHow it works:\n• Instances chat with each other automatically\n• Activity increases gradually\n• Human-like delays are used\n\nRecommended duration: 7–14 days.\nEnable under the **Warmup Settings** of an instance."
+  "unknown": {
+    "en": "I'm not sure I understood that correctly. 🤔\n\nI can help you with:\n• Sending messages\n• Scheduling messages\n• Filtering phone numbers\n• Creating/managing instances\n• Creating/managing groups\n• Managing contacts\n• Pricing information\n• Platform features\n\nCould you rephrase your question or choose from the topics above?",
+    "id": "Saya tidak yakin memahami pertanyaan Anda dengan benar. 🤔\n\nSaya bisa membantu dengan:\n• Mengirim pesan\n• Menjadwalkan pesan\n• Menyaring nomor telepon\n• Membuat/mengelola instance\n• Membuat/mengelola grup\n• Mengelola kontak\n• Informasi harga\n• Fitur platform\n\nBisakah Anda mengulang pertanyaan atau pilih dari topik di atas?"
   }
 }
