@@ -1,0 +1,2103 @@
+"text",intent
+"how do i send a message",send_message
+"can you send a message to my contacts",send_message
+"i want to send a bulk message",send_message
+"send message",send_message
+"how to broadcast",send_message
+"i need to send a message to multiple people",send_message
+"can i send messages now",send_message
+"send a whatsapp message",send_message
+"how do i send bulk messages to my customer list",send_message
+"i want to message all my contacts",send_message
+"help me send a message",send_message
+"can you help me broadcast a message",send_message
+"send text to contacts",send_message
+"how can i send messages in bulk",send_message
+"i need to send promotional messages to my contacts",send_message
+"what's the process to send a message to multiple numbers",send_message
+"i want to send a marketing message to all my customers today",send_message
+"can you show me how to send bulk whatsapp messages",send_message
+"send message to group",send_message
+"how do i send a message to everyone",send_message
+"i want to blast a message",send_message
+"broadcast message please",send_message
+"help with sending messages",send_message
+"can i send a message right now",send_message
+"i need to send an announcement to all contacts",send_message
+"how to send whatsapp broadcast",send_message
+"send bulk whatsapp",send_message
+"message all contacts",send_message
+"i want to send out a promotion",send_message
+"can you send messages for me",send_message
+"how do i use the bulk send feature",send_message
+"i need to notify all my customers about a sale",send_message
+"send a message to my entire contact list please",send_message
+"broadcast to all",send_message
+"mass message send",send_message
+"can i send the same message to multiple people at once",send_message
+"i want to send a notification to everyone on my list",send_message
+"help me broadcast an important announcement to all contacts",send_message
+"how can i send messages to hundreds of people",send_message
+"bulk messaging feature",send_message
+"i need to send a promotional campaign message to all my subscribers",send_message
+"can you guide me through sending a bulk message to my customer database",send_message
+"i want to send special offers to all contacts",send_message
+"how do i message everyone",send_message
+"send to all contacts now",send_message
+"i need to send urgent message to all",send_message
+"bulk send whatsapp messages",send_message
+"how to broadcast on whatsapp business",send_message
+"i want to send a product launch announcement to my entire contact list",send_message
+"can i send different messages to different groups",send_message
+"schedule a message",schedule_message
+"can i schedule messages",schedule_message
+"how to schedule",schedule_message
+"i want to schedule a message for later",schedule_message
+"schedule message for tomorrow",schedule_message
+"can you help me schedule a broadcast",schedule_message
+"how do i set up scheduled messages",schedule_message
+"schedule bulk message",schedule_message
+"i need to schedule a message to be sent next week",schedule_message
+"can i schedule messages to go out automatically",schedule_message
+"how to schedule whatsapp messages",schedule_message
+"schedule send",schedule_message
+"i want to schedule a promotional message for friday",schedule_message
+"can you schedule messages for me",schedule_message
+"how do i schedule a message to send later",schedule_message
+"i need to schedule bulk messages for tomorrow morning",schedule_message
+"schedule a broadcast for next monday",schedule_message
+"can i set a message to send automatically at a specific time",schedule_message
+"how to schedule whatsapp broadcasts",schedule_message
+"schedule message feature",schedule_message
+"i want to schedule multiple messages throughout the week",schedule_message
+"can you help me schedule a message for 9am tomorrow",schedule_message
+"how do i schedule a bulk message to send on a specific date",schedule_message
+"schedule a campaign",schedule_message
+"i need to schedule an announcement for next month",schedule_message
+"can i schedule messages in advance",schedule_message
+"how to set up scheduled broadcasts",schedule_message
+"schedule message to send later",schedule_message
+"i want to schedule a message to go out on christmas",schedule_message
+"can you schedule a bulk message for me",schedule_message
+"how do i schedule messages to send automatically",schedule_message
+"schedule whatsapp message",schedule_message
+"i need to schedule promotional messages for the entire month",schedule_message
+"can i schedule a message to send at midnight",schedule_message
+"how to schedule a broadcast for next week",schedule_message
+"schedule send for tomorrow",schedule_message
+"i want to schedule messages for different times",schedule_message
+"can you help me set up scheduled messages",schedule_message
+"how do i schedule a message campaign",schedule_message
+"schedule bulk messages for next month",schedule_message
+"i need to schedule a message to send on new years eve",schedule_message
+"can i schedule messages to send while i sleep",schedule_message
+"how to schedule automatic messages",schedule_message
+"schedule broadcast message",schedule_message
+"i want to schedule a flash sale announcement for friday 6pm",schedule_message
+"can you schedule multiple messages for different days",schedule_message
+"how do i schedule a message to send in 2 hours",schedule_message
+"schedule a reminder message",schedule_message
+"i need to schedule messages for my product launch campaign next month",schedule_message
+"can i schedule a message to repeat every week",schedule_message
+"filter numbers",filter_number
+"how do i filter contacts",filter_number
+"can you help me filter my contact list",filter_number
+"filter invalid numbers",filter_number
+"i need to filter my numbers",filter_number
+"how to filter contacts by criteria",filter_number
+"can i filter numbers",filter_number
+"filter contact list",filter_number
+"how do i filter out invalid whatsapp numbers",filter_number
+"i want to filter my contacts",filter_number
+"help me filter numbers",filter_number
+"can you filter invalid contacts",filter_number
+"how to filter number list",filter_number
+"filter whatsapp numbers",filter_number
+"i need to filter out non-whatsapp numbers from my list",filter_number
+"can i filter contacts by country",filter_number
+"how do i filter my contact database",filter_number
+"filter out bad numbers",filter_number
+"i want to clean up my contact list by filtering",filter_number
+"can you help me filter contacts that don't have whatsapp",filter_number
+"how to filter and validate phone numbers",filter_number
+"filter duplicate numbers",filter_number
+"i need to filter my contact list to remove invalid entries",filter_number
+"can i filter contacts by active status",filter_number
+"how do i filter numbers before sending",filter_number
+"filter contact database",filter_number
+"i want to filter out numbers that are not on whatsapp",filter_number
+"can you filter my list to show only valid numbers",filter_number
+"how to filter contacts by region",filter_number
+"filter and validate contacts",filter_number
+"i need to filter my customer list to get only active whatsapp users",filter_number
+"can i filter numbers by country code",filter_number
+"how do i filter and clean my contact list",filter_number
+"filter whatsapp active numbers",filter_number
+"i want to filter contacts to remove duplicates and invalid numbers",filter_number
+"can you help me filter my database to get only valid whatsapp contacts",filter_number
+"how to filter number list before bulk send",filter_number
+"filter invalid entries",filter_number
+"i need to validate and filter my contact list",filter_number
+"can i filter to show only numbers with whatsapp",filter_number
+"how do i filter contacts by active status on whatsapp",filter_number
+"filter my contact list",filter_number
+"i want to remove invalid numbers from my list",filter_number
+"can you filter and validate all my contacts",filter_number
+"how to filter contacts effectively",filter_number
+"filter numbers tool",filter_number
+"i need to filter my entire contact database for valid whatsapp numbers",filter_number
+"can i filter contacts that haven't been active",filter_number
+"how do i use the number filter feature",filter_number
+"filter and clean contact list",filter_number
+"create instance",create_instance
+"how do i create a new instance",create_instance
+"can you help me create an instance",create_instance
+"i want to create a whatsapp instance",create_instance
+"create new instance",create_instance
+"how to set up a new instance",create_instance
+"can i create another instance",create_instance
+"i need to create a whatsapp business instance",create_instance
+"create instance please",create_instance
+"how do i add a new whatsapp instance",create_instance
+"i want to create a new whatsapp connection",create_instance
+"can you help me set up a new instance",create_instance
+"create new whatsapp instance",create_instance
+"how to create an instance",create_instance
+"i need to create another instance for a different number",create_instance
+"can i create multiple instances",create_instance
+"how do i create a second whatsapp instance",create_instance
+"create new connection",create_instance
+"i want to add a new whatsapp business account",create_instance
+"can you guide me through creating a new instance",create_instance
+"how to set up whatsapp instance",create_instance
+"create instance for new number",create_instance
+"i need to create a new instance for my business phone",create_instance
+"can i create an instance for another phone number",create_instance
+"how do i create and configure a new whatsapp instance",create_instance
+"create whatsapp business instance",create_instance
+"i want to set up a new instance for my second business line",create_instance
+"can you help me create a new whatsapp connection",create_instance
+"how to add new instance",create_instance
+"create new wa instance",create_instance
+"i need to create an instance for my new whatsapp business number",create_instance
+"can i create multiple whatsapp instances for different numbers",create_instance
+"how do i create a fresh instance",create_instance
+"create instance for business",create_instance
+"i want to create a new instance and connect my whatsapp",create_instance
+"can you show me how to create a new whatsapp instance",create_instance
+"how to create multiple instances",create_instance
+"create new business instance",create_instance
+"i need to set up a new whatsapp instance for my company",create_instance
+"can i create an instance for testing",create_instance
+"how do i create a new instance and scan qr code",create_instance
+"create whatsapp instance",create_instance
+"i want to add another whatsapp business instance to my account",create_instance
+"can you help me create and configure a new instance",create_instance
+"how to create new wa business instance",create_instance
+"create instance for new business",create_instance
+"i need to create a new instance for my e-commerce whatsapp",create_instance
+"can i create an instance right now",create_instance
+"how do i set up and create a whatsapp business instance",create_instance
+"delete instance",delete_instance
+"how do i delete an instance",delete_instance
+"can you help me delete my instance",delete_instance
+"i want to delete a whatsapp instance",delete_instance
+"delete instance please",delete_instance
+"how to remove an instance",delete_instance
+"can i delete an instance",delete_instance
+"i need to delete my whatsapp instance",delete_instance
+"remove instance",delete_instance
+"how do i delete a whatsapp connection",delete_instance
+"i want to remove an instance",delete_instance
+"can you help me delete an instance",delete_instance
+"delete whatsapp instance",delete_instance
+"how to delete instance",delete_instance
+"i need to remove an old instance",delete_instance
+"can i delete multiple instances",delete_instance
+"how do i delete an instance permanently",delete_instance
+"delete connection",delete_instance
+"i want to delete my old whatsapp instance",delete_instance
+"can you delete an instance for me",delete_instance
+"how to remove whatsapp instance",delete_instance
+"delete old instance",delete_instance
+"i need to delete an instance i no longer use",delete_instance
+"can i delete an inactive instance",delete_instance
+"how do i remove and delete an instance",delete_instance
+"delete instance from account",delete_instance
+"i want to delete all my instances",delete_instance
+"can you help me remove an instance",delete_instance
+"how to delete multiple instances",delete_instance
+"delete wa instance",delete_instance
+"i need to delete a whatsapp instance that's no longer active",delete_instance
+"can i delete an instance and create a new one",delete_instance
+"how do i delete a specific instance",delete_instance
+"delete business instance",delete_instance
+"i want to remove an old whatsapp connection",delete_instance
+"can you show me how to delete an instance",delete_instance
+"how to permanently delete instance",delete_instance
+"delete unused instance",delete_instance
+"i need to delete my test instance",delete_instance
+"can i delete an instance without affecting others",delete_instance
+"how do i delete an instance completely",delete_instance
+"delete whatsapp connection",delete_instance
+"i want to delete this instance and start fresh",delete_instance
+"can you help me delete all unused instances",delete_instance
+"how to delete instance permanently",delete_instance
+"delete all instances",delete_instance
+"i need to clean up and delete old instances",delete_instance
+"can i delete an instance right now",delete_instance
+"how do i remove an instance from my account",delete_instance
+"edit instance",edit_instance
+"how do i edit an instance",edit_instance
+"can you help me edit my instance",edit_instance
+"i want to edit a whatsapp instance",edit_instance
+"edit instance settings",edit_instance
+"how to modify an instance",edit_instance
+"can i edit instance details",edit_instance
+"i need to edit my whatsapp instance",edit_instance
+"modify instance",edit_instance
+"how do i edit instance configuration",edit_instance
+"i want to change instance settings",edit_instance
+"can you help me modify an instance",edit_instance
+"edit whatsapp instance",edit_instance
+"how to edit instance",edit_instance
+"i need to update my instance settings",edit_instance
+"can i edit an instance",edit_instance
+"how do i change instance details",edit_instance
+"edit instance name",edit_instance
+"i want to edit my instance configuration",edit_instance
+"can you edit an instance for me",edit_instance
+"how to modify instance settings",edit_instance
+"edit instance info",edit_instance
+"i need to edit an instance's details",edit_instance
+"can i modify instance settings",edit_instance
+"how do i edit and update an instance",edit_instance
+"edit business instance",edit_instance
+"i want to change my instance name",edit_instance
+"can you help me update instance settings",edit_instance
+"how to change instance details",edit_instance
+"edit wa instance",edit_instance
+"i need to modify my whatsapp instance configuration",edit_instance
+"can i edit instance settings",edit_instance
+"how do i edit an instance's name and settings",edit_instance
+"edit instance configuration",edit_instance
+"i want to update my instance details",edit_instance
+"can you show me how to edit an instance",edit_instance
+"how to update instance",edit_instance
+"edit instance parameters",edit_instance
+"i need to change my instance settings",edit_instance
+"can i edit multiple instance settings",edit_instance
+"how do i modify instance name",edit_instance
+"edit whatsapp connection",edit_instance
+"i want to edit the settings of my business instance",edit_instance
+"can you help me change instance configuration",edit_instance
+"how to edit instance name and details",edit_instance
+"edit current instance",edit_instance
+"i need to update and edit my instance",edit_instance
+"can i edit an instance's configuration",edit_instance
+"how do i change and edit instance settings",edit_instance
+"create group",create_group
+"how do i create a group",create_group
+"can you help me create a whatsapp group",create_group
+"i want to create a new group",create_group
+"create group please",create_group
+"how to create a contact group",create_group
+"can i create a group",create_group
+"i need to create a whatsapp group",create_group
+"create new group",create_group
+"how do i make a new group",create_group
+"i want to create a group for my contacts",create_group
+"can you help me create a group",create_group
+"create whatsapp group",create_group
+"how to create group",create_group
+"i need to create a contact group",create_group
+"can i create multiple groups",create_group
+"how do i create a group for bulk messaging",create_group
+"create contact group",create_group
+"i want to create a group of customers",create_group
+"can you create a group for me",create_group
+"how to make a new group",create_group
+"create group for contacts",create_group
+"i need to create a group to organize my contacts",create_group
+"can i create a group for a specific campaign",create_group
+"how do i create and name a new group",create_group
+"create customer group",create_group
+"i want to create a group for my vip customers",create_group
+"can you help me set up a new group",create_group
+"how to create contact groups",create_group
+"create new contact group",create_group
+"i need to create a group for my sales contacts",create_group
+"can i create a group and add contacts to it",create_group
+"how do i create a group for organizing contacts",create_group
+"create broadcast group",create_group
+"i want to create a group for my email subscribers",create_group
+"can you show me how to create a group",create_group
+"how to create multiple groups",create_group
+"create group for campaign",create_group
+"i need to create a group to segment my audience",create_group
+"can i create a custom group",create_group
+"how do i create a group and add members",create_group
+"create segmented group",create_group
+"i want to create different groups for different customer types",create_group
+"can you help me create and organize groups",create_group
+"how to create group for bulk send",create_group
+"create wa group",create_group
+"i need to create a group for my loyalty program members",create_group
+"can i create a group for inactive customers",create_group
+"how do i create a targeted group",create_group
+"edit group",edit_group
+"how do i edit a group",edit_group
+"can you help me edit my group",edit_group
+"i want to edit a whatsapp group",edit_group
+"edit group settings",edit_group
+"how to modify a group",edit_group
+"can i edit group details",edit_group
+"i need to edit my whatsapp group",edit_group
+"modify group",edit_group
+"how do i edit group name",edit_group
+"i want to change group settings",edit_group
+"can you help me modify a group",edit_group
+"edit whatsapp group",edit_group
+"how to edit group",edit_group
+"i need to update my group",edit_group
+"can i edit a group",edit_group
+"how do i change group details",edit_group
+"edit group name",edit_group
+"i want to edit my group configuration",edit_group
+"can you edit a group for me",edit_group
+"how to modify group settings",edit_group
+"edit group info",edit_group
+"i need to edit a group's details",edit_group
+"can i modify group settings",edit_group
+"how do i edit and update a group",edit_group
+"edit contact group",edit_group
+"i want to change my group name",edit_group
+"can you help me update group settings",edit_group
+"how to change group details",edit_group
+"edit group members",edit_group
+"i need to modify my whatsapp group",edit_group
+"can i edit group name",edit_group
+"how do i edit a group's name and members",edit_group
+"edit group configuration",edit_group
+"i want to update my group details",edit_group
+"can you show me how to edit a group",edit_group
+"how to update group",edit_group
+"edit group parameters",edit_group
+"i need to change my group settings",edit_group
+"can i edit multiple groups",edit_group
+"how do i modify group name",edit_group
+"edit customer group",edit_group
+"i want to edit the settings of my contact group",edit_group
+"can you help me change group configuration",edit_group
+"how to edit group name and members",edit_group
+"edit current group",edit_group
+"i need to update and edit my group",edit_group
+"can i edit a group's members",edit_group
+"how do i change and edit group settings",edit_group
+"delete group",delete_group
+"how do i delete a group",delete_group
+"can you help me delete my group",delete_group
+"i want to delete a whatsapp group",delete_group
+"delete group please",delete_group
+"how to remove a group",delete_group
+"can i delete a group",delete_group
+"i need to delete my whatsapp group",delete_group
+"remove group",delete_group
+"how do i delete a contact group",delete_group
+"i want to remove a group",delete_group
+"can you help me delete a group",delete_group
+"delete whatsapp group",delete_group
+"how to delete group",delete_group
+"i need to remove an old group",delete_group
+"can i delete multiple groups",delete_group
+"how do i delete a group permanently",delete_group
+"delete contact group",delete_group
+"i want to delete my old group",delete_group
+"can you delete a group for me",delete_group
+"how to remove whatsapp group",delete_group
+"delete old group",delete_group
+"i need to delete a group i no longer use",delete_group
+"can i delete an inactive group",delete_group
+"how do i remove and delete a group",delete_group
+"delete group from account",delete_group
+"i want to delete all my groups",delete_group
+"can you help me remove a group",delete_group
+"how to delete multiple groups",delete_group
+"delete customer group",delete_group
+"i need to delete a whatsapp group that's no longer needed",delete_group
+"can i delete a group and create a new one",delete_group
+"how do i delete a specific group",delete_group
+"delete broadcast group",delete_group
+"i want to remove an old contact group",delete_group
+"can you show me how to delete a group",delete_group
+"how to permanently delete group",delete_group
+"delete unused group",delete_group
+"i need to delete my test group",delete_group
+"can i delete a group without affecting contacts",delete_group
+"how do i delete a group completely",delete_group
+"delete contact list group",delete_group
+"i want to delete this group and start fresh",delete_group
+"can you help me delete all unused groups",delete_group
+"how to delete group permanently",delete_group
+"delete all groups",delete_group
+"i need to clean up and delete old groups",delete_group
+"can i delete a group right now",delete_group
+"how do i remove a group from my account",delete_group
+"what is this for",what_for
+"what does this platform do",what_for
+"can you explain what this is",what_for
+"what is chattea",what_for
+"tell me about this service",what_for
+"what can i do here",what_for
+"what is this platform",what_for
+"can you explain the features",what_for
+"what does this app do",what_for
+"tell me what this is for",what_for
+"what is the purpose of this",what_for
+"can you describe this service",what_for
+"what features do you have",what_for
+"what can this platform do",what_for
+"tell me about chattea",what_for
+"what is this service used for",what_for
+"can you explain what chattea does",what_for
+"what's this for",what_for
+"tell me about the platform",what_for
+"what can i use this for",what_for
+"what is whatsapp business api",what_for
+"can you explain the purpose of this platform",what_for
+"what features does chattea offer",what_for
+"tell me what features are available",what_for
+"what can this service do for me",what_for
+"what is this platform designed for",what_for
+"can you describe the features",what_for
+"what's the purpose",what_for
+"tell me about whatsapp business management",what_for
+"what can i achieve with this platform",what_for
+"what does this system do",what_for
+"can you explain what features are available",what_for
+"what is the main purpose of chattea",what_for
+"tell me about the whatsapp business features",what_for
+"what can this help me with",what_for
+"what is this tool for",what_for
+"can you describe what this platform offers",what_for
+"what's chattea",what_for
+"tell me the features",what_for
+"what can i do with this service",what_for
+"what is the whatsapp business api platform",what_for
+"can you explain all the features",what_for
+"what does chattea provide",what_for
+"tell me what this platform can do",what_for
+"what are the main features",what_for
+"what is this application for",what_for
+"can you describe the service",what_for
+"what's this platform about",what_for
+"tell me about bulk messaging",what_for
+"what can chattea do for my business",what_for
+"pricing",pricing
+"how much does it cost",pricing
+"what are your prices",pricing
+"tell me about pricing",pricing
+"what are the plans",pricing
+"how much is it",pricing
+"what's the cost",pricing
+"can you tell me the pricing",pricing
+"what are your subscription plans",pricing
+"how much do i need to pay",pricing
+"tell me the price",pricing
+"what are the pricing tiers",pricing
+"how much does chattea cost",pricing
+"what's the pricing",pricing
+"can you explain the pricing",pricing
+"what plans do you offer",pricing
+"how much for a subscription",pricing
+"tell me about subscription costs",pricing
+"what are the fees",pricing
+"how much does this service cost",pricing
+"what's the monthly cost",pricing
+"can you tell me about the plans",pricing
+"what are your rates",pricing
+"how much to use chattea",pricing
+"tell me the subscription pricing",pricing
+"what are the different plans",pricing
+"how much is the monthly fee",pricing
+"what's the price for bulk messaging",pricing
+"can you explain the subscription plans",pricing
+"what plans are available",pricing
+"how much does a plan cost",pricing
+"tell me about the pricing structure",pricing
+"what are the costs",pricing
+"how much for whatsapp business api",pricing
+"what's the cheapest plan",pricing
+"can you tell me the subscription fees",pricing
+"what are the monthly rates",pricing
+"how much is the premium plan",pricing
+"tell me all the pricing options",pricing
+"what are the subscription options",pricing
+"how much does it cost per month",pricing
+"what's the annual pricing",pricing
+"can you explain all the plans",pricing
+"what are the plan prices",pricing
+"how much for basic plan",pricing
+"tell me about the different subscription tiers",pricing
+"what are the payment options",pricing
+"how much to get started",pricing
+"what's included in each plan",pricing
+"can you tell me the cost breakdown",pricing
+"contact",contact
+"how do i contact you",contact
+"can i get support",contact
+"i need help",contact
+"contact support",contact
+"how to reach support",contact
+"can i talk to someone",contact
+"i need customer service",contact
+"how do i get help",contact
+"contact customer support",contact
+"can you help me",contact
+"how to contact chattea",contact
+"i need technical support",contact
+"can i speak to support",contact
+"how do i reach customer service",contact
+"contact info",contact
+"i need to talk to someone",contact
+"how to get support",contact
+"can i contact support",contact
+"i need assistance",contact
+"how do i get customer support",contact
+"contact details",contact
+"can you provide support contact",contact
+"i need help with an issue",contact
+"how to reach customer support",contact
+"can i get technical support",contact
+"i need to speak with support",contact
+"how do i contact support team",contact
+"contact support team",contact
+"can you give me contact information",contact
+"i need help from support",contact
+"how to contact customer service",contact
+"can i reach out to support",contact
+"i need urgent support",contact
+"how do i get in touch",contact
+"contact customer service",contact
+"can you connect me to support",contact
+"i need to contact someone",contact
+"how to get customer support",contact
+"can i have the support email",contact
+"i need to report an issue",contact
+"how do i reach technical support",contact
+"contact technical support",contact
+"can you help me with a problem",contact
+"i need live support",contact
+"how to contact help desk",contact
+"can i get live chat support",contact
+"i need immediate assistance",contact
+"how do i talk to support",contact
+"hello",greeting
+"hi",greeting
+"hey",greeting
+"good morning",greeting
+"good afternoon",greeting
+"good evening",greeting
+"what's up",greeting
+"how are you",greeting
+"greetings",greeting
+"hi there",greeting
+"hey there",greeting
+"hello there",greeting
+"yo",greeting
+"sup",greeting
+"howdy",greeting
+"ok",unknown
+"yes",unknown
+"no",unknown
+"maybe",unknown
+"i don't know",unknown
+"thanks",unknown
+"thank you",unknown
+"thanks a lot",unknown
+"appreciate it",unknown
+"goodbye",unknown
+"bye",unknown
+"see you",unknown
+"later",unknown
+"take care",unknown
+"that's great",unknown
+"awesome",unknown
+"cool",unknown
+"nice",unknown
+"perfect",unknown
+"alright",unknown
+"sounds good",unknown
+"makes sense",unknown
+"i see",unknown
+"got it",unknown
+"understood",unknown
+"roger that",unknown
+"copy that",unknown
+"haha",unknown
+"lol",unknown
+"hehe",unknown
+"what",unknown
+"huh",unknown
+"sorry",unknown
+"excuse me",unknown
+"pardon",unknown
+"my bad",unknown
+"oops",unknown
+"test",unknown
+"testing",unknown
+"asdf",unknown
+"qwerty",unknown
+"random text",unknown
+"blah blah",unknown
+"whatever",unknown
+"nevermind",unknown
+"forget it",unknown
+"nothing",unknown
+"i want to send a promotional message to all my contacts in my database so they know about our upcoming sale",send_message
+"can you please help me figure out how to send bulk whatsapp messages to my customer list",send_message
+"i need to broadcast an important announcement to everyone on my contact list right now",send_message
+"how do i go about sending the same message to multiple people at the same time",send_message
+"i'd like to send out a marketing campaign to all my subscribers via whatsapp",send_message
+"can you show me the process to send a bulk message to hundreds of contacts",send_message
+"i want to notify all my customers about a special discount we're running this week",send_message
+"how can i send a whatsapp broadcast message to my entire customer database",send_message
+"i need to send an urgent update to all contacts on my list",send_message
+"can you guide me through sending a mass message to my contact list",send_message
+"i want to send a holiday greeting to all my business contacts",send_message
+"how do i send a promotional campaign via bulk whatsapp messaging",send_message
+"i need to send out a product announcement to everyone in my contact database",send_message
+"can you help me broadcast a message to all my customers about our new location",send_message
+"i want to send a survey to all my contacts to get feedback",send_message
+"how can i send the same promotional offer to multiple contacts simultaneously",send_message
+"i'd like to send out a newsletter type message to all my subscribers",send_message
+"can you show me how to send a bulk message with an image attachment",send_message
+"i need to send a reminder message to all my customers about their appointments",send_message
+"how do i send a flash sale announcement to my entire contact list",send_message
+"i want to send a thank you message to all my customers who made purchases",send_message
+"can you help me send a bulk message about our new product line",send_message
+"i need to broadcast a message to inform everyone about our business hours change",send_message
+"how can i send a whatsapp message to all contacts in a specific group",send_message
+"i'd like to send out an event invitation to all my business contacts",send_message
+"can you guide me on how to send bulk messages with personalization",send_message
+"i want to send a reactivation campaign to customers who haven't purchased in a while",send_message
+"how do i send a message to my entire customer database announcing a price change",send_message
+"i need to send a bulk message to promote our limited time offer",send_message
+"can you help me broadcast an urgent recall notice to all customers",send_message
+"i'd like to schedule my promotional messages to go out at 10am tomorrow morning when most people check their phones",schedule_message
+"can you help me set up scheduled messages for my entire marketing campaign next month",schedule_message
+"i need to schedule a flash sale announcement to be sent this friday at 6pm",schedule_message
+"how do i schedule bulk messages to send automatically on specific dates and times",schedule_message
+"i want to schedule a series of reminder messages throughout the week",schedule_message
+"can you show me how to schedule a message to go out on christmas day",schedule_message
+"i need to schedule messages for my product launch happening in two weeks",schedule_message
+"how can i schedule a message to send at midnight on new year's eve",schedule_message
+"i'd like to schedule automated messages for the entire month of december",schedule_message
+"can you help me schedule a message campaign with different messages on different days",schedule_message
+"i want to schedule reminder messages to go out every monday morning",schedule_message
+"how do i schedule a bulk message to send while i'm on vacation",schedule_message
+"i need to schedule promotional messages for black friday and cyber monday",schedule_message
+"can you guide me through scheduling messages for my weekly newsletter",schedule_message
+"i'd like to schedule a message to send tomorrow at 9am when my store opens",schedule_message
+"how can i schedule multiple messages to go out at different times throughout the day",schedule_message
+"i want to schedule a birthday message campaign for all my customers",schedule_message
+"can you help me schedule messages for my 7-day email drip campaign",schedule_message
+"i need to schedule a message to remind customers about the sale ending soon",schedule_message
+"how do i schedule messages to send automatically every weekend",schedule_message
+"i'd like to schedule promotional messages for the entire quarter in advance",schedule_message
+"can you show me how to schedule a message for valentine's day promotion",schedule_message
+"i want to schedule automated follow-up messages after customer purchases",schedule_message
+"how can i schedule a message to send in exactly 24 hours from now",schedule_message
+"i need to schedule messages for my upcoming webinar series",schedule_message
+"can you help me schedule reminder messages for customers with abandoned carts",schedule_message
+"i'd like to schedule a message campaign for my seasonal sale event",schedule_message
+"how do i schedule messages to go out at optimal times for engagement",schedule_message
+"i want to schedule a re-engagement campaign for inactive customers",schedule_message
+"can you guide me on scheduling messages for different time zones",schedule_message
+"i need to filter my contact list to remove all the invalid phone numbers before sending my campaign",filter_number
+"can you help me filter out contacts that don't have whatsapp installed",filter_number
+"how do i filter and validate my entire customer database to ensure only active numbers",filter_number
+"i want to filter my contact list to show only numbers from a specific country",filter_number
+"can you show me how to filter out duplicate phone numbers from my list",filter_number
+"i need to filter my contacts to identify which ones are actually on whatsapp",filter_number
+"how can i filter my number list to remove any that are no longer active",filter_number
+"i'd like to filter my database to separate valid from invalid whatsapp numbers",filter_number
+"can you help me filter contacts based on their activity status",filter_number
+"i want to filter out all landline numbers that can't receive whatsapp messages",filter_number
+"how do i filter my contact list to clean up incorrect or incomplete phone numbers",filter_number
+"i need to filter and validate 5000 phone numbers before my bulk send campaign",filter_number
+"can you guide me through filtering contacts by region or area code",filter_number
+"i'd like to filter my list to remove contacts that have blocked me",filter_number
+"how can i filter my database to find only mobile numbers with whatsapp",filter_number
+"i want to filter out any numbers that might be invalid or fake",filter_number
+"can you show me how to filter contacts to remove those marked as do not contact",filter_number
+"i need to filter my contact list to segment by country code",filter_number
+"how do i filter and clean my customer database before importing",filter_number
+"i'd like to filter my numbers to identify which ones bounced in previous campaigns",filter_number
+"can you help me filter contacts to remove any with formatting errors",filter_number
+"i want to filter my list to show only numbers that are verified on whatsapp",filter_number
+"how can i filter out contacts that haven't been active in the last 6 months",filter_number
+"i need to filter my database to remove test numbers and keep only real customers",filter_number
+"can you guide me on filtering numbers to check whatsapp validity",filter_number
+"i'd like to filter my contact list to separate business from personal numbers",filter_number
+"how do i filter contacts to identify which ones are international numbers",filter_number
+"i want to filter and validate all my imported contacts before adding them",filter_number
+"can you help me filter my list to remove numbers without proper country codes",filter_number
+"i need to filter my customer database to ensure compliance with messaging regulations",filter_number
+"i need to create a new whatsapp business instance for my online store so i can start messaging customers",create_instance
+"can you walk me through the process of creating and setting up a new whatsapp instance",create_instance
+"how do i create a second whatsapp instance for my other business line",create_instance
+"i'd like to create a new instance and connect it to my business phone number",create_instance
+"can you help me create a whatsapp instance for my e-commerce business",create_instance
+"i want to set up a new instance for my marketing team to use",create_instance
+"how can i create multiple whatsapp instances for different departments",create_instance
+"i need to create a fresh instance because my old one stopped working",create_instance
+"can you guide me through creating a new whatsapp business api instance",create_instance
+"i'd like to create an instance for testing before i use it with real customers",create_instance
+"how do i create and configure a new instance with all the right settings",create_instance
+"i want to create a new instance for my restaurant to send order updates",create_instance
+"can you help me create an instance and explain the qr code scanning process",create_instance
+"i need to create additional instances to handle multiple phone numbers",create_instance
+"how can i create a new whatsapp instance for my sales department",create_instance
+"i'd like to create an instance specifically for customer support messages",create_instance
+"can you show me how to create a new instance and connect my whatsapp business account",create_instance
+"i want to create an instance for my new business venture",create_instance
+"how do i create a whatsapp instance that can handle bulk messaging",create_instance
+"i need to create an instance for my agency to manage client communications",create_instance
+"can you guide me on creating multiple instances for different brands i manage",create_instance
+"i'd like to create a new instance because i got a new business phone number",create_instance
+"how can i create an instance and ensure it's properly configured",create_instance
+"i want to create a dedicated instance for my promotional campaigns",create_instance
+"can you help me create an instance for my retail store location",create_instance
+"i need to create a new instance and migrate my contacts to it",create_instance
+"how do i create an instance that will work with my existing whatsapp business",create_instance
+"i'd like to create multiple instances to separate my business communications",create_instance
+"can you show me the steps to create and activate a new whatsapp instance",create_instance
+"i want to create an instance for my consulting business to reach clients",create_instance
+"i need to delete my old whatsapp instance because i'm no longer using that number",delete_instance
+"can you help me remove an instance that's been inactive for months",delete_instance
+"how do i permanently delete a whatsapp instance from my account",delete_instance
+"i'd like to delete all my test instances and keep only the production one",delete_instance
+"can you guide me through deleting an instance that's causing problems",delete_instance
+"i want to delete my current instance and create a fresh one",delete_instance
+"how can i delete multiple instances at once to clean up my account",delete_instance
+"i need to delete an instance associated with a phone number i no longer have",delete_instance
+"can you show me how to delete an instance without affecting my other instances",delete_instance
+"i'd like to delete my old business instance now that we've rebranded",delete_instance
+"how do i delete a whatsapp instance that's no longer needed",delete_instance
+"i want to remove an instance that was set up incorrectly",delete_instance
+"can you help me delete instances that are taking up space in my account",delete_instance
+"i need to delete my trial instance now that i have a paid subscription",delete_instance
+"how can i delete an instance and ensure all data is removed",delete_instance
+"i'd like to delete the instance for my closed business location",delete_instance
+"can you guide me on deleting an instance that's been disconnected",delete_instance
+"i want to delete all unused instances to keep my account organized",delete_instance
+"how do i delete a specific instance by its id or name",delete_instance
+"i need to delete an instance that was created by mistake",delete_instance
+"can you help me delete an instance and free up my phone number",delete_instance
+"i'd like to delete my old instances before creating new ones",delete_instance
+"how can i delete an instance that's no longer authenticated",delete_instance
+"i want to remove instances from my account that i don't recognize",delete_instance
+"can you show me how to safely delete an instance without losing important data",delete_instance
+"i need to delete my testing instance now that we've gone live",delete_instance
+"how do i delete an instance and cancel its subscription",delete_instance
+"i'd like to delete instances associated with former employees",delete_instance
+"can you help me delete an instance that's been hacked or compromised",delete_instance
+"i want to completely remove an old instance and all its associated data",delete_instance
+"i need to edit my whatsapp instance name to reflect our new business branding",edit_instance
+"can you help me change the settings on my current instance",edit_instance
+"how do i edit an instance to update the phone number associated with it",edit_instance
+"i'd like to modify my instance settings to enable additional features",edit_instance
+"can you guide me through editing my instance configuration",edit_instance
+"i want to edit my instance details to match our company information",edit_instance
+"how can i edit multiple instances to update their settings",edit_instance
+"i need to edit my instance to change the webhook url",edit_instance
+"can you show me how to edit an instance's name and description",edit_instance
+"i'd like to edit my instance settings to adjust message delays",edit_instance
+"how do i edit an instance to enable or disable certain features",edit_instance
+"i want to modify my instance configuration for better performance",edit_instance
+"can you help me edit the settings of my production instance",edit_instance
+"i need to edit my instance to update the api credentials",edit_instance
+"how can i edit an instance to change its status or priority",edit_instance
+"i'd like to edit my instance to customize the automated responses",edit_instance
+"can you guide me on editing instance settings for compliance",edit_instance
+"i want to edit my instance name from the default to something meaningful",edit_instance
+"how do i edit an instance's configuration without disconnecting it",edit_instance
+"i need to edit my instance to update the business profile information",edit_instance
+"can you help me edit multiple instances with the same settings",edit_instance
+"i'd like to edit my instance to change the message sending limits",edit_instance
+"how can i edit an instance to update its contact information",edit_instance
+"i want to modify my instance settings to improve delivery rates",edit_instance
+"can you show me how to edit instance parameters in bulk",edit_instance
+"i need to edit my instance to change the authentication method",edit_instance
+"how do i edit an instance to update its integration settings",edit_instance
+"i'd like to edit my instance configuration to enable webhooks",edit_instance
+"can you help me edit the advanced settings of my whatsapp instance",edit_instance
+"i want to edit my instance to rename it and update its description",edit_instance
+"i need to create a customer group for all my vip clients so i can send them exclusive offers",create_group
+"can you help me create different groups to segment my contacts by interest",create_group
+"how do i create a group for customers who purchased specific products",create_group
+"i'd like to create a group of contacts who signed up for my newsletter",create_group
+"can you guide me through creating groups for different marketing segments",create_group
+"i want to create a group for inactive customers to target with reactivation campaigns",create_group
+"how can i create multiple groups to organize my contacts by region",create_group
+"i need to create a group for beta testers of my new product",create_group
+"can you show me how to create a group and add contacts to it",create_group
+"i'd like to create groups based on customer purchase history",create_group
+"how do i create a group for contacts who attended my event",create_group
+"i want to create different groups for my b2b and b2c customers",create_group
+"can you help me create a group for high-value customers",create_group
+"i need to create groups to organize contacts by their preferences",create_group
+"how can i create a group for contacts who need follow-up",create_group
+"i'd like to create a group specifically for my loyalty program members",create_group
+"can you guide me on creating groups for targeted campaigns",create_group
+"i want to create a group of contacts who requested product demos",create_group
+"how do i create groups to separate customers by industry",create_group
+"i need to create a group for contacts who abandoned their shopping carts",create_group
+"can you help me create groups based on customer engagement levels",create_group
+"i'd like to create a group for contacts in a specific geographic area",create_group
+"how can i create multiple groups for different customer journeys",create_group
+"i want to create a group for contacts who need special attention",create_group
+"can you show me how to create and manage customer groups",create_group
+"i need to create groups to organize my growing contact database",create_group
+"how do i create a group for wholesale customers versus retail",create_group
+"i'd like to create groups for different stages of the sales funnel",create_group
+"can you help me create a group for contacts who opted in to promotions",create_group
+"i want to create targeted groups for my upcoming campaign",create_group
+"i need to edit my customer group name to better reflect the segment it represents",edit_group
+"can you help me modify a group to add or remove contacts",edit_group
+"how do i edit a group to update its description and settings",edit_group
+"i'd like to edit my vip group to include new high-value customers",edit_group
+"can you guide me through editing group details and member list",edit_group
+"i want to edit my groups to reorganize my contact segments",edit_group
+"how can i edit a group's name without affecting the contacts in it",edit_group
+"i need to edit a group to remove customers who unsubscribed",edit_group
+"can you show me how to edit multiple groups at once",edit_group
+"i'd like to edit my group settings to change the targeting criteria",edit_group
+"how do i edit a group to merge it with another group",edit_group
+"i want to modify my groups to reflect current customer categories",edit_group
+"can you help me edit a group to update its membership",edit_group
+"i need to edit groups to clean up outdated segments",edit_group
+"how can i edit a group to add contacts from a recent import",edit_group
+"i'd like to edit my promotional group to exclude certain contacts",edit_group
+"can you guide me on editing group properties",edit_group
+"i want to edit a group name from the default to something descriptive",edit_group
+"how do i edit a group to change which contacts are included",edit_group
+"i need to edit my customer groups to align with new business segments",edit_group
+"can you help me edit groups to improve campaign targeting",edit_group
+"i'd like to edit a group to update the contact filter criteria",edit_group
+"how can i edit my groups to remove duplicate members",edit_group
+"i want to modify group settings to better organize my contacts",edit_group
+"can you show me how to edit a group's configuration",edit_group
+"i need to edit several groups to standardize their naming",edit_group
+"how do i edit a group to add newly acquired contacts",edit_group
+"i'd like to edit my groups to reflect the current customer journey",edit_group
+"can you help me edit a group to split it into smaller segments",edit_group
+"i want to edit my group structure to improve campaign performance",edit_group
+"i need to delete old customer groups that are no longer relevant to my business",delete_group
+"can you help me remove a group that was created for a past campaign",delete_group
+"how do i delete multiple groups that i don't use anymore",delete_group
+"i'd like to delete a test group i created while learning the system",delete_group
+"can you guide me through deleting groups without deleting the contacts",delete_group
+"i want to delete all inactive groups to clean up my account",delete_group
+"how can i delete a group that has no members",delete_group
+"i need to delete groups from old campaigns to keep things organized",delete_group
+"can you show me how to delete a specific group by name",delete_group
+"i'd like to delete duplicate groups that were created by mistake",delete_group
+"how do i delete a group and reassign its members to another group",delete_group
+"i want to remove groups that are no longer part of my marketing strategy",delete_group
+"can you help me delete outdated customer segments",delete_group
+"i need to delete groups created by former employees",delete_group
+"how can i delete all test groups at once",delete_group
+"i'd like to delete a group that's causing confusion in my contact organization",delete_group
+"can you guide me on safely deleting groups",delete_group
+"i want to delete unused groups to simplify my contact management",delete_group
+"how do i delete a group without affecting other groups",delete_group
+"i need to delete seasonal campaign groups after the season ends",delete_group
+"can you help me delete groups that have served their purpose",delete_group
+"i'd like to delete a group and move its contacts elsewhere",delete_group
+"how can i delete multiple groups in one action",delete_group
+"i want to remove a group that was set up incorrectly",delete_group
+"can you show me how to delete groups and keep my contact list clean",delete_group
+"i need to delete old segmentation groups that are no longer accurate",delete_group
+"how do i delete a group completely from my account",delete_group
+"i'd like to delete groups associated with discontinued products",delete_group
+"can you help me delete all groups except my active ones",delete_group
+"i want to delete temporary groups that were used for one-time campaigns",delete_group
+"can you explain what chattea is and how it can help my business grow",what_for
+"i'm new here and would like to know what this platform is designed to do",what_for
+"what exactly does this whatsapp business management platform offer",what_for
+"can you tell me what features and capabilities are available on chattea",what_for
+"i'd like to understand what this service is for and how it works",what_for
+"what can i accomplish using this whatsapp business api platform",what_for
+"can you give me an overview of what chattea does for businesses",what_for
+"what is the main purpose of this platform and who is it for",what_for
+"i want to know what makes this platform different from regular whatsapp",what_for
+"can you explain what whatsapp business api management means",what_for
+"what kind of businesses would benefit from using this platform",what_for
+"can you describe all the features available in this service",what_for
+"what problems does this platform solve for business owners",what_for
+"i'd like to know what i can do with chattea that i can't do with normal whatsapp",what_for
+"can you tell me about the bulk messaging and automation features",what_for
+"what is this platform's approach to managing customer communications",what_for
+"can you explain how this platform helps with whatsapp marketing",what_for
+"what are the key features that make this platform valuable",what_for
+"i want to understand the full capabilities of this whatsapp business tool",what_for
+"can you give me a comprehensive overview of what's included",what_for
+"what does this platform do differently than other whatsapp solutions",what_for
+"can you explain the whatsapp business api and how this platform uses it",what_for
+"what can i expect to achieve using this service for my business",what_for
+"i'd like to know all about the features before i commit",what_for
+"can you describe how this platform manages multiple whatsapp instances",what_for
+"what is the vision behind chattea and what problems does it solve",what_for
+"can you tell me about the contact management and segmentation features",what_for
+"what makes this platform suitable for businesses of different sizes",what_for
+"i want to understand what this platform offers compared to competitors",what_for
+"can you explain what i'll be able to do once i start using chattea",what_for
+"i'd like to know about your pricing plans and what's included in each tier",pricing
+"can you break down the cost structure and subscription options available",pricing
+"what are the different pricing levels and what features do they include",pricing
+"how much would it cost for me to use this platform for my small business",pricing
+"can you explain the difference between your basic and premium plans",pricing
+"i want to know the monthly and annual pricing for all available plans",pricing
+"what's included in the free trial and what happens when it expires",pricing
+"can you tell me about any discounts for annual subscriptions",pricing
+"how does the pricing scale as my business grows and i need more features",pricing
+"what are the costs associated with sending bulk messages",pricing
+"can you provide a detailed breakdown of all fees and charges",pricing
+"i'd like to compare the features and prices of different subscription tiers",pricing
+"what's the most affordable plan that includes bulk messaging",pricing
+"can you explain if there are any hidden costs or additional fees",pricing
+"how much does it cost to add extra whatsapp instances to my account",pricing
+"what payment methods do you accept for subscription plans",pricing
+"can you tell me about any enterprise or custom pricing options",pricing
+"i want to know if there's a money-back guarantee or refund policy",pricing
+"what's the pricing for businesses that need high-volume messaging",pricing
+"can you explain the payment cycle and when i'll be charged",pricing
+"how do i upgrade or downgrade my subscription plan",pricing
+"what features are exclusive to the higher-tier pricing plans",pricing
+"can you tell me if there are any setup fees or onboarding costs",pricing
+"i'd like to know the exact monthly cost for the plan that fits my needs",pricing
+"what's included in the price versus what costs extra",pricing
+"can you provide pricing information for teams or multiple users",pricing
+"how does your pricing compare to other whatsapp business api providers",pricing
+"what happens to my data if i cancel my subscription",pricing
+"can you explain the trial period terms and conditions",pricing
+"i want to understand the full cost of ownership before making a decision",pricing
+"how can i get in touch with your customer support team if i have issues",contact
+"i need help with a technical problem, who should i contact",contact
+"can you provide me with the support email or phone number",contact
+"what are the different ways i can reach out for assistance",contact
+"i'd like to speak with someone from your team about my account",contact
+"how do i contact support if something isn't working properly",contact
+"can you give me the contact information for technical support",contact
+"what's the best way to get help with my whatsapp instance",contact
+"i need urgent assistance, how can i reach someone quickly",contact
+"can you tell me if there's live chat support available",contact
+"how do i submit a support ticket for my issue",contact
+"what are your support hours and response times",contact
+"i'd like to contact sales to discuss enterprise options",contact
+"can you provide contact details for billing inquiries",contact
+"how can i reach out to report a bug or technical issue",contact
+"what's the process for getting help with account problems",contact
+"i need to contact support about a payment issue",contact
+"can you give me the email address for customer service",contact
+"how do i get in touch with your team for partnership inquiries",contact
+"what channels are available for customer support",contact
+"i'd like to know if you offer phone support or only email",contact
+"can you tell me how to contact support outside business hours",contact
+"how do i reach someone for help with api integration",contact
+"what's the fastest way to get a response from your support team",contact
+"i need to contact support about suspicious activity on my account",contact
+"can you provide me with all available contact methods",contact
+"how do i escalate an issue that hasn't been resolved",contact
+"what's the support email for urgent technical problems",contact
+"i'd like to speak with a representative about custom solutions",contact
+"can you tell me how to contact your team for feedback or suggestions",contact
+"thanks for your help",unknown
+"that makes sense now",unknown
+"i appreciate the information",unknown
+"okay i understand",unknown
+"got it thanks",unknown
+"that's helpful",unknown
+"perfect thanks",unknown
+"makes sense",unknown
+"i see what you mean",unknown
+"okay cool",unknown
+"sounds good to me",unknown
+"i'll try that",unknown
+"let me think about it",unknown
+"not sure yet",unknown
+"maybe later",unknown
+"i'll get back to you",unknown
+"hmm interesting",unknown
+"okay then",unknown
+"fair enough",unknown
+"i guess so",unknown
+"whatever works",unknown
+"sure thing",unknown
+"absolutely",unknown
+"definitely",unknown
+"for sure",unknown
+"you bet",unknown
+"of course",unknown
+"certainly",unknown
+"right",unknown
+"exactly",unknown
+"yup",unknown
+"yep",unknown
+"yeah",unknown
+"nah",unknown
+"nope",unknown
+"not really",unknown
+"i don't think so",unknown
+"probably not",unknown
+"doubt it",unknown
+"can't say",unknown
+"who knows",unknown
+"beats me",unknown
+"no idea",unknown
+"not a clue",unknown
+"couldn't tell you",unknown
+"your guess is as good as mine",unknown
+"i'm not sure about that",unknown
+"random",unknown
+"just checking",unknown
+"never mind",unknown
+"forget about it",unknown
+"it's nothing",unknown
+"doesn't matter",unknown
+"not important",unknown
+"how do i send a message to all my subscribers about the new product launch happening next week",send_message
+"i want to broadcast an urgent message to everyone in my contact list right now",send_message
+"can you help me send the same promotional text to 500 customers at once",send_message
+"i need to send a bulk whatsapp message announcing our store reopening",send_message
+"how can i message all my customers about the upcoming maintenance",send_message
+"i'd like to send a flash sale notification to my entire database",send_message
+"can you show me how to send mass messages to my contact groups",send_message
+"i want to send order confirmation messages to multiple customers",send_message
+"how do i broadcast a message with images to all my followers",send_message
+"i need to send appointment reminders to everyone scheduled for tomorrow",send_message
+"can you help me send a thank you message to all recent buyers",send_message
+"i want to notify all customers about our price increase effective next month",send_message
+"how can i send a survey message to my entire customer base",send_message
+"i'd like to broadcast shipping updates to customers waiting for orders",send_message
+"can you guide me on sending personalized bulk messages",send_message
+"i need to send a message about our policy changes to all users",send_message
+"how do i send a message blast about our referral program",send_message
+"i want to send event invitations to my vip contact list",send_message
+"can you help me send a message campaign for our anniversary sale",send_message
+"i'd like to broadcast a message with our new business hours",send_message
+"i want to schedule promotional messages for black friday to go out at 12:01 am",schedule_message
+"can you help me set up scheduled messages for my entire december campaign",schedule_message
+"how do i schedule a message to send next monday morning at 9am",schedule_message
+"i'd like to schedule reminder messages for customers with appointments this week",schedule_message
+"can you show me how to schedule messages to go out while i'm on vacation",schedule_message
+"i need to schedule a series of educational messages over the next 30 days",schedule_message
+"how can i schedule messages for different customer segments at optimal times",schedule_message
+"i want to schedule follow-up messages for new customer onboarding",schedule_message
+"can you guide me on scheduling automated birthday messages for customers",schedule_message
+"i'd like to schedule my weekly newsletter to send every friday at noon",schedule_message
+"how do i schedule messages for a drip campaign over several weeks",schedule_message
+"i need to schedule promotional messages for our upcoming product drops",schedule_message
+"can you help me schedule messages to send at different times across time zones",schedule_message
+"i want to schedule reminder messages for customers who abandoned carts",schedule_message
+"how can i schedule a message to send exactly one week from today",schedule_message
+"i'd like to schedule messages for my flash sales happening throughout the month",schedule_message
+"can you show me how to schedule recurring messages for monthly updates",schedule_message
+"i need to schedule messages for different phases of my marketing funnel",schedule_message
+"how do i schedule a countdown message series leading up to my event",schedule_message
+"i want to schedule post-purchase follow-up messages for customer feedback",schedule_message
+"i need to validate all the phone numbers in my csv file before importing them",filter_number
+"can you help me filter out international numbers from my contact list",filter_number
+"how do i filter my database to show only whatsapp-active numbers",filter_number
+"i want to filter my contacts to remove any that are marked as invalid",filter_number
+"can you show me how to filter numbers by country code",filter_number
+"i'd like to filter my list to identify mobile vs landline numbers",filter_number
+"how can i filter contacts to remove those who've opted out",filter_number
+"i need to filter my database to find numbers with formatting issues",filter_number
+"can you guide me on filtering contacts to ensure compliance",filter_number
+"i want to filter my list to remove numbers that bounced",filter_number
+"how do i filter contacts to segment by geographic region",filter_number
+"i'd like to filter my database to identify premium mobile numbers",filter_number
+"can you help me filter out test numbers from my production list",filter_number
+"i need to filter contacts to find those added in the last 30 days",filter_number
+"how can i filter numbers to check which ones are verified",filter_number
+"i want to filter my contact list to remove corporate landlines",filter_number
+"can you show me how to filter and clean my entire database",filter_number
+"i'd like to filter contacts to separate paying customers from leads",filter_number
+"how do i filter numbers to identify which carrier they use",filter_number
+"i need to filter my list to ensure gdpr compliance",filter_number
+"i want to create a new whatsapp instance for my second business location",create_instance
+"can you help me set up a whatsapp instance for my online boutique",create_instance
+"how do i create multiple instances for different product lines",create_instance
+"i'd like to create an instance dedicated to customer support",create_instance
+"can you guide me through creating an instance for my startup",create_instance
+"i need to create a test instance before going live with customers",create_instance
+"how can i create an instance and link it to my business number",create_instance
+"i want to create separate instances for sales and marketing teams",create_instance
+"can you show me how to create an instance step by step",create_instance
+"i'd like to create a new instance for my restaurant delivery service",create_instance
+"how do i create an instance for my consulting business",create_instance
+"i need to create multiple instances to manage different clients",create_instance
+"can you help me create an instance for my real estate business",create_instance
+"i want to create a whatsapp instance for my fitness coaching",create_instance
+"how can i create an instance that supports multiple languages",create_instance
+"i'd like to create an instance for seasonal campaign management",create_instance
+"can you guide me on creating an instance with custom settings",create_instance
+"i need to create an instance for my nonprofit organization",create_instance
+"how do i create an instance optimized for bulk messaging",create_instance
+"i want to create dedicated instances for each franchise location",create_instance
+"i need to delete the whatsapp instance for my closed store location",delete_instance
+"can you help me remove instances that are no longer in use",delete_instance
+"how do i delete my test instance now that i'm in production",delete_instance
+"i'd like to delete instances associated with old phone numbers",delete_instance
+"can you guide me on deleting instances to free up my subscription",delete_instance
+"i want to delete all demo instances and keep only active ones",delete_instance
+"how can i delete an instance that's been disconnected for months",delete_instance
+"i need to delete instances from a failed integration attempt",delete_instance
+"can you show me how to delete specific instances by id",delete_instance
+"i'd like to delete my old instance before creating a new one",delete_instance
+"how do i delete instances for employees who left the company",delete_instance
+"i need to delete duplicate instances created by mistake",delete_instance
+"can you help me delete instances and recover the phone numbers",delete_instance
+"i want to delete seasonal instances after the campaign ends",delete_instance
+"how can i delete an instance without losing contact information",delete_instance
+"i'd like to delete all inactive instances from my account",delete_instance
+"can you guide me on bulk deleting multiple instances",delete_instance
+"i need to delete an instance that was compromised",delete_instance
+"how do i delete instances associated with archived projects",delete_instance
+"i want to delete trial instances and upgrade to paid ones",delete_instance
+"i need to edit my instance name to match our rebranded company",edit_instance
+"can you help me modify instance settings for better deliverability",edit_instance
+"how do i edit my instance to update the webhook configuration",edit_instance
+"i'd like to edit instance details to reflect current business info",edit_instance
+"can you guide me on editing instance settings for compliance",edit_instance
+"i want to edit my instance to enable advanced features",edit_instance
+"how can i edit multiple instances with the same configuration",edit_instance
+"i need to edit my instance to change the sending speed",edit_instance
+"can you show me how to edit instance metadata",edit_instance
+"i'd like to edit my instance to improve performance metrics",edit_instance
+"how do i edit an instance to add new administrators",edit_instance
+"i need to edit instance settings to adjust rate limits",edit_instance
+"can you help me edit my instance for better security",edit_instance
+"i want to edit instance names to follow naming conventions",edit_instance
+"how can i edit an instance to change its assigned phone number",edit_instance
+"i'd like to edit instance configurations for seasonal campaigns",edit_instance
+"can you guide me on editing instance api keys",edit_instance
+"i need to edit my instance to enable message templates",edit_instance
+"how do i edit instances to standardize settings across the board",edit_instance
+"i want to edit my instance to customize automatic responses",edit_instance
+"i need to create contact groups for my product categories",create_group
+"can you help me create groups to segment customers by purchase behavior",create_group
+"how do i create groups for different email campaign segments",create_group
+"i'd like to create groups based on customer lifetime value",create_group
+"can you guide me on creating groups for geographic targeting",create_group
+"i want to create groups for customers at different funnel stages",create_group
+"how can i create groups to organize leads by source",create_group
+"i need to create groups for a/b testing my messages",create_group
+"can you show me how to create groups dynamically based on behavior",create_group
+"i'd like to create groups for active vs inactive customers",create_group
+"how do i create groups for different subscription tiers",create_group
+"i need to create groups based on customer preferences",create_group
+"can you help me create groups for seasonal shoppers",create_group
+"i want to create groups to separate wholesale from retail customers",create_group
+"how can i create groups for different age demographics",create_group
+"i'd like to create groups for customers who need re-engagement",create_group
+"can you guide me on creating smart groups with filters",create_group
+"i need to create groups for customers by industry vertical",create_group
+"how do i create groups for personalized marketing campaigns",create_group
+"i want to create groups to manage customer journey stages",create_group
+"i need to edit my vip group to add new qualified members",edit_group
+"can you help me modify group criteria to be more specific",edit_group
+"how do i edit groups to reflect updated customer segments",edit_group
+"i'd like to edit my promotional group to exclude unsubscribers",edit_group
+"can you guide me on editing group membership rules",edit_group
+"i want to edit groups to align with new marketing strategy",edit_group
+"how can i edit a group to change its targeting parameters",edit_group
+"i need to edit groups to remove outdated contacts",edit_group
+"can you show me how to edit group names for clarity",edit_group
+"i'd like to edit groups to split large segments into smaller ones",edit_group
+"how do i edit a group to merge duplicate members",edit_group
+"i need to edit groups to update demographic information",edit_group
+"can you help me edit groups to improve campaign accuracy",edit_group
+"i want to edit my groups to reflect seasonal changes",edit_group
+"how can i edit groups to add contacts from recent imports",edit_group
+"i'd like to edit group descriptions to better explain their purpose",edit_group
+"can you guide me on editing groups in bulk",edit_group
+"i need to edit groups to ensure data accuracy",edit_group
+"how do i edit a group to change its parent category",edit_group
+"i want to edit groups to optimize for better engagement",edit_group
+"i need to delete customer groups from last year's campaigns",delete_group
+"can you help me remove groups that are no longer needed",delete_group
+"how do i delete test groups created during setup",delete_group
+"i'd like to delete groups with zero members",delete_group
+"can you guide me on deleting groups safely",delete_group
+"i want to delete all temporary campaign groups",delete_group
+"how can i delete groups without affecting contacts",delete_group
+"i need to delete duplicate groups created by accident",delete_group
+"can you show me how to delete groups in bulk",delete_group
+"i'd like to delete groups associated with discontinued products",delete_group
+"how do i delete seasonal groups after the season ends",delete_group
+"i need to delete groups created by former team members",delete_group
+"can you help me delete unused groups to declutter",delete_group
+"i want to delete groups that are causing segmentation confusion",delete_group
+"how can i delete groups and reassign their members",delete_group
+"i'd like to delete old segmentation groups",delete_group
+"can you guide me on deleting groups permanently",delete_group
+"i need to delete groups from archived campaigns",delete_group
+"how do i delete groups that are no longer accurate",delete_group
+"i want to delete all groups except my core segments",delete_group
+"what exactly can i do with this whatsapp business platform",what_for
+"can you explain how chattea helps with customer communication",what_for
+"i want to understand what features are included in this service",what_for
+"what makes this platform useful for my business",what_for
+"can you tell me about the whatsapp api capabilities",what_for
+"how does this platform help with marketing automation",what_for
+"what are the main benefits of using chattea",what_for
+"can you describe the bulk messaging functionality",what_for
+"what can this platform do that regular whatsapp can't",what_for
+"i'd like to know how this helps manage customer relationships",what_for
+"can you explain the contact management features",what_for
+"what is the purpose of having multiple instances",what_for
+"can you tell me about automation and scheduling capabilities",what_for
+"what problems does this platform solve for businesses",what_for
+"i want to know how this integrates with my existing systems",what_for
+"can you explain what makes chattea different",what_for
+"what are all the features available on this platform",what_for
+"can you describe how the whatsapp business api works here",what_for
+"what can i achieve using this service",what_for
+"i'd like to understand the full scope of capabilities",what_for
+"what's the monthly cost for your basic plan",pricing
+"can you tell me about volume discounts for messaging",pricing
+"how much does the enterprise plan cost",pricing
+"i'd like to see a comparison of all pricing tiers",pricing
+"can you explain what's included in each subscription level",pricing
+"what are the costs for additional users or seats",pricing
+"how does billing work for this service",pricing
+"can you tell me about any promotional pricing",pricing
+"what's the difference in price between monthly and annual billing",pricing
+"i want to know if there are any setup fees",pricing
+"can you provide a detailed price breakdown",pricing
+"how much would it cost for 10000 messages per month",pricing
+"what payment options do you accept",pricing
+"can you tell me about your refund policy",pricing
+"i'd like to know the pricing for API access",pricing
+"how much does it cost to add extra whatsapp numbers",pricing
+"can you explain the pricing structure clearly",pricing
+"what's included in the free tier if you have one",pricing
+"i want to know about costs for international messaging",pricing
+"can you tell me if there are any hidden charges",pricing
+"i need help setting up my account",contact
+"can you provide support contact information",contact
+"how do i reach technical support",contact
+"i'd like to speak with someone about my issue",contact
+"can you give me the customer service email",contact
+"what's the best way to get help quickly",contact
+"how can i contact your sales team",contact
+"i need to report a problem with my account",contact
+"can you tell me your support hours",contact
+"what channels can i use to reach support",contact
+"i'd like to know if you offer live chat",contact
+"how do i submit a support ticket",contact
+"can you provide contact details for billing questions",contact
+"i need urgent help with a technical issue",contact
+"what's the email for customer support",contact
+"how can i escalate my support request",contact
+"can you tell me how to contact your team",contact
+"i'd like to speak with a representative",contact
+"what's the phone number for support",contact
+"how do i get in touch for partnership inquiries",contact
+"okay",unknown
+"sure",unknown
+"alright",unknown
+"msg blast",send_message
+"push notification to all",send_message
+"mass whatsapp send",send_message
+"bulk wa message",send_message
+"send notification broadcast",send_message
+"message everyone now",send_message
+"whatsapp bulk send feature",send_message
+"how to mass message on whatsapp",send_message
+"send announcement to all customers",send_message
+"broadcast promo message",send_message
+"message all my clients",send_message
+"how to send to multiple numbers",send_message
+"bulk sms whatsapp",send_message
+"send campaign message",send_message
+"blast message whatsapp",send_message
+"message distribution to contacts",send_message
+"whatsapp marketing message send",send_message
+"send promotional blast",send_message
+"notify all customers whatsapp",send_message
+"bulk wa broadcast",send_message
+"send to contact list",send_message
+"mass messaging whatsapp",send_message
+"send same msg to all",send_message
+"whatsapp bulk notification",send_message
+"broadcast msg feature",send_message
+"send marketing blast",send_message
+"message to all subscribers",send_message
+"bulk customer notification",send_message
+"send whatsapp campaign",send_message
+"promotional message blast",send_message
+"later message send",schedule_message
+"set message time",schedule_message
+"auto send message",schedule_message
+"timed message broadcast",schedule_message
+"message timer",schedule_message
+"schedule wa message",schedule_message
+"set scheduled broadcast",schedule_message
+"automatic message send time",schedule_message
+"delayed message send",schedule_message
+"message automation schedule",schedule_message
+"timed whatsapp send",schedule_message
+"schedule msg campaign",schedule_message
+"auto broadcast schedule",schedule_message
+"set time for message",schedule_message
+"future message send",schedule_message
+"scheduled marketing message",schedule_message
+"timer for bulk send",schedule_message
+"automatic scheduled msg",schedule_message
+"message queue schedule",schedule_message
+"time delayed broadcast",schedule_message
+"set auto send time",schedule_message
+"schedule wa broadcast",schedule_message
+"message scheduler feature",schedule_message
+"timed bulk message",schedule_message
+"schedule promo send",schedule_message
+"auto timed message",schedule_message
+"schedule message blast",schedule_message
+"set future broadcast",schedule_message
+"delayed wa message",schedule_message
+"message send scheduler",schedule_message
+"validate numbers",filter_number
+"check whatsapp numbers",filter_number
+"number validation tool",filter_number
+"clean number list",filter_number
+"verify whatsapp contacts",filter_number
+"check valid numbers",filter_number
+"number checker",filter_number
+"validate contact list",filter_number
+"clean contact database",filter_number
+"check number validity",filter_number
+"whatsapp number check",filter_number
+"validate phone numbers",filter_number
+"number verification",filter_number
+"clean up numbers",filter_number
+"check active whatsapp",filter_number
+"number cleaner",filter_number
+"validate wa numbers",filter_number
+"contact verification",filter_number
+"check contact validity",filter_number
+"number database clean",filter_number
+"verify contact numbers",filter_number
+"filter bad contacts",filter_number
+"check number format",filter_number
+"validate mobile numbers",filter_number
+"clean number database",filter_number
+"check wa active",filter_number
+"number format check",filter_number
+"validate contacts db",filter_number
+"clean phone numbers",filter_number
+"verify wa numbers",filter_number
+"new instance setup",create_instance
+"add whatsapp instance",create_instance
+"setup wa instance",create_instance
+"new wa connection",create_instance
+"instance creation",create_instance
+"add new instance",create_instance
+"setup whatsapp business",create_instance
+"new instance config",create_instance
+"create wa account",create_instance
+"add business instance",create_instance
+"setup new connection",create_instance
+"instance setup wizard",create_instance
+"new whatsapp setup",create_instance
+"add instance account",create_instance
+"create business wa",create_instance
+"setup instance now",create_instance
+"new wa business instance",create_instance
+"add whatsapp connection",create_instance
+"instance initialization",create_instance
+"setup wa business",create_instance
+"new instance wizard",create_instance
+"create wa instance",create_instance
+"add business connection",create_instance
+"setup instance config",create_instance
+"new wa account setup",create_instance
+"create business instance",create_instance
+"add instance setup",create_instance
+"new connection config",create_instance
+"instance creation wizard",create_instance
+"setup whatsapp instance",create_instance
+"remove instance",delete_instance
+"delete wa instance",delete_instance
+"remove connection",delete_instance
+"delete business instance",delete_instance
+"remove wa connection",delete_instance
+"instance removal",delete_instance
+"delete instance config",delete_instance
+"remove business wa",delete_instance
+"delete wa connection",delete_instance
+"instance deletion",delete_instance
+"remove whatsapp instance",delete_instance
+"delete instance account",delete_instance
+"remove wa instance",delete_instance
+"instance cleanup",delete_instance
+"delete connection config",delete_instance
+"remove instance setup",delete_instance
+"delete wa business",delete_instance
+"instance termination",delete_instance
+"remove instance account",delete_instance
+"delete business connection",delete_instance
+"cleanup instances",delete_instance
+"remove old wa",delete_instance
+"delete instance permanently",delete_instance
+"instance uninstall",delete_instance
+"remove wa setup",delete_instance
+"delete old connection",delete_instance
+"cleanup wa instances",delete_instance
+"remove business instance",delete_instance
+"delete connection permanently",delete_instance
+"instance removal tool",delete_instance
+"update instance",edit_instance
+"modify instance config",edit_instance
+"change instance settings",edit_instance
+"edit wa instance",edit_instance
+"update instance details",edit_instance
+"modify connection",edit_instance
+"change instance name",edit_instance
+"edit instance config",edit_instance
+"update wa settings",edit_instance
+"modify business instance",edit_instance
+"change instance info",edit_instance
+"edit connection settings",edit_instance
+"update instance setup",edit_instance
+"modify wa instance",edit_instance
+"change instance details",edit_instance
+"edit business wa",edit_instance
+"update connection config",edit_instance
+"modify instance details",edit_instance
+"change wa settings",edit_instance
+"edit instance setup",edit_instance
+"update business instance",edit_instance
+"modify connection config",edit_instance
+"change instance config",edit_instance
+"edit wa settings",edit_instance
+"update instance info",edit_instance
+"modify instance setup",edit_instance
+"change business settings",edit_instance
+"edit connection details",edit_instance
+"update wa instance",edit_instance
+"modify settings config",edit_instance
+"new group setup",create_group
+"add contact group",create_group
+"create customer segment",create_group
+"setup contact group",create_group
+"new group creation",create_group
+"add group segment",create_group
+"create contact list",create_group
+"setup customer group",create_group
+"new segment creation",create_group
+"add customer group",create_group
+"create group list",create_group
+"setup group segment",create_group
+"new contact group",create_group
+"add group list",create_group
+"create segment group",create_group
+"setup list group",create_group
+"new customer group",create_group
+"add contact segment",create_group
+"create group setup",create_group
+"setup segment list",create_group
+"new group list",create_group
+"add segment group",create_group
+"create customer list",create_group
+"setup contact segment",create_group
+"new list group",create_group
+"add group creation",create_group
+"create contact segment",create_group
+"setup customer segment",create_group
+"new segment list",create_group
+"add list group",create_group
+"update group",edit_group
+"modify group settings",edit_group
+"change group name",edit_group
+"edit group list",edit_group
+"update group members",edit_group
+"modify contact group",edit_group
+"change group details",edit_group
+"edit customer group",edit_group
+"update group config",edit_group
+"modify group details",edit_group
+"change group settings",edit_group
+"edit group segment",edit_group
+"update contact group",edit_group
+"modify group list",edit_group
+"change group members",edit_group
+"edit list group",edit_group
+"update segment group",edit_group
+"modify customer group",edit_group
+"change group config",edit_group
+"edit contact group",edit_group
+"update group details",edit_group
+"modify segment list",edit_group
+"change customer group",edit_group
+"edit group members",edit_group
+"update list group",edit_group
+"modify group config",edit_group
+"change segment group",edit_group
+"edit group info",edit_group
+"update customer group",edit_group
+"modify list group",edit_group
+"remove group",delete_group
+"delete contact group",delete_group
+"remove customer group",delete_group
+"delete group list",delete_group
+"remove segment group",delete_group
+"delete customer segment",delete_group
+"remove group segment",delete_group
+"delete list group",delete_group
+"remove contact segment",delete_group
+"delete group setup",delete_group
+"remove list segment",delete_group
+"delete segment list",delete_group
+"remove customer list",delete_group
+"delete contact list",delete_group
+"remove group list",delete_group
+"delete group config",delete_group
+"remove segment list",delete_group
+"delete customer list",delete_group
+"remove group config",delete_group
+"delete group permanently",delete_group
+"remove contact list",delete_group
+"delete list segment",delete_group
+"remove group permanently",delete_group
+"delete segment group",delete_group
+"remove customer segment",delete_group
+"delete group deletion",delete_group
+"remove list deletion",delete_group
+"delete contact segment",delete_group
+"remove group removal",delete_group
+"delete list removal",delete_group
+"tell me about this",what_for
+"what is this service",what_for
+"explain the platform",what_for
+"what does it do",what_for
+"platform info",what_for
+"service description",what_for
+"what is chattea for",what_for
+"tell me features",what_for
+"platform purpose",what_for
+"what can i do",what_for
+"explain chattea",what_for
+"service info",what_for
+"platform features",what_for
+"what's available",what_for
+"tell me capabilities",what_for
+"explain features",what_for
+"what's this platform",what_for
+"service capabilities",what_for
+"platform description",what_for
+"what does chattea do",what_for
+"tell me about platform",what_for
+"explain the service",what_for
+"what's this for",what_for
+"platform overview",what_for
+"service overview",what_for
+"what can chattea do",what_for
+"tell me platform info",what_for
+"explain capabilities",what_for
+"what's the purpose",what_for
+"platform details",what_for
+"cost info",pricing
+"plan pricing",pricing
+"subscription cost",pricing
+"how much cost",pricing
+"price details",pricing
+"plan cost",pricing
+"pricing info",pricing
+"subscription price",pricing
+"cost breakdown",pricing
+"price list",pricing
+"plan fees",pricing
+"pricing details",pricing
+"subscription fees",pricing
+"cost structure",pricing
+"price info",pricing
+"plan prices",pricing
+"pricing structure",pricing
+"subscription rates",pricing
+"cost details",pricing
+"price breakdown",pricing
+"plan rates",pricing
+"pricing plans",pricing
+"subscription cost breakdown",pricing
+"cost information",pricing
+"price structure",pricing
+"plan information",pricing
+"pricing information",pricing
+"subscription pricing",pricing
+"cost plans",pricing
+"price plans",pricing
+"need support",contact
+"get help",contact
+"support info",contact
+"contact info",contact
+"help desk",contact
+"support contact",contact
+"customer service",contact
+"support email",contact
+"contact details",contact
+"help contact",contact
+"support team",contact
+"customer support",contact
+"support number",contact
+"contact support",contact
+"help support",contact
+"support information",contact
+"customer contact",contact
+"support details",contact
+"contact team",contact
+"help desk contact",contact
+"support channel",contact
+"customer help",contact
+"support phone",contact
+"contact email",contact
+"help team",contact
+"support service",contact
+"customer service contact",contact
+"support options",contact
+"contact options",contact
+"help options",contact
+"send bulk messages to 1000 contacts about our grand opening sale starting this weekend",send_message
+"i need to message everyone in my database about the urgent product recall",send_message
+"broadcast a special offer to all my whatsapp contacts for the holiday season",send_message
+"how do i send the same discount code to all customers at once",send_message
+"i want to notify everyone about our new store hours effective immediately",send_message
+"can you help me send a mass text about our app launch to all users",send_message
+"need to broadcast order status updates to all pending customers",send_message
+"send welcome messages to all new signups from last week",send_message
+"i want to blast a message about our clearance sale to the entire list",send_message
+"how can i send shipping notifications to multiple customers simultaneously",send_message
+"need to message all attendees about the event rescheduling",send_message
+"broadcast reminder about payment due dates to all customers",send_message
+"send satisfaction survey to everyone who purchased last month",send_message
+"i want to notify all subscribers about our new product catalog",send_message
+"how do i send appointment confirmations to all scheduled clients",send_message
+"need to broadcast breaking news about our business to all contacts",send_message
+"send restock notifications to customers waiting for the product",send_message
+"i want to message all inactive users with a reactivation offer",send_message
+"broadcast thank you message to all customers who left reviews",send_message
+"send loyalty points update to all program members",send_message
+"schedule my marketing emails to go out every tuesday and thursday at 10am",schedule_message
+"i need to set up automated birthday wishes for all my customers",schedule_message
+"can you help me schedule reminder messages 24 hours before appointments",schedule_message
+"want to schedule a series of onboarding messages for new subscribers",schedule_message
+"how do i set messages to send at different times for different time zones",schedule_message
+"schedule promotional messages for the entire month in advance",schedule_message
+"i need messages to go out automatically when i'm closed for holidays",schedule_message
+"set up recurring weekly newsletters to send every monday",schedule_message
+"schedule countdown messages for our product launch next month",schedule_message
+"want to automate follow-up messages 3 days after purchase",schedule_message
+"how can i schedule seasonal greetings for all major holidays",schedule_message
+"need to set up abandoned cart reminders to send after 2 hours",schedule_message
+"schedule flash sale announcements for specific dates and times",schedule_message
+"i want messages to send automatically based on customer behavior",schedule_message
+"set up drip campaign messages to send over 2 weeks",schedule_message
+"schedule re-engagement messages for inactive customers after 30 days",schedule_message
+"want to automate appointment reminders 48 hours and 2 hours before",schedule_message
+"how do i schedule promotional messages for optimal engagement times",schedule_message
+"need to set up recurring monthly billing reminders",schedule_message
+"schedule welcome series messages for new customer onboarding",schedule_message
+"need to clean my contact list and remove all invalid phone numbers",filter_number
+"how do i check which numbers on my list actually have whatsapp",filter_number
+"want to filter out all duplicate entries from my customer database",filter_number
+"can you help me validate 10000 phone numbers before my campaign",filter_number
+"need to separate valid mobile numbers from landlines in my list",filter_number
+"how do i filter contacts by country and remove international numbers",filter_number
+"want to clean up my database and keep only active whatsapp users",filter_number
+"need to validate and format all phone numbers to proper standard",filter_number
+"how can i filter out contacts who have blocked my business number",filter_number
+"want to identify and remove all test numbers from production list",filter_number
+"need to check which contacts are still active on whatsapp",filter_number
+"how do i filter my list to find numbers with incorrect formatting",filter_number
+"want to validate all imported contacts before adding to database",filter_number
+"need to separate opt-in contacts from those who unsubscribed",filter_number
+"how can i filter contacts based on engagement history",filter_number
+"want to clean my list by removing numbers that bounced previously",filter_number
+"need to validate all numbers comply with messaging regulations",filter_number
+"how do i filter and segment contacts by geographic location",filter_number
+"want to identify premium numbers vs standard numbers in my list",filter_number
+"need to check number validity across my entire customer database",filter_number
+"i need to set up a new whatsapp business instance for my cafe",create_instance
+"want to create separate instances for each department in my company",create_instance
+"how do i add another whatsapp instance for my second phone number",create_instance
+"need to create a dedicated instance for customer support team",create_instance
+"can you help me set up a whatsapp instance for my new branch",create_instance
+"want to create multiple instances to separate marketing and sales",create_instance
+"how do i create a test instance to try features before production",create_instance
+"need to set up an instance for my e-commerce business whatsapp",create_instance
+"want to create a new instance and connect my business phone",create_instance
+"how can i create separate instances for different product lines",create_instance
+"need to add a whatsapp instance for my franchise location",create_instance
+"want to create instance for seasonal campaign management",create_instance
+"how do i set up an instance for my consulting services",create_instance
+"need to create multiple instances for client management",create_instance
+"want to add a new instance for my real estate listings",create_instance
+"how can i create an instance optimized for bulk campaigns",create_instance
+"need to set up whatsapp instance for my nonprofit outreach",create_instance
+"want to create an instance for my coaching business",create_instance
+"how do i add an instance for multi-language support",create_instance
+"need to create dedicated instance for automated responses",create_instance
+"i need to remove the whatsapp instance for our old business number",delete_instance
+"want to delete all test instances and keep only production",delete_instance
+"how do i remove instances that haven't been active in months",delete_instance
+"need to delete the instance for my closed business location",delete_instance
+"can you help me clean up and remove unused whatsapp instances",delete_instance
+"want to delete instances associated with former team members",delete_instance
+"how do i remove an instance that's been compromised",delete_instance
+"need to delete my trial instance and upgrade to paid",delete_instance
+"want to remove instances from failed integration attempts",delete_instance
+"how can i delete multiple instances at once",delete_instance
+"need to remove the instance for a phone number i no longer have",delete_instance
+"want to delete old instances before creating fresh ones",delete_instance
+"how do i remove instances without losing my contact data",delete_instance
+"need to delete seasonal campaign instances after completion",delete_instance
+"want to clean up my account by removing demo instances",delete_instance
+"how can i delete an instance and free up the phone number",delete_instance
+"need to remove instances that are taking up subscription slots",delete_instance
+"want to delete instances that were created by mistake",delete_instance
+"how do i remove all inactive instances from my account",delete_instance
+"need to delete archived project instances permanently",delete_instance
+"i need to update my instance name to reflect our new branding",edit_instance
+"want to change the webhook settings for my whatsapp instance",edit_instance
+"how do i edit instance settings to improve message delivery",edit_instance
+"need to modify my instance configuration for better performance",edit_instance
+"can you help me update the phone number on my instance",edit_instance
+"want to edit instance settings to enable new features",edit_instance
+"how do i change instance details to match company information",edit_instance
+"need to update api credentials for my whatsapp instance",edit_instance
+"want to modify instance name from default to something meaningful",edit_instance
+"how can i edit multiple instances with same settings",edit_instance
+"need to update instance configuration for compliance requirements",edit_instance
+"want to change message sending limits on my instance",edit_instance
+"how do i edit instance to add team member access",edit_instance
+"need to modify webhook urls for all my instances",edit_instance
+"want to update instance settings for seasonal campaigns",edit_instance
+"how can i edit instance to customize auto-responses",edit_instance
+"need to change instance security settings",edit_instance
+"want to update business profile information on instance",edit_instance
+"how do i edit instance to adjust rate limiting",edit_instance
+"need to modify instance settings across all my accounts",edit_instance
+"i need to create a VIP customer group for exclusive offers",create_group
+"want to set up different groups for each product category",create_group
+"how do i create groups to segment customers by purchase history",create_group
+"need to make a group for customers who signed up this month",create_group
+"can you help me create groups based on customer engagement levels",create_group
+"want to set up groups for different stages of sales funnel",create_group
+"how do i create a group for beta testers of new features",create_group
+"need to make groups to organize contacts by geographic region",create_group
+"want to create a group for high-value repeat customers",create_group
+"how can i set up groups for A/B testing campaigns",create_group
+"need to create groups based on customer preferences",create_group
+"want to make a group for inactive users needing reactivation",create_group
+"how do i create groups for wholesale vs retail customers",create_group
+"need to set up groups for different subscription tiers",create_group
+"want to create a group for customers who abandoned carts",create_group
+"how can i make groups to separate B2B from B2C contacts",create_group
+"need to create groups organized by industry vertical",create_group
+"want to set up groups for seasonal shoppers",create_group
+"how do i create groups for personalized marketing segments",create_group
+"need to make groups to track customer journey stages",create_group
+"i need to update my VIP group with newly qualified customers",edit_group
+"want to rename my customer groups to better describe segments",edit_group
+"how do i edit a group to add contacts from recent import",edit_group
+"need to modify group settings to change targeting criteria",edit_group
+"can you help me update group membership to remove unsubscribers",edit_group
+"want to edit my groups to align with new marketing strategy",edit_group
+"how do i change group names across all my segments",edit_group
+"need to update groups to reflect current customer categories",edit_group
+"want to modify group to split it into smaller targeted segments",edit_group
+"how can i edit groups to remove duplicate members",edit_group
+"need to update group descriptions for better organization",edit_group
+"want to change group criteria to improve campaign targeting",edit_group
+"how do i edit multiple groups with same updates",edit_group
+"need to modify groups to reflect seasonal changes",edit_group
+"want to update group settings for better segmentation",edit_group
+"how can i edit group to merge it with another segment",edit_group
+"need to change group membership based on new data",edit_group
+"want to update groups to optimize engagement rates",edit_group
+"how do i edit group to update demographic targeting",edit_group
+"need to modify group configuration for better accuracy",edit_group
+"i need to remove old campaign groups from last year",delete_group
+"want to delete all test groups created during setup",delete_group
+"how do i remove groups that have no active members",delete_group
+"need to clean up and delete unused customer segments",delete_group
+"can you help me remove groups associated with discontinued products",delete_group
+"want to delete seasonal groups after campaign completion",delete_group
+"how do i remove duplicate groups from my account",delete_group
+"need to delete groups created by previous team members",delete_group
+"want to clean up my segmentation by removing old groups",delete_group
+"how can i delete multiple groups in one action",delete_group
+"need to remove groups that are causing confusion",delete_group
+"want to delete groups and reassign members to active segments",delete_group
+"how do i remove all temporary campaign groups",delete_group
+"need to delete archived project groups permanently",delete_group
+"want to clean up account by removing demo groups",delete_group
+"how can i delete groups without affecting contact data",delete_group
+"need to remove groups that are no longer relevant",delete_group
+"want to delete all groups except my core segments",delete_group
+"how do i remove groups from old marketing strategies",delete_group
+"need to delete obsolete segmentation groups",delete_group
+"can you explain what this whatsapp business platform does exactly",what_for
+"what kind of features are available in chattea",what_for
+"tell me how this platform helps with customer messaging",what_for
+"what makes chattea useful for businesses",what_for
+"can you describe the whatsapp api integration",what_for
+"what are the core capabilities of this platform",what_for
+"tell me about the bulk messaging features",what_for
+"what can i accomplish with this service",what_for
+"can you explain the contact management system",what_for
+"what problems does chattea solve",what_for
+"tell me about the automation features",what_for
+"what's the difference between this and regular whatsapp",what_for
+"can you describe how multiple instances work",what_for
+"what benefits does this platform provide",what_for
+"tell me about whatsapp business api capabilities",what_for
+"what features help with customer engagement",what_for
+"can you explain the messaging automation",what_for
+"what makes this platform stand out",what_for
+"tell me about the scheduling capabilities",what_for
+"what can businesses achieve using chattea",what_for
+"how much does the basic subscription cost per month",pricing
+"what's included in your premium tier",pricing
+"can you break down the pricing for all plans",pricing
+"tell me about costs for high volume messaging",pricing
+"what are the fees for additional whatsapp instances",pricing
+"can you explain the difference between pricing tiers",pricing
+"how much for annual subscription vs monthly",pricing
+"what's the cost breakdown for enterprise plan",pricing
+"can you tell me about volume pricing discounts",pricing
+"what payment methods are accepted",pricing
+"how much does it cost to get started",pricing
+"can you explain any setup or onboarding fees",pricing
+"what's included in the price vs what costs extra",pricing
+"how much for API access and integration",pricing
+"can you tell me about trial period pricing",pricing
+"what are the costs for international messaging",pricing
+"how much to add extra users to my account",pricing
+"can you explain the refund policy",pricing
+"what's the pricing for seasonal campaigns",pricing
+"how much does bulk messaging cost",pricing
+"i need help with my account setup",contact
+"can you provide customer support contact",contact
+"how do i reach your technical support team",contact
+"what's the best way to get help",contact
+"can you give me support email address",contact
+"how can i contact sales team",contact
+"what are your customer service hours",contact
+"can you provide phone support number",contact
+"how do i submit a bug report",contact
+"what's the fastest way to reach support",contact
+"can you tell me about live chat availability",contact
+"how can i escalate my issue",contact
+"what support channels do you offer",contact
+"can you provide contact for billing questions",contact
+"how do i report a technical problem",contact
+"what's the email for partnership inquiries",contact
+"can you give me all contact options",contact
+"how can i reach someone urgently",contact
+"what's your support response time",contact
+"can you connect me with a representative",contact
+"hi how are you doing",unknown
+"good morning everyone",unknown
+"thanks so much for the help",unknown
+"that's really helpful information",unknown
+"okay i got it now",unknown
+"sounds perfect to me",unknown
+"i appreciate your assistance",unknown
+"alright let me try that",unknown
+"makes total sense",unknown
+"okay cool thanks",unknown
+"yeah that works",unknown
+"nope i don't think so",unknown
+"maybe i'll try later",unknown
+"not sure about that",unknown
+"whatever you think is best",unknown
+"hmm let me think",unknown
+"okay bye for now",unknown
+"see you later then",unknown
+"take care bye",unknown
+"have a great day",unknown
+"send msg to everyone",send_message
+"blast whatsapp message",send_message
+"notify all via whatsapp",send_message
+"send bulk promotional message",send_message
+"message all customers now",send_message
+"broadcast urgent update",send_message
+"send to all contacts",send_message
+"mass whatsapp notification",send_message
+"bulk message everyone",send_message
+"send campaign to all",send_message
+"auto schedule message",schedule_message
+"set future message send",schedule_message
+"schedule bulk broadcast",schedule_message
+"timed message send",schedule_message
+"set message schedule",schedule_message
+"auto send later",schedule_message
+"schedule campaign send",schedule_message
+"set timed broadcast",schedule_message
+"schedule message now",schedule_message
+"future send schedule",schedule_message
+"check number validity",filter_number
+"validate all numbers",filter_number
+"clean contact numbers",filter_number
+"verify whatsapp numbers",filter_number
+"filter invalid contacts",filter_number
+"check valid whatsapp",filter_number
+"number cleanup tool",filter_number
+"validate phone list",filter_number
+"clean number list",filter_number
+"verify contact validity",filter_number
+"add new instance",create_instance
+"setup wa instance",create_instance
+"create whatsapp connection",create_instance
+"new instance add",create_instance
+"setup business whatsapp",create_instance
+"create new wa",create_instance
+"add business instance",create_instance
+"instance setup",create_instance
+"new whatsapp add",create_instance
+"create instance now",create_instance
+"remove old instance",delete_instance
+"delete wa connection",delete_instance
+"remove business instance",delete_instance
+"delete old wa",delete_instance
+"instance delete",delete_instance
+"remove connection now",delete_instance
+"delete business wa",delete_instance
+"remove instance now",delete_instance
+"delete connection",delete_instance
+"instance removal",delete_instance
+"change instance name",edit_instance
+"update wa instance",edit_instance
+"modify instance",edit_instance
+"edit connection",edit_instance
+"change instance",edit_instance
+"update instance now",edit_instance
+"modify wa settings",edit_instance
+"edit business instance",edit_instance
+"change wa instance",edit_instance
+"update connection",edit_instance
+"make new group",create_group
+"add customer segment",create_group
+"create new group",create_group
+"setup contact list",create_group
+"new group add",create_group
+"create segment now",create_group
+"add group now",create_group
+"setup customer list",create_group
+"make contact group",create_group
+"create list now",create_group
+"change group name",edit_group
+"update customer group",edit_group
+"modify group now",edit_group
+"edit contact list",edit_group
+"change group settings",edit_group
+"update group now",edit_group
+"modify customer list",edit_group
+"edit segment now",edit_group
+"change group list",edit_group
+"update segment",edit_group
+"remove customer group",delete_group
+"delete contact list",delete_group
+"remove old group",delete_group
+"delete segment now",delete_group
+"remove group now",delete_group
+"delete customer list",delete_group
+"remove contact segment",delete_group
+"delete old group",delete_group
+"remove list now",delete_group
+"delete group now",delete_group
+"what's this platform for",what_for
+"tell me about features",what_for
+"explain what chattea does",what_for
+"platform capabilities",what_for
+"what can this do",what_for
+"describe the service",what_for
+"what's available here",what_for
+"tell me platform features",what_for
+"explain the features",what_for
+"what's this service",what_for
+"plan cost info",pricing
+"pricing breakdown",pricing
+"subscription details",pricing
+"cost information",pricing
+"plan pricing info",pricing
+"price details now",pricing
+"subscription cost info",pricing
+"pricing structure details",pricing
+"cost breakdown info",pricing
+"plan fees info",pricing
+"support contact info",contact
+"help desk info",contact
+"customer service contact",contact
+"support details now",contact
+"contact support now",contact
+"help contact info",contact
+"customer support details",contact
+"support team info",contact
+"contact info now",contact
+"help desk contact",contact
+"hi bot",greeting
+"hello bot",greeting
+"hey bot",greeting
+"good day",greeting
+"greetings bot",greeting
+"hi there bot",greeting
+"hello there bot",greeting
+"hey there bot",greeting
+"morning",greeting
+"afternoon",greeting
+"evening",greeting
+"hi how are you",greeting
+"hello how are you",greeting
+"hey how are you doing",greeting
+"hi good morning",greeting
+"hello good afternoon",greeting
+"hey good evening",greeting
+"whats up",greeting
+"wassup",greeting
+"yo bot",greeting
+"hiya",greeting
+"heya",greeting
+"hola",greeting
+"bonjour",greeting
+"konnichiwa",greeting
+"namaste",greeting
+"aloha",greeting
+"salutations",greeting
+"welcome",greeting
+"greetings and salutations",greeting
+"top of the morning",greeting
+"good to see you",greeting
+"nice to meet you",greeting
+"pleasure to meet you",greeting
+"how do you do",greeting
+"howdy partner",greeting
+"hey friend",greeting
+"hi friend",greeting
+"hello friend",greeting
+"yo what's good",greeting
+"hey what's up",greeting
+"hi what's new",greeting
+"hello is anyone there",greeting
+"hi is this working",greeting
+"hey are you there",greeting
+"hello bot are you online",greeting
+"hi are you available",greeting
+"testing hello",greeting
+"hello testing",greeting
+"hi can you hear me",greeting
